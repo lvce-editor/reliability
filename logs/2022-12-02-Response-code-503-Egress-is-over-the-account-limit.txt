@@ -1,0 +1,57 @@
+Name: Response code 503 (Egress is over the account limit.)
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/3602945449/jobs/6070529933
+Os: Linux
+Phase: Download Builtin Extensions
+Date: 2022-12-02
+
+[download] builtin.language-basics-bat: 628.601ms
+[download] builtin.language-basics-c: 394.591ms
+[download] builtin.language-basics-coffeescript: 392.593ms
+[download] builtin.language-basics-cpp: 549.331ms
+[download] builtin.language-basics-css: 533.648ms
+[download] builtin.language-basics-dart: 530.969ms
+[download] builtin.language-basics-desktop: 609.741ms
+[download] builtin.language-basics-docker: 550.282ms
+[download] builtin.language-basics-dotenv: 378.315ms
+[download] builtin.language-basics-editorconfig: 438.783ms
+[download] builtin.language-basics-elixir: 354.705ms
+[download] builtin.language-basics-elm: 556.677ms
+[download] builtin.language-basics-gitattributes: 443.983ms
+[download] builtin.language-basics-go: 406.829ms
+[download] builtin.language-basics-graphql: 367.528ms
+[download] builtin.language-basics-html: 447.63ms
+[download] builtin.language-basics-java: 526.955ms
+[download] builtin.language-basics-javascript: 555.286ms
+[download] builtin.language-basics-json: 398.932ms
+[download] builtin.language-basics-julia: 523.041ms
+[download] builtin.language-basics-kotlin: 435.603ms
+[download] builtin.language-basics-less: 385.044ms
+[download] builtin.language-basics-nvmrc: 389.417ms
+[download] builtin.language-basics-perl: 362.702ms
+[download] builtin.language-basics-plaintext: 390.258ms
+[download] builtin.language-basics-powershell: 376.296ms
+[download] builtin.language-basics-python: 374.824ms
+[download] builtin.language-basics-r: 388.917ms
+[download] builtin.language-basics-rust: 515.984ms
+[download] builtin.language-basics-shellscript: 482.901ms
+[download] builtin.language-basics-svelte: 467.737ms
+[download] builtin.language-basics-toml: 568.93ms
+[download] builtin.language-basics-typescript: 485.247ms
+[download] builtin.language-basics-xml: 517.199ms
+[download] builtin.language-basics-yaml: 461.428ms
+[download] builtin.language-features-css: 382.231ms
+[download] builtin.language-features-html: 390.478ms
+[download] builtin.language-features-typescript: 1.121s
+[download] builtin.prettier: 856.104ms
+[download] builtin.theme-atom-one-dark: 397.286ms
+[download] builtin.theme-ayu: 394.512ms
+[download] builtin.theme-cobalt2: 383.09ms
+[download] builtin.theme-gruvbox: 465.092ms
+[download] builtin.theme-high-contrast: 486.316ms
+[download] builtin.theme-material: 546.344ms
+[download] builtin.theme-monokai: 357.517ms
+[download] builtin.theme-noctis-uva: 414.037ms
+[download] builtin.theme-palenight: 859.995ms
+[download] builtin.vscode-icons: 1.456s
+Failed to download extension builtin.language-basics-markdown: Failed to download "https://github.com/lvce-editor/language-basics-markdown/releases/download/v0.0.4/language-basics-markdown-v0.0.4.tar.br": Response code 503 (Egress is over the account limit.)
+Error: Process completed with exit code 1.
