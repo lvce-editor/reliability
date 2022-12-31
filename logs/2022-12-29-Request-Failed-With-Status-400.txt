@@ -1,0 +1,22 @@
+Name: Request failed with status code 400
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/3800132747/jobs/6463447958
+Os: Linux
+Phase: Deploy to Github Pages
+Date: 2022-12-29
+
+Artifact URL: https://pipelines.actions.githubusercontent.com/9OtalDJVyLyDdev6inEYQsch43zFDau4CbJSKDrBmMKW7l90L0/_apis/pipelines/workflows/3800132747/artifacts?api-version=6.0-preview
+{"count":1,"value":[{"containerId":4999695,"size":15708160,"signedContent":null,"fileContainerResourceUrl":"https://pipelines.actions.githubusercontent.com/9OtalDJVyLyDdev6inEYQsch43zFDau4CbJSKDrBmMKW7l90L0/_apis/resources/Containers/4999695","type":"actions_storage","name":"github-pages","url":"https://pipelines.actions.githubusercontent.com/9OtalDJVyLyDdev6inEYQsch43zFDau4CbJSKDrBmMKW7l90L0/_apis/pipelines/1/runs/5143/artifacts?artifactName=github-pages","expiresOn":"2022-12-30T11:17:16.7577313Z","items":null}]}
+Creating deployment with payload:
+{
+	"artifact_url": "https://pipelines.actions.githubusercontent.com/9OtalDJVyLyDdev6inEYQsch43zFDau4CbJSKDrBmMKW7l90L0/_apis/pipelines/1/runs/5143/artifacts?artifactName=github-pages&%24expand=SignedContent",
+	"pages_build_version": "a6fbb6264b225dfc65c06991ad16c184ff2c1836",
+	"oidc_token": "***"
+}
+Error: Request failed with status code 400
+    at createError (/home/runner/work/_actions/actions/deploy-pages/v1/webpack:/deploy-pages/node_modules/axios/lib/core/createError.js:16:1)
+    at settle (/home/runner/work/_actions/actions/deploy-pages/v1/webpack:/deploy-pages/node_modules/axios/lib/core/settle.js:17:1)
+    at IncomingMessage.handleStreamEnd (/home/runner/work/_actions/actions/deploy-pages/v1/webpack:/deploy-pages/node_modules/axios/lib/adapters/http.js:293:1)
+    at IncomingMessage.emit (node:events:402:35)
+    at endReadableNT (node:internal/streams/readable:1343:12)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+Error: Failed to create deployment (status: 400) with build version a6fbb6264b225dfc65c06991ad16c184ff2c1836. Responded with: Deployment request failed for a6fbb6264b225dfc65c06991ad16c184ff2c1836 due to in progress deployment. Please cancel 8ea1abe2b709baf796f101694f6ca1622ddf41ff first or wait for it to complete.
