@@ -1,0 +1,21 @@
+Name: Exceeded timeout of 5000 ms for a test
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/3316370610/jobs/5478083755
+Os: Windows
+Phase: Main Process Unit Tests
+Date: 2022-10-24
+
+FAIL  test/AppWindow.test.js (9.548 s)
+  ● createAppWindow - error
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Use jest.setTimeout(newTimeout) to increase the timeout value, if this is a long-running test."
+
+      47 | })
+      48 |
+    > 49 | test('createAppWindow - error', async () => {
+         | ^
+      50 |   jest.mock('electron', () => {
+      51 |     const EventEmitter = require('events')
+      52 |     return {
+
+      at Object.test (test/AppWindow.test.js:49:1)
