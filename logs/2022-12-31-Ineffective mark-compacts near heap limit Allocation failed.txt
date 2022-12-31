@@ -1,0 +1,44 @@
+Name: Ineffective mark-compacts near heap limit Allocation failed
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/3812055858/jobs/6485065465
+OS: MacOS
+Phase: renderer-worker Unit-Tests
+Date: 2022-12-31
+
+<--- Last few GCs --->
+[2877:0x7f978d04d000] 141365 ms: Mark-sweep 1769.4 (2081.5) -> 1751.7 (2077.7) MB, 1738.5 / 0.8 ms (average mu = 0.252, current mu = 0.097) allocation failure; scavenge might not succeed
+[2877:0x7f978d04d000] 141713 ms: Scavenge 1767.0 (2078.0) -> 1760.7 (2078.0) MB, 15.2 / 0.3 ms (average mu = 0.252, current mu = 0.097) task;
+[2877:0x7f978d04d000] 141848 ms: Scavenge 1771.6 (2078.2) -> 1767.9 (2080.7) MB, 8.2 / 0.2 ms (average mu = 0.252, current mu = 0.097) allocation failure;
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Ineffective mark-compacts near heap limit Allocation failed - JavaScript heap out of memory
+
+1: 0x10b4b0d55 node::Abort() (.cold.1) [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+
+> Lerna (powered by Nx) Running target test for project renderer-worker failed
+> 2: 0x109f79259 node::Abort() [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+
+3: 0x109f7943e node::OOMErrorHandler(char const*, bool) [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+Failed tasks:
+4: 0x10a0f4193 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const\*, bool) [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+
+5: 0x10a2bcbd5 v8::internal::Heap::FatalProcessOutOfMemory(char const\*) [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+
+- renderer-worker:test
+  6: 0x10a2c10a0 v8::internal::Heap::CollectSharedGarbage(v8::internal::GarbageCollectionReason) [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+
+7: 0x10a2bd8ef v8::internal::Heap::PerformGarbageCollection(v8::internal::GarbageCollector, v8::internal::GarbageCollectionReason, char const\*, v8::GCCallbackFlags) [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+Hint: run the command with --verbose for more details.
+8: 0x10a2ba9c8 v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+
+9: 0x10a3533c1 v8::internal::ScavengeJob::Task::RunInternal() [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+10: 0x109fe4661 node::PerIsolatePlatformData::RunForegroundTask(std::**1::unique_ptr<v8::Task, std::**1::default_delete<v8::Task> >) [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+11: 0x109fe30c7 node::PerIsolatePlatformData::FlushForegroundTasksInternal() [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+12: 0x10aa24cab uv**async_io [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+13: 0x10aa38a7b uv**io_poll [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+14: 0x10aa25231 uv_run [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+15: 0x109ea6733 node::SpinEventLoop(node::Environment*) [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+16: 0x109fbc3d2 node::NodeMainInstance::Run() [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+17: 0x109f4008c node::LoadSnapshotDataAndRun(node::SnapshotData const\*\*, node::InitializationResult const*) [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+18: 0x109f40373 node::Start(int, char\*\*) [/Users/runner/hostedtoolcache/node/18.12.1/x64/bin/node]
+19: 0x11c51d52e
