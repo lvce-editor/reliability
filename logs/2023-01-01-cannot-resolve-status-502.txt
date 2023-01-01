@@ -1,0 +1,65 @@
+Name: cannot resolve https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-resources-3.4.1/nsis-resources-3.4.1.7z: status code 502
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/3817271792/jobs/6493426220
+Os: Windows
+Phase: Build Windows Exe
+Date: 2023-01-01
+
+copyBuildResources: 1.696ms
+  • electron-builder  version=23.6.0 os=10.0.20348
+  • publishing will be skipped  reason=current build is a part of pull request solution=set env PUBLISH_FOR_PULL_REQUEST to true to force code signing
+There are serious security concerns with PUBLISH_FOR_PULL_REQUEST=true (see the  CircleCI documentation (https://circleci.com/docs/1.0/fork-pr-builds/) for details)
+If you have SSH keys, sensitive env vars or AWS credentials stored in your project settings and untrusted forks can make pull requests against your repo, then this option isn't for you.
+  • loaded configuration  file=package.json ("build" field)
+  • building        target=nsis file=build\.tmp\electron-builder\dist\lvce-oss Setup 0.0.0.exe archs=x64 oneClick=true perMachine=false
+  • downloading     url=https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-3.0.4.1/nsis-3.0.4.1.7z size=1.3 MB parts=1
+  • downloaded      url=https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-3.0.4.1/nsis-3.0.4.1.7z duration=448ms
+  ⨯ cannot resolve https://github.com/electron-userland/electron-builder-binaries/releases/download/nsis-resources-3.4.1/nsis-resources-3.4.1.7z: status code 502
+github.com/develar/app-builder/pkg/download.(*Downloader).follow
+	/Volumes/data/Documents/app-builder/pkg/download/downloader.go:237
+github.com/develar/app-builder/pkg/download.(*Downloader).DownloadNoRetry
+	/Volumes/data/Documents/app-builder/pkg/download/downloader.go:128
+github.com/develar/app-builder/pkg/download.(*Downloader).Download
+	/Volumes/data/Documents/app-builder/pkg/download/downloader.go:112
+github.com/develar/app-builder/pkg/download.DownloadArtifact
+	/Volumes/data/Documents/app-builder/pkg/download/artifactDownloader.go:107
+github.com/develar/app-builder/pkg/download.ConfigureArtifactCommand.func1
+	/Volumes/data/Documents/app-builder/pkg/download/artifactDownloader.go:27
+github.com/alecthomas/kingpin.(*actionMixin).applyActions
+	/Volumes/data/go/pkg/mod/github.com/alecthomas/kingpin@v2.2.6+incompatible/actions.go:28
+github.com/alecthomas/kingpin.(*Application).applyActions
+	/Volumes/data/go/pkg/mod/github.com/alecthomas/kingpin@v2.2.6+incompatible/app.go:557
+github.com/alecthomas/kingpin.(*Application).execute
+	/Volumes/data/go/pkg/mod/github.com/alecthomas/kingpin@v2.2.6+incompatible/app.go:390
+github.com/alecthomas/kingpin.(*Application).Parse
+	/Volumes/data/go/pkg/mod/github.com/alecthomas/kingpin@v2.2.6+incompatible/app.go:222
+main.main
+	/Volumes/data/Documents/app-builder/main.go:90
+runtime.main
+	/usr/local/Cellar/go/1.17/libexec/src/runtime/proc.go:255
+runtime.goexit
+	/usr/local/Cellar/go/1.17/libexec/src/runtime/asm_amd64.s:1581
+Build failed:
+VError: Electron builder failed to execute: D:\a\lvce-editor\lvce-editor\build\node_modules\app-builder-bin\win\x64\app-builder.exe process failed ERR_ELECTRON_BUILDER_CANNOT_EXECUTE
+Exit code:
+1
+    at runElectronBuilder (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/ElectronBuilder/ElectronBuilder.js:63:11)
+    at Module.build (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/ElectronBuilder/ElectronBuilder.js:186:3)
+    at Module.build (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/ElectronBuilderWindowsExe/ElectronBuilderWindowsExe.js:15:3)
+    at main (file:///D:/a/lvce-editor/lvce-editor/build/src/build.js:63:5) {
+  jse_shortmsg: 'Electron builder failed to execute',
+  jse_cause: ExecError: D:\a\lvce-editor\lvce-editor\build\node_modules\app-builder-bin\win\x64\app-builder.exe process failed ERR_ELECTRON_BUILDER_CANNOT_EXECUTE
+  Exit code:
+  1
+      at ChildProcess.<anonymous> (D:\a\lvce-editor\lvce-editor\build\node_modules\builder-util\src\util.ts:250:14)
+      at Object.onceWrapper (node:events:628:26)
+      at ChildProcess.emit (node:events:513:28)
+      at ChildProcess.cp.emit (D:\a\lvce-editor\lvce-editor\build\node_modules\cross-spawn\lib\enoent.js:34:29)
+      at maybeClose (node:internal/child_process:1091:16)
+      at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5) {
+    exitCode: 1,
+    alreadyLogged: false,
+    code: 'ERR_ELECTRON_BUILDER_CANNOT_EXECUTE'
+  },
+  jse_info: {},
+  cause: [Function: ve_cause]
+}
