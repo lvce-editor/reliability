@@ -1,0 +1,33 @@
+Name: The operation was canceled.
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/3828071552/jobs/6513255690
+Os: Windows
+Phase: Npm ci
+Date: 2023-01-03
+
+npm ci 32m 46s
+
+Run npm ci
+npm WARN deprecated readdir-scoped-modules@1.1.0: This functionality has been moved to @npmcli/fs
+npm WARN deprecated @npmcli/move-file@2.0.1: This functionality has been moved to @npmcli/fs
+
+> lvce-editor@0.0.0-dev postinstall
+> lerna bootstrap --ci && node scripts/postinstall.js
+
+lerna notice cli v6.3.0
+lerna info ci enabled
+lerna info Bootstrapping 12 packages
+lerna info Installing external dependencies
+lerna info Symlinking packages and binaries
+lerna success Bootstrapped 12 packages
+cd packages/extension-host && npm ci --prefer-offline && cd ../../
+
+added 37 packages, and audited 38 packages in 17s
+
+9 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+cd packages/main-process && npm ci --prefer-offline && cd ../../
+npm WARN deprecated @npmcli/move-file@2.0.1: This functionality has been moved to @npmcli/fs
+Terminate batch job (Y/N)?
+Error: The operation was canceled.
