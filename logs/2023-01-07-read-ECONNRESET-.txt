@@ -1,0 +1,75 @@
+Name: read ECONNRESET
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/3862537151/jobs/6584168070
+OS: Ubuntu
+Phase: Building Deb
+Date: 2023-01-07
+
+Run node build/bin/build.js --target=electron-deb
+{ target: 'electron-deb' }
+[info] enabling fakeroot
+{ target: 'electron-deb' }
+{
+  electronVersion: '22.0.0',
+  buildPath: '/home/runner/work/lvce-editor/lvce-editor/build/.tmp/cachedDependencies/97e59a722e2903800011c0c9dc59bdc667e583df/packages/pty-host',
+  arch: 'x64'
+}
+Build failed:
+VError: Failed to rebuild native dependendencies in /home/runner/work/lvce-editor/lvce-editor/build/.tmp/cachedDependencies/97e59a722e2903800011c0c9dc59bdc667e583df/packages/pty-host: node-gyp failed to rebuild '/home/runner/work/lvce-editor/lvce-editor/build/.tmp/cachedDependencies/97e59a722e2903800011c0c9dc59bdc667e583df/packages/pty-host/node_modules/node-pty'.
+For more information, rerun with the DEBUG environment variable set to "electron-rebuild".
+
+Error: request to https://www.electronjs.org/headers/v22.0.0/SHASUMS256.txt failed, reason: read ECONNRESET
+
+
+    at Module.rebuild (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/Rebuild/Rebuild.js:19:13)
+    at async Module.bundlePtyHostDependencies (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/BundlePtyHostDependencies/BundlePtyHostDependencies.js:51:3)
+    at async copyPtyHostFiles (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/BundleElectronAppDependencies/BundleElectronAppDependencies.js:19:3)
+    at async Module.bundleElectronAppDependencies (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/BundleElectronAppDependencies/BundleElectronAppDependencies.js:145:3)
+    at async build (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/BundleElectronApp/BundleElectronApp.js:338:5)
+    at async bundleElectronMaybe (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/Deb/Deb.js:38:3)
+    at async copyElectronResult (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/Deb/Deb.js:42:3)
+    at async Module.build (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/Deb/Deb.js:306:3)
+    at async main (file:///home/runner/work/lvce-editor/lvce-editor/build/src/build.js:63:5) {
+  jse_shortmsg: 'Failed to rebuild native dependendencies in /home/runner/work/lvce-editor/lvce-editor/build/.tmp/cachedDependencies/97e59a722e2903800011c0c9dc59bdc667e583df/packages/pty-host',
+  jse_cause: Error: node-gyp failed to rebuild '/home/runner/work/lvce-editor/lvce-editor/build/.tmp/cachedDependencies/97e59a722e2903800011c0c9dc59bdc667e583df/packages/pty-host/node_modules/node-pty'.
+  For more information, rerun with the DEBUG environment variable set to "electron-rebuild".
+
+  Error: request to https://www.electronjs.org/headers/v22.0.0/SHASUMS256.txt failed, reason: read ECONNRESET
+
+
+      at NodeGyp.rebuildModule (/home/runner/work/lvce-editor/lvce-editor/build/node_modules/@electron/rebuild/lib/src/module-type/node-gyp.js:120:19)
+      at async ModuleRebuilder.rebuildNodeGypModule (/home/runner/work/lvce-editor/lvce-editor/build/node_modules/@electron/rebuild/lib/src/module-rebuilder.js:98:9)
+      at async ModuleRebuilder.rebuild (/home/runner/work/lvce-editor/lvce-editor/build/node_modules/@electron/rebuild/lib/src/module-rebuilder.js:128:14)
+      at async Rebuilder.rebuildModuleAt (/home/runner/work/lvce-editor/lvce-editor/build/node_modules/@electron/rebuild/lib/src/rebuild.js:149:13)
+      at async Rebuilder.rebuild (/home/runner/work/lvce-editor/lvce-editor/build/node_modules/@electron/rebuild/lib/src/rebuild.js:112:17)
+      at async Module.rebuild (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/Rebuild/Rebuild.js:7:5)
+      at async Module.bundlePtyHostDependencies (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/BundlePtyHostDependencies/BundlePtyHostDependencies.js:51:3)
+      at async copyPtyHostFiles (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/BundleElectronAppDependencies/BundleElectronAppDependencies.js:19:3)
+      at async Module.bundleElectronAppDependencies (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/BundleElectronAppDependencies/BundleElectronAppDependencies.js:145:3)
+      at async build (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/BundleElectronApp/BundleElectronApp.js:338:5)
+      at async bundleElectronMaybe (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/Deb/Deb.js:38:3)
+      at async copyElectronResult (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/Deb/Deb.js:42:3)
+      at async Module.build (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/Deb/Deb.js:306:3)
+      at async main (file:///home/runner/work/lvce-editor/lvce-editor/build/src/build.js:63:5),
+  jse_info: {},
+  cause: [Function: ve_cause]
+}
+Build failed:
+Error: Command failed with exit code 1: fakeroot /opt/hostedtoolcache/node/18.13.0/x64/bin/node /home/runner/work/lvce-editor/lvce-editor/build/bin/build.js --target=electron-deb
+    at makeError (file:///home/runner/work/lvce-editor/lvce-editor/build/node_modules/execa/lib/error.js:59:11)
+    at handlePromise (file:///home/runner/work/lvce-editor/lvce-editor/build/node_modules/execa/index.js:119:26)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Module.build (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/Deb/Deb.js:302:5)
+    at async main (file:///home/runner/work/lvce-editor/lvce-editor/build/src/build.js:63:5) {
+  shortMessage: 'Command failed with exit code 1: fakeroot /opt/hostedtoolcache/node/18.13.0/x64/bin/node /home/runner/work/lvce-editor/lvce-editor/build/bin/build.js --target=electron-deb',
+  command: 'fakeroot /opt/hostedtoolcache/node/18.13.0/x64/bin/node /home/runner/work/lvce-editor/lvce-editor/build/bin/build.js --target=electron-deb',
+  escapedCommand: 'fakeroot "/opt/hostedtoolcache/node/18.13.0/x64/bin/node" "/home/runner/work/lvce-editor/lvce-editor/build/bin/build.js" "--target=electron-deb"',
+  exitCode: 1,
+  signal: undefined,
+  signalDescription: undefined,
+  stdout: undefined,
+  stderr: undefined,
+  failed: true,
+  timedOut: false,
+  isCanceled: false,
+  killed: false
+}
