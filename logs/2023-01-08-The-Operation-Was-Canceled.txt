@@ -1,0 +1,809 @@
+Name: The Operation was canceled
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/3866551498/jobs/6590761665
+OS: Macos
+Phase: Running Unit Tests
+Date: 2023-01-08
+
+Run npm test 38m 54s
+
+> lvce-editor@0.0.0-dev test
+> lerna run test
+
+lerna notice cli v6.4.0
+lerna info ci enabled
+
+ >  Lerna (powered by Nx)   Running target test for 7 projects:
+
+    - @lvce-editor/extension-host-helper-process
+    - extension-host-worker
+    - @lvce-editor/extension-host
+    - main-process
+    - renderer-process
+    - renderer-worker
+    - @lvce-editor/shared-process
+
+
+
+> @lvce-editor/extension-host-helper-process:test
+
+
+> @lvce-editor/extension-host-helper-process@0.0.0-dev test
+> node --unhandled-rejections=warn --experimental-vm-modules ../../node_modules/jest/bin/jest.js --detectOpenHandles --forceExit
+
+(node:3197) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ PASS  test/GetResponse.test.js
+ PASS  test/CreateWebSocketIpc.test.js
+ PASS  test/Exec.test.js
+ PASS  test/GetWebSocket.test.js
+
+Test Suites: 4 passed, 4 total
+Tests:       1 skipped, 6 passed, 7 total
+Snapshots:   0 total
+Time:        4.73 s
+Ran all test suites.
+
+> @lvce-editor/extension-host:test
+
+
+> @lvce-editor/extension-host@0.0.0-dev test
+> node --unhandled-rejections=warn --experimental-vm-modules ../../node_modules/jest/bin/jest.js --detectOpenHandles --forceExit
+
+(node:3193) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ PASS  test/PrettyError.test.js
+ PASS  test/ExtensionHostTypeDefinition.test.js
+ PASS  test/ExtensionHostDefinition.test.js
+ PASS  test/ExtensionHostTextDocument.test.js
+  ● Console
+
+    console.error
+      Error: Failed to run open listener: x is not a function
+          at /Users/runner/work/lvce-editor/lvce-editor/packages/extension-host/test/ExtensionHostTextDocument.test.js:22:11
+          at /Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-mock/build/index.js:379:39
+          at /Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-mock/build/index.js:386:13
+          at mockConstructor (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-mock/build/index.js:129:19)
+          at listener (/Users/runner/work/lvce-editor/lvce-editor/packages/extension-host/src/parts/ExtensionHostTextDocument/ExtensionHostTextDocument.js:208:11)
+          at Module.runListenerSafe (/Users/runner/work/lvce-editor/lvce-editor/packages/extension-host/src/parts/ExtensionHostTextDocument/ExtensionHostTextDocument.js:356:5)
+          at Object.onDidOpenTextDocument (/Users/runner/work/lvce-editor/lvce-editor/packages/extension-host/test/ExtensionHostTextDocument.test.js:24:16)
+          at Promise.then.completed (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/utils.js:289:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/utils.js:222:10)
+          at _callCircusTest (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/run.js:248:40)
+          at _runTest (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/run.js:184:3)
+          at _runTestsForDescribeBlock (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/run.js:86:9)
+          at run (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/run.js:26:3)
+          at runAndTransformResultsToJestFormat (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:120:21)
+          at jestAdapter (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+          at runTestInternal (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-runner/build/runTest.js:367:16)
+          at runTest (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-runner/build/runTest.js:444:34)
+
+      211 |       error.message = 'Failed to run open listener: ' + error.message
+      212 |     }
+    > 213 |     console.error(error)
+          |             ^
+      214 |   }
+      215 | }
+      216 |
+
+      at console.<anonymous> (../../node_modules/jest-mock/build/index.js:744:25)
+      at error (src/parts/ExtensionHostTextDocument/ExtensionHostTextDocument.js:213:13)
+      at Module.runListenerSafe (src/parts/ExtensionHostTextDocument/ExtensionHostTextDocument.js:356:5)
+      at Object.onDidOpenTextDocument (test/ExtensionHostTextDocument.test.js:24:16)
+
+    console.error
+      Error: Failed to run open listener: x is not a function
+          at /Users/runner/work/lvce-editor/lvce-editor/packages/extension-host/test/ExtensionHostTextDocument.test.js:22:11
+          at /Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-mock/build/index.js:379:39
+          at /Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-mock/build/index.js:386:13
+          at mockConstructor (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-mock/build/index.js:129:19)
+          at listener (/Users/runner/work/lvce-editor/lvce-editor/packages/extension-host/src/parts/ExtensionHostTextDocument/ExtensionHostTextDocument.js:208:11)
+          at runListenerSafe (/Users/runner/work/lvce-editor/lvce-editor/packages/extension-host/src/parts/ExtensionHostTextDocument/ExtensionHostTextDocument.js:219:5)
+          at Module.runListenersSafe (/Users/runner/work/lvce-editor/lvce-editor/packages/extension-host/src/parts/ExtensionHostTextDocument/ExtensionHostTextDocument.js:237:3)
+          at Object.syncFull (/Users/runner/work/lvce-editor/lvce-editor/packages/extension-host/test/ExtensionHostTextDocument.test.js:25:16)
+          at Promise.then.completed (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/utils.js:289:28)
+          at new Promise (<anonymous>)
+          at callAsyncCircusFn (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/utils.js:222:10)
+          at _callCircusTest (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/run.js:248:40)
+          at _runTest (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/run.js:184:3)
+          at _runTestsForDescribeBlock (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/run.js:86:9)
+          at run (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/run.js:26:3)
+          at runAndTransformResultsToJestFormat (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:120:21)
+          at jestAdapter (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:79:19)
+          at runTestInternal (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-runner/build/runTest.js:367:16)
+          at runTest (/Users/runner/work/lvce-editor/lvce-editor/node_modules/jest-runner/build/runTest.js:444:34)
+
+      211 |       error.message = 'Failed to run open listener: ' + error.message
+      212 |     }
+    > 213 |     console.error(error)
+          |             ^
+      214 |   }
+      215 | }
+      216 |
+
+      at console.<anonymous> (../../node_modules/jest-mock/build/index.js:744:25)
+      at error (src/parts/ExtensionHostTextDocument/ExtensionHostTextDocument.js:213:13)
+      at runListenerSafe (src/parts/ExtensionHostTextDocument/ExtensionHostTextDocument.js:219:5)
+      at Module.runListenersSafe (src/parts/ExtensionHostTextDocument/ExtensionHostTextDocument.js:237:3)
+      at Object.syncFull (test/ExtensionHostTextDocument.test.js:25:16)
+
+    console.log
+      {
+        syntheticChange: {
+          start: { rowIndex: 1, columnIndex: 1 },
+          end: { rowIndex: 1, columnIndex: 1 },
+          inserted: [ 'a' ],
+          deleted: []
+        }
+      }
+
+      at Module.log (src/parts/ExtensionHostTextDocument/ExtensionHostTextDocument.js:349:11)
+
+ PASS  test/ExtensionHostFileSystem.test.js
+  ● Console
+
+    console.log
+      { protocol: 'memfs', path: 'memfs://abc.txt' }
+
+      at Module.log (src/parts/ExtensionHostFileSystem/ExtensionHostFileSystem.js:36:11)
+
+    console.log
+      { protocol: 'memfs', path: 'memfs://abc.txt' }
+
+      at Module.log (src/parts/ExtensionHostFileSystem/ExtensionHostFileSystem.js:36:11)
+
+    console.log
+      { state: { fileSystemProviderMap: [Object: null prototype] {} } }
+
+      at log (src/parts/ExtensionHostFileSystem/ExtensionHostFileSystem.js:13:13)
+
+ PASS  test/ExtensionManagement.test.js
+ PASS  test/ExtensionHostTabCompletion.test.js
+  ● Console
+
+    console.info
+      no tab Completion provider for unknown
+
+      at info (src/parts/ExtensionHostTabCompletion/ExtensionHostTabCompletion.js:36:13)
+
+ PASS  test/ExtensionHostImplementation.test.js
+ PASS  test/ExtensionHostDiagnostic.test.js
+  ● Console
+
+    console.log
+      diag map [Object: null prototype] {
+        unknown: [
+          {
+            languageId: 'unknown',
+            provideDiagnostics: [Function: provideDiagnostics]
+          }
+        ]
+      }
+
+      at Module.log (src/parts/ExtensionHostDiagnostic/ExtensionHostDiagnostic.js:36:13)
+
+    console.log
+      diag map [Object: null prototype] {
+        unknown: [ { languageId: 'unknown', abc: [Function: abc] } ]
+      }
+
+      at Module.log (src/parts/ExtensionHostDiagnostic/ExtensionHostDiagnostic.js:36:13)
+
+    console.log
+      diag map [Object: null prototype] {
+        unknown: [
+          {
+            languageId: 'unknown',
+            provideDiagnostics: [Function: provideDiagnostics]
+          }
+        ]
+      }
+
+      at Module.log (src/parts/ExtensionHostDiagnostic/ExtensionHostDiagnostic.js:36:13)
+
+    console.log
+      diag map [Object: null prototype] {
+        unknown: [
+          {
+            languageId: 'unknown',
+            provideDiagnostics: [Function: provideDiagnostics]
+          }
+        ]
+      }
+
+      at Module.log (src/parts/ExtensionHostDiagnostic/ExtensionHostDiagnostic.js:36:13)
+
+ PASS  test/ExtensionHostReference.test.js
+  ● Console
+
+    console.log
+      execute reference provider 1 0
+
+      at Module.log (src/parts/ExtensionHostReference/ExtensionHostReference.js:25:11)
+
+    console.log
+      {
+        state: {
+          referenceProviders: [Object: null prototype] { javascript: [Object] }
+        }
+      }
+
+      at Module.log (src/parts/ExtensionHostReference/ExtensionHostReference.js:37:13)
+
+    console.log
+      execute reference provider 1 0
+
+      at Module.log (src/parts/ExtensionHostReference/ExtensionHostReference.js:25:11)
+
+    console.log
+      {
+        state: {
+          referenceProviders: [Object: null prototype] { javascript: [Object] }
+        }
+      }
+
+      at Module.log (src/parts/ExtensionHostReference/ExtensionHostReference.js:37:13)
+
+    console.log
+      execute reference provider 1 0
+
+      at Module.log (src/parts/ExtensionHostReference/ExtensionHostReference.js:25:11)
+
+    console.log
+      {
+        state: {
+          referenceProviders: [Object: null prototype] { javascript: [Object] }
+        }
+      }
+
+      at Module.log (src/parts/ExtensionHostReference/ExtensionHostReference.js:37:13)
+
+    console.log
+      execute reference provider 1 0
+
+      at Module.log (src/parts/ExtensionHostReference/ExtensionHostReference.js:25:11)
+
+    console.log
+      {
+        state: {
+          referenceProviders: [Object: null prototype] { javascript: [Object] }
+        }
+      }
+
+      at Module.log (src/parts/ExtensionHostReference/ExtensionHostReference.js:37:13)
+
+    console.log
+      execute reference provider 1 0
+
+      at Module.log (src/parts/ExtensionHostReference/ExtensionHostReference.js:25:11)
+
+    console.log
+      { state: { referenceProviders: [Object: null prototype] {} } }
+
+      at Module.log (src/parts/ExtensionHostReference/ExtensionHostReference.js:37:13)
+
+ PASS  test/ExtensionHostCompletion.test.js
+  ● Console
+
+    console.log
+      oc 1 1
+
+      at log (src/parts/ExtensionHostCompletion/ExtensionHostCompletion.js:47:11)
+
+    console.log
+      {
+        completionProviderMap: [Object: null prototype] { unknown: [ [Object] ] }
+      }
+
+      at log (src/parts/ExtensionHostCompletion/ExtensionHostCompletion.js:48:11)
+
+    console.log
+      {
+        uri: '/tmp/some-file.txt',
+        documentId: 1,
+        languageId: 'unknown',
+        text: 'sample text'
+      }
+
+      at log (src/parts/ExtensionHostCompletion/ExtensionHostCompletion.js:49:11)
+
+    console.log
+      oc 1 1
+
+      at log (src/parts/ExtensionHostCompletion/ExtensionHostCompletion.js:47:11)
+
+    console.log
+      {
+        completionProviderMap: [Object: null prototype] { unknown: [ [Object] ] }
+      }
+
+      at log (src/parts/ExtensionHostCompletion/ExtensionHostCompletion.js:48:11)
+
+    console.log
+      {
+        uri: '/tmp/some-file.txt',
+        documentId: 1,
+        languageId: 'unknown',
+        text: 'sample text'
+      }
+
+      at log (src/parts/ExtensionHostCompletion/ExtensionHostCompletion.js:49:11)
+
+    console.log
+      oc 1 1
+
+      at log (src/parts/ExtensionHostCompletion/ExtensionHostCompletion.js:47:11)
+
+    console.log
+      {
+        completionProviderMap: [Object: null prototype] { unknown: [ [Object] ] }
+      }
+
+      at log (src/parts/ExtensionHostCompletion/ExtensionHostCompletion.js:48:11)
+
+    console.log
+      {
+        uri: '/tmp/some-file.txt',
+        documentId: 1,
+        languageId: 'unknown',
+        text: 'sample text'
+      }
+
+      at log (src/parts/ExtensionHostCompletion/ExtensionHostCompletion.js:49:11)
+
+    console.log
+      oc 1 1
+
+      at log (src/parts/ExtensionHostCompletion/ExtensionHostCompletion.js:47:11)
+
+    console.log
+      {
+        completionProviderMap: [Object: null prototype] { unknown: [ [Object] ] }
+      }
+
+      at log (src/parts/ExtensionHostCompletion/ExtensionHostCompletion.js:48:11)
+
+    console.log
+      {
+        uri: '/tmp/some-file.txt',
+        documentId: 1,
+        languageId: 'unknown',
+        text: 'sample text'
+      }
+
+      at log (src/parts/ExtensionHostCompletion/ExtensionHostCompletion.js:49:11)
+
+ PASS  test/ExtensionHostFormatting.test.js
+ PASS  test/ExtensionHostOutputChannel.test.js
+ PASS  test/ExtensionHostRename.test.js
+ PASS  test/ExtensionHostHover.test.js
+ PASS  test/ExtensionHostSemanticTokens.test.js
+ PASS  test/IpcChildWithWebSocket.test.js
+  ● Console
+
+    console.log
+      [extension host] listening for websocket
+
+      at Module.log (src/parts/IpcChild/IpcChildWithWebSocket.js:11:11)
+
+    console.log
+      [extension host] listening for websocket
+
+      at Module.log (src/parts/IpcChild/IpcChildWithWebSocket.js:11:11)
+
+    console.log
+      [extension host] got socket
+
+      at Module.log (src/parts/IpcChild/IpcChildWithWebSocket.js:34:11)
+
+
+Test Suites: 1 skipped, 17 passed, 17 of 18 total
+Tests:       11 skipped, 105 passed, 116 total
+Snapshots:   0 total
+Time:        18.237 s
+Ran all test suites.
+
+> extension-host-worker:test
+
+
+> extension-host-worker@0.0.0-dev test
+> node --unhandled-rejections=warn --experimental-vm-modules ../../node_modules/jest/bin/jest.js --detectOpenHandles --forceExit
+
+(node:3192) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ PASS  test/ExtensionHostTypeDefinition.test.js
+ PASS  test/ExtensionHostCompletion.test.js
+ PASS  test/ExtensionHostDefinition.test.js
+ PASS  test/PrettyError.test.js
+ PASS  test/ExtensionHostFileSystem.test.js
+ PASS  test/ExtensionHostTabCompletion.test.js
+ PASS  test/ExtensionHostBraceCompletion.test.js
+ PASS  test/VError.test.js
+ PASS  test/ExtensionHostImplementation.test.js
+ PASS  test/Rpc.test.js
+ PASS  test/ExtensionHostReference.test.js
+ PASS  test/ExtensionHostFormatting.test.js
+ PASS  test/ExtensionHostTextSearch.test.js
+ PASS  test/ExtensionHostSourceControl.test.js
+  ● Console
+
+    console.log
+      { enabledIds: [ 'test-source-control-provider-2' ] }
+
+      at Module.log (src/parts/ExtensionHostSourceControl/ExtensionHostSourceControl.js:63:11)
+
+ PASS  test/IpcChildWithModuleWorker.test.js
+ PASS  test/ExtensionHostExtension.test.js
+ PASS  test/Validation.test.js
+ PASS  test/ExtensionHostCommand.test.js
+ PASS  test/ExtensionHostMockExec.test.js
+ PASS  test/JsonRpc.test.js
+ PASS  test/GetResponse.test.js
+ PASS  test/ExtensionHostHelperProcessIpcType.test.js
+ PASS  test/CommandMap.test.js
+ PASS  test/GetErrorResponse.test.js
+ PASS  test/GetSuccessResponse.test.js
+
+Test Suites: 25 passed, 25 total
+Tests:       3 skipped, 102 passed, 105 total
+Snapshots:   0 total
+Time:        22.283 s
+Ran all test suites.
+
+> main-process:test
+
+
+> main-process@0.0.0-dev test
+> node --unhandled-rejections=warn --experimental-vm-modules ../../node_modules/jest/bin/jest.js --detectOpenHandles --forceExit
+
+ PASS  test/PrettyError.test.js
+ PASS  test/ListProcessesWithMemoryUsageWindows.test.js
+ PASS  test/ListProcessesWithMemoryUsageUnix.test.js
+ PASS  test/ElectronBrowserViewFunctions.test.js
+ PASS  test/ListProcessGetName.test.js
+ PASS  test/ErrorHandling.test.js
+ PASS  test/Session.test.js
+ PASS  test/ElectronAutoUpdater.test.js
+ PASS  test/AppWindow.test.js
+ PASS  test/ElectronContentTracing.test.js
+ PASS  test/ElectronSafeStorage.test.js
+ PASS  test/ElectronPowerSaveBlocker.test.js
+ PASS  test/ElectronNetLog.test.js
+ PASS  test/ElectronShell.test.js
+ PASS  test/Dialog.test.js
+ PASS  test/ContentSecurityPolicy.test.js
+ PASS  test/CliVersion.test.js
+ PASS  test/ElectronContextMenu.test.js
+ PASS  test/Cli.test.js
+ PASS  test/Platform.test.js
+ PASS  test/Assert.test.js
+ PASS  test/ElectronWindow.test.js
+ PASS  test/CliHelp.test.js
+ PASS  test/Performance.test.js
+ PASS  test/Developer.test.js
+ PASS  test/Path.test.js
+ PASS  test/Root.test.js
+
+Test Suites: 1 skipped, 27 passed, 27 of 28 total
+Tests:       3 skipped, 89 passed, 92 total
+Snapshots:   0 total
+Time:        26.125 s
+Ran all test suites.
+
+> renderer-process:test
+
+
+> renderer-process@0.0.0-dev test
+> node --unhandled-rejections=warn --experimental-vm-modules ../../node_modules/jest/bin/jest.js
+
+(node:4021) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ PASS  test/EditorEvents.test.js
+(node:4023) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ PASS  test/ViewletExtensions.test.js (5.434 s)
+ PASS  test/ViewletExplorer.test.js
+ PASS  test/ViewletExplorerEvents.test.js
+ PASS  test/Menu.test.js
+ PASS  test/LayerText.test.js
+ PASS  test/KeyBindings.test.js
+ PASS  test/ViewletExtensionsEvents.test.js
+ PASS  test/ViewletActivityBar.test.js
+ PASS  test/ViewletTitleBarMenuBar.test.js
+ PASS  test/Editor.test.js
+ PASS  test/ViewletMain.test.js
+ PASS  test/ViewletEditorImageEvents.test.js
+ PASS  test/Menu2.test.js
+ PASS  test/ViewletList.test.js
+ PASS  test/VirtualDom.test.js
+ PASS  test/LayerCursor.test.js
+ PASS  test/ViewletActivityBarEvents.test.js
+ PASS  test/ViewletLayoutEvents.test.js
+ PASS  test/IpcParentWithModuleWorker.test.js
+ PASS  test/ViewletLocations.test.js
+ PASS  test/ViewletQuickPick.test.js
+ PASS  test/VError.test.js
+ PASS  test/ViewletMainEvents.test.js
+ PASS  test/ViewletQuickPickEvents.test.js
+ PASS  test/ClipBoard.test.js
+ PASS  test/ViewletEditorCompletion.test.js
+ PASS  test/ViewletSearchEvents.test.js
+ PASS  test/ViewletTitleBarMenuBarEvents.test.js
+ PASS  test/LayerScrollBar.test.js
+ PASS  test/ViewletPanel.test.js
+ PASS  test/Performance.test.js
+ PASS  test/FilePicker.test.js
+ PASS  test/ViewletSourceControlEvents.test.js
+ PASS  test/ViewletSourceControl.test.js
+ PASS  test/ViewletPdfEvents.test.js
+ PASS  test/LayerSelection.test.js
+ PASS  test/Command.test.js
+ PASS  test/ViewletOutput.test.js
+ PASS  test/ViewletFindWidgetEvents.test.js
+ PASS  test/ViewletEditorCompletionEvents.test.js
+ PASS  test/ServiceWorker.test.js
+ PASS  test/ViewletSearch.test.js
+ PASS  test/ViewletTitleBarButtonsEvents.test.js
+ PASS  test/ViewletSideBar.test.js
+ PASS  test/ImagePreview.test.js
+ PASS  test/ViewletProblemsEvents.test.js
+ PASS  test/Location.test.js
+ PASS  test/ViewletSimpleBrowser.test.js
+ PASS  test/EditorGroup.test.js
+ PASS  test/ViewletFindWidget.test.js
+ PASS  test/ViewletStatusBar.test.js
+ PASS  test/EditorRename.test.js
+ PASS  test/ViewletDebugConsole.test.js
+ PASS  test/Css.test.js
+ PASS  test/ViewletOutputEvents.test.js
+ PASS  test/Callback.test.js
+ PASS  test/OffscreenCanvas.test.js
+ PASS  test/Dialog.test.js
+ PASS  test/ViewletExtensionDetail.test.js
+ PASS  test/AriaAlert.test.js
+ PASS  test/EditorError.test.js
+ PASS  test/WebStorage.test.js
+ PASS  test/ViewletAudioEvents.test.js
+ PASS  test/Download.test.js
+ PASS  test/ViewletKeyBindings.test.js
+ PASS  test/ViewletSimpleBrowserEvents.test.js
+ PASS  test/ViewletKeyBindingEvents.test.js
+ PASS  test/Assert.test.js
+ PASS  test/ViewletExtensionDetailEvents.test.js
+ PASS  test/Focus.test.js
+ PASS  test/ViewletProblems.test.js
+ PASS  test/ViewletIframe.test.js
+ PASS  test/Meta.test.js
+ PASS  test/ViewletRunAndDebug.test.js
+ PASS  test/ViewletEditorPlainText.test.js
+ PASS  test/Widget.test.js
+ PASS  test/ViewletEditorImage.test.js
+ PASS  test/SanitizeHtml.test.js
+ PASS  test/ViewletClock.test.js
+ PASS  test/ViewletLayout.test.js
+ PASS  test/ViewletAudio.test.js
+ PASS  test/Audio.test.js
+ PASS  test/Open.test.js
+ PASS  test/EditorHover.test.js
+ PASS  test/ViewletTitleBar.test.js
+ PASS  test/Notification.test.js
+ PASS  test/ViewletTitleBarButtons.test.js
+ PASS  test/InputBox.test.js
+ PASS  test/ViewletPdf.test.js
+ PASS  test/Window.test.js
+ PASS  test/Platform.test.js
+
+Test Suites: 5 skipped, 92 passed, 92 of 97 total
+Tests:       65 skipped, 398 passed, 463 total
+Snapshots:   2 passed, 2 total
+Time:        39.682 s
+Ran all test suites.
+
+> @lvce-editor/shared-process:test
+
+
+> @lvce-editor/shared-process@0.0.0-dev test
+> node --unhandled-rejections=warn --experimental-vm-modules ../../node_modules/jest/bin/jest.js --detectOpenHandles --forceExit
+
+(node:3784) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ PASS  test/ExtensionManagement.test.js (5.886 s)
+ PASS  test/FileSystem.test.js
+ PASS  test/ExtensionHostLanguages.test.js
+ PASS  test/ExtensionHostColorTheme.test.js
+ PASS  test/ExtensionInstallFromGitHub.test.js
+ PASS  test/Preferences.test.js
+node:internal/modules/cjs/loader:1042
+  throw err;
+  ^
+
+Error: Cannot find module '/test'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1039:15)
+    at Module._load (node:internal/modules/cjs/loader:885:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.13.0
+node:internal/modules/cjs/loader:1042
+  throw err;
+  ^
+
+Error: Cannot find module '/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/foo-IaBraJ'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1039:15)
+    at Module._load (node:internal/modules/cjs/loader:885:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v18.13.0
+/private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/foo-hbWKAD/extensionHost.js:1
+...
+
+
+SyntaxError: Unexpected end of input
+    at internalCompileFunction (node:internal/vm:74:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1141:20)
+    at Module._compile (node:internal/modules/cjs/loader:1182:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1272:10)
+    at Module.load (node:internal/modules/cjs/loader:1081:32)
+    at Module._load (node:internal/modules/cjs/loader:922:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.13.0
+/private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/foo-C0fzuE/extensionHost.js:1
+throw new Error('oops')
+^
+
+Error: oops
+    at Object.<anonymous> (/private/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/foo-C0fzuE/extensionHost.js:1:7)
+    at Module._compile (node:internal/modules/cjs/loader:1218:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1272:10)
+    at Module.load (node:internal/modules/cjs/loader:1081:32)
+    at Module._load (node:internal/modules/cjs/loader:922:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:81:12)
+    at node:internal/main/run_main_module:23:47
+
+Node.js v18.13.0
+ PASS  test/ExtensionHost.test.js
+  ● Console
+
+    console.log
+      start extension host 1
+
+      at Module.log (src/parts/ExtensionHost/ExtensionHost.js:29:13)
+
+    console.info
+      [SharedProcess] Extension Host exited with code 1
+
+      at ChildProcess.info (src/parts/ExtensionHostRpc/ExtensionHostRpc.js:17:13)
+
+    console.log
+      start extension host 1
+
+      at Module.log (src/parts/ExtensionHost/ExtensionHost.js:29:13)
+
+    console.info
+      [SharedProcess] Extension Host exited with code 1
+
+      at ChildProcess.info (src/parts/ExtensionHostRpc/ExtensionHostRpc.js:17:13)
+
+    console.log
+      start extension host 1
+
+      at Module.log (src/parts/ExtensionHost/ExtensionHost.js:29:13)
+
+    console.info
+      [SharedProcess] Extension Host exited with code 1
+
+      at ChildProcess.info (src/parts/ExtensionHostRpc/ExtensionHostRpc.js:17:13)
+
+    console.log
+      start extension host 1
+
+      at Module.log (src/parts/ExtensionHost/ExtensionHost.js:29:13)
+
+    console.info
+      [SharedProcess] Extension Host exited with code 1
+
+      at ChildProcess.info (src/parts/ExtensionHostRpc/ExtensionHostRpc.js:17:13)
+
+    console.log
+      start extension host 1
+
+      at Module.log (src/parts/ExtensionHost/ExtensionHost.js:29:13)
+
+    console.info
+      [SharedProcess] Extension Host exited with code 123
+
+      at ChildProcess.info (src/parts/ExtensionHostRpc/ExtensionHostRpc.js:17:13)
+
+    console.log
+      start extension host 1
+
+      at Module.log (src/parts/ExtensionHost/ExtensionHost.js:29:13)
+
+    console.info
+      [shared process] disposing extension host
+
+      at info (src/parts/ExtensionHostRpc/ExtensionHostRpc.js:21:13)
+
+ PASS  test/Credentials.test.js
+ PASS  test/Command.test.js
+ PASS  test/GetResponse.test.js
+ PASS  test/RecentlyOpened.test.js
+ PASS  test/ExtensionList.test.js
+ PASS  test/ExtensionLink.test.js
+ PASS  test/WebSocketServer.test.js
+ PASS  test/ExtensionInstallFromFile.test.js
+ PASS  test/PrettyError.test.js
+ PASS  test/CliInstall.test.js
+
+  ●  Cannot log after tests are done. Did you forget to wait for something async in your test?
+    Attempted to log "[shared-process] socket closed".
+
+      73 | export const set = (socket) => {
+      74 |   socket.on('close', () => {
+    > 75 |     console.log('[shared-process] socket closed')
+         |             ^
+      76 |   })
+      77 |   socket.onmessage = handleMessage
+      78 |   // socket.onerror = handleError
+
+      at console.log (../../node_modules/@jest/console/build/BufferedConsole.js:156:10)
+      at WebSocket.log (src/parts/Socket/Socket.js:75:13)
+      at WebSocket.emitClose (node_modules/ws/lib/websocket.js:258:10)
+      at Socket.socketOnClose (node_modules/ws/lib/websocket.js:1260:15)
+
+ PASS  test/ClipBoard.test.js
+ PASS  test/JsonError.test.js
+ PASS  test/ExtensionHostIconTheme.test.js
+ PASS  test/ExtensionInstallParseInput.test.js
+ PASS  test/OutputChannel.test.js
+ PASS  test/Download.test.js
+ PASS  test/Extract.test.js
+ PASS  test/ExtensionUnlink.test.js
+ PASS  test/ExtensionInstallFromUrl.test.js
+ PASS  test/Cli.test.js
+ PASS  test/SearchFile.test.js
+ PASS  test/SymLink.test.js
+ PASS  test/ExtensionInstall.test.js
+ PASS  test/CliLink.test.js
+ PASS  test/Platform.test.js
+ PASS  test/ExtractZip.test.js
+ PASS  test/TextSearch.test.js
+ PASS  test/CliList.test.js
+ PASS  test/ExtensionHostRpc.test.js
+  ● Console
+
+    console.info
+      [SharedProcess] Extension Host exited with code undefined
+
+      at EventEmitter.info (src/parts/ExtensionHostRpc/ExtensionHostRpc.js:17:13)
+
+ PASS  test/ExtensionManifests.test.js
+ PASS  test/ExtensionHostManagementColorTheme.test.js
+ PASS  test/Callback.test.js
+ PASS  test/Developer.test.js
+ PASS  test/Native.test.js
+ PASS  test/Trash.test.js
+ PASS  test/ChromeExtension.test.js
+ PASS  test/Exec.test.js
+ PASS  test/Path.test.js
+ PASS  test/Json.test.js
+ PASS  test/LimitString.test.js
+ PASS  test/Error.test.js
+ PASS  test/Process.test.js
+ PASS  test/RgPath.test.js
+
+Test Suites: 1 skipped, 50 passed, 50 of 51 total
+Tests:       27 skipped, 187 passed, 214 total
+Snapshots:   0 total
+Time:        44.447 s
+Ran all test suites.
+Error: The operation was canceled.
