@@ -1,0 +1,48 @@
+Name: HTTPError: Response code 403
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/3989170506/jobs/6841272098
+OS: Windows
+Phase: Npm ci
+Date: 2023-01-23
+
+Run npm ci
+npm WARN deprecated readdir-scoped-modules@1.1.0: This functionality has been moved to @npmcli/fs
+npm WARN deprecated @npmcli/move-file@2.0.1: This functionality has been moved to @npmcli/fs
+
+> lvce-editor@0.0.0-dev postinstall
+> lerna bootstrap --ci && node scripts/postinstall.js
+
+lerna notice cli v6.4.1
+lerna info ci enabled
+lerna info Bootstrapping 12 packages
+lerna info Installing external dependencies
+lerna ERR! npm ci exited 1 in 'main-process'
+lerna ERR! npm ci stderr:
+npm WARN deprecated @npmcli/move-file@2.0.1: This functionality has been moved to @npmcli/fs
+npm ERR! code 1
+npm ERR! path D:\a\lvce-editor\lvce-editor\packages\main-process\node_modules\electron
+npm ERR! command failed
+npm ERR! command C:\Windows\system32\cmd.exe /d /s /c node install.js
+npm ERR! HTTPError: Response code 403 (Server failed to authenticate the request. Make sure the value of Authorization header is formed correctly including the signature.)
+npm ERR!     at Request._onResponseBase (D:\a\lvce-editor\lvce-editor\packages\main-process\node_modules\got\dist\source\core\index.js:913:31)
+npm ERR!     at Request._onResponse (D:\a\lvce-editor\lvce-editor\packages\main-process\node_modules\got\dist\source\core\index.js:948:24)
+npm ERR!     at ClientRequest.<anonymous> (D:\a\lvce-editor\lvce-editor\packages\main-process\node_modules\got\dist\source\core\index.js:962:23)
+npm ERR!     at Object.onceWrapper (node:events:628:26)
+npm ERR!     at ClientRequest.emit (node:events:525:35)
+npm ERR!     at origin.emit (D:\a\lvce-editor\lvce-editor\packages\main-process\node_modules\@szmarczak\http-timer\dist\source\index.js:43:20)
+npm ERR!     at HTTPParser.parserOnIncomingClient (node:_http_client:695:27)
+npm ERR!     at HTTPParser.parserOnHeadersComplete (node:_http_common:117:17)
+npm ERR!     at TLSSocket.socketOnData (node:_http_client:536:22)
+npm ERR!     at TLSSocket.emit (node:events:513:28)
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\npm\cache\_logs\2023-01-23T18_02_58_409Z-debug-0.log
+lerna ERR! npm ci exited 1 in 'main-process'
+lerna WARN complete Waiting for 1 child process to exit. CTRL-C to exit immediately.
+npm ERR! code 1
+npm ERR! path D:\a\lvce-editor\lvce-editor
+npm ERR! command failed
+npm ERR! command C:\Windows\system32\cmd.exe /d /s /c lerna bootstrap --ci && node scripts/postinstall.js
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\npm\cache\_logs\2023-01-23T18_02_13_624Z-debug-0.log
+Error: Process completed with exit code 1.
