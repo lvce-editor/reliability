@@ -1,0 +1,56 @@
+Name: Electron Headers ECONNRESET
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/3997632244/jobs/6859214262
+OS: Windows
+Phase: Build Windows exe
+Date: 2023-01-24
+
+Run node build/bin/build.js --target=electron-builder-windows-exe
+{ target: 'electron-builder-windows-exe' }
+{
+  electronVersion: '22.0.3',
+  buildPath: 'D:\\a\\lvce-editor\\lvce-editor\\build\\.tmp\\cachedDependencies\\13f29d68e1274b9b80240a97ebba313d22998a83/packages/pty-host',
+  arch: 'x64'
+}
+Build failed:
+VError: Failed to rebuild native dependendencies in D:\a\lvce-editor\lvce-editor\build\.tmp\cachedDependencies\13f29d68e1274b9b80240a97ebba313d22998a83/packages/pty-host: node-gyp failed to rebuild 'D:\a\lvce-editor\lvce-editor\build\.tmp\cachedDependencies\13f29d68e1274b9b80240a97ebba313d22998a83\packages\pty-host\node_modules\node-pty'.
+For more information, rerun with the DEBUG environment variable set to "electron-rebuild".
+
+Error: request to https://www.electronjs.org/headers/v22.0.3/win-x86/node.lib failed, reason: read ECONNRESET
+
+
+    at Module.rebuild (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/Rebuild/Rebuild.js:19:13)
+    at Module.bundlePtyHostDependencies (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/BundlePtyHostDependencies/BundlePtyHostDependencies.js:51:3)
+    at copyPtyHostFiles (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/BundleElectronAppDependencies/BundleElectronAppDependencies.js:19:3)
+    at Module.bundleElectronAppDependencies (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/BundleElectronAppDependencies/BundleElectronAppDependencies.js:145:3)
+    at build (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/BundleElectronApp/BundleElectronApp.js:338:5)
+    at bundleElectronMaybe (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/ElectronBuilder/ElectronBuilder.js:25:3)
+    at copyElectronResult (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/ElectronBuilder/ElectronBuilder.js:137:3)
+    at Module.build (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/ElectronBuilder/ElectronBuilder.js:174:3)
+    at Module.build (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/ElectronBuilderWindowsExe/ElectronBuilderWindowsExe.js:15:3)
+    at main (file:///D:/a/lvce-editor/lvce-editor/build/src/build.js:63:5) {
+  jse_shortmsg: 'Failed to rebuild native dependendencies in D:\\a\\lvce-editor\\lvce-editor\\build\\.tmp\\cachedDependencies\\13f29d68e1274b9b80240a97ebba313d22998a83/packages/pty-host',
+  jse_cause: Error: node-gyp failed to rebuild 'D:\a\lvce-editor\lvce-editor\build\.tmp\cachedDependencies\13f29d68e1274b9b80240a97ebba313d22998a83\packages\pty-host\node_modules\node-pty'.
+  For more information, rerun with the DEBUG environment variable set to "electron-rebuild".
+
+  Error: request to https://www.electronjs.org/headers/v22.0.3/win-x86/node.lib failed, reason: read ECONNRESET
+
+
+      at NodeGyp.rebuildModule (D:\a\lvce-editor\lvce-editor\build\node_modules\@electron\rebuild\src\module-type\node-gyp.ts:133:13)
+      at ModuleRebuilder.rebuildNodeGypModule (D:\a\lvce-editor\lvce-editor\build\node_modules\@electron\rebuild\src\module-rebuilder.ts:93:5)
+      at ModuleRebuilder.rebuild (D:\a\lvce-editor\lvce-editor\build\node_modules\@electron\rebuild\src\module-rebuilder.ts:129:8)
+      at Rebuilder.rebuildModuleAt (D:\a\lvce-editor\lvce-editor\build\node_modules\@electron\rebuild\src\rebuild.ts:203:9)
+      at Rebuilder.rebuild (D:\a\lvce-editor\lvce-editor\build\node_modules\@electron\rebuild\src\rebuild.ts:158:9)
+      at Module.rebuild (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/Rebuild/Rebuild.js:7:5)
+      at Module.bundlePtyHostDependencies (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/BundlePtyHostDependencies/BundlePtyHostDependencies.js:51:3)
+      at copyPtyHostFiles (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/BundleElectronAppDependencies/BundleElectronAppDependencies.js:19:3)
+      at Module.bundleElectronAppDependencies (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/BundleElectronAppDependencies/BundleElectronAppDependencies.js:145:3)
+      at build (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/BundleElectronApp/BundleElectronApp.js:338:5)
+      at bundleElectronMaybe (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/ElectronBuilder/ElectronBuilder.js:25:3)
+      at copyElectronResult (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/ElectronBuilder/ElectronBuilder.js:137:3)
+      at Module.build (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/ElectronBuilder/ElectronBuilder.js:174:3)
+      at Module.build (file:///D:/a/lvce-editor/lvce-editor/build/src/parts/ElectronBuilderWindowsExe/ElectronBuilderWindowsExe.js:15:3)
+      at main (file:///D:/a/lvce-editor/lvce-editor/build/src/build.js:63:5),
+  jse_info: {},
+  cause: [Function: ve_cause]
+}
+Error: Process completed with exit code 1.
