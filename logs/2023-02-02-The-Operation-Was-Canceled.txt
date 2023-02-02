@@ -1,0 +1,24 @@
+Name: The operation was canceled.
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/4076213027/jobs/7023640246
+OS: MacOS
+Phase: Unit-Tests
+Date: 2023-02-02
+
+npm test 39m 25s
+
+...
+
+PASS  test/MenuEntriesGo.test.js
+ PASS  test/Markdown.test.js
+ PASS  test/Compare.test.js
+ PASS  test/Id.test.js
+ PASS  test/Base64.test.js
+ PASS  test/SearchExtensions.test.js
+ PASS  test/EditorBraceCompletion.test.js
+
+Test Suites: 23 skipped, 338 passed, 338 of 361 total
+Tests:       256 skipped, 1416 passed, 1672 total
+Snapshots:   0 total
+Time:        93.242 s
+Ran all test suites.
+Error: The operation was canceled.
