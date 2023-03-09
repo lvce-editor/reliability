@@ -1,0 +1,30 @@
+Name: install should fail when the server sends an invalid compressed object
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/4364130340/jobs/7631075945
+OS: Windows
+Phase: Unit-Tests (Shared Process)
+Date: 2023-03-08
+
+> @lvce-editor/shared-process:test
+
+
+> @lvce-editor/shared-process@0.0.0-dev test
+> node --unhandled-rejections=warn --experimental-vm-modules ../../node_modules/jest/bin/jest.js --detectOpenHandles --forceExit
+
+(node:5836) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+ PASS  test/PrettyError.test.js
+ FAIL  test/ExtensionManagement.test.js (25.387 s)
+  ● install should fail when the server sends an invalid compressed object
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      170 | })
+      171 |
+    > 172 | test('install should fail when the server sends an invalid compressed object', async () => {
+          | ^
+      173 |   const tmpDir1 = await getTmpDir()
+      174 |   const tmpDir2 = await getTmpDir()
+      175 |   const tmpDir3 = await getTmpDir()
+
+      at test (test/ExtensionManagement.test.js:172:1)
