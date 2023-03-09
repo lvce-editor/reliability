@@ -1,0 +1,27 @@
+Name: The operation was canceled.
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/4317559242/jobs/7534768805
+OS: MacOS
+Phase: E2e Tests
+Date: 2023-03-02
+
+ci (macos-12) cancelled in 40m 11s
+
+Set up job 14s
+Run actions/checkout@v3 7s
+Run actions/setup-node@v3 33s
+Compute node modules cache key 1s
+Run actions/cache@v3 2m 11s
+Run actions/cache@v3 1s
+Run actions/cache@v3 2s
+npm ci 0s
+Compute builtin extensions cache key 1s
+Run actions/cache@v3 7s
+Download Builtin Extensions 0s
+Run npm test 23m 8s
+install playwright dependencies 0s
+Run headless test 13s
+install playwright dependencies (extension host worker tests) 0s
+Run extension host worker tests 13m 18s
+Build Electron App (deb) 0s
+
+...
