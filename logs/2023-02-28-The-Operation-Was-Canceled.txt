@@ -1,0 +1,8 @@
+Name: The operation was canceled.
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/4295736712/jobs/7486555977
+OS: MacOS
+Phase: Unit Tests
+Date: 2023-02-28
+
+Run npm test 38m 2s
+Error: The operation was canceled.
