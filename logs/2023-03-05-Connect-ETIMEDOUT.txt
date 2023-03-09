@@ -1,0 +1,182 @@
+Name: Failed to download extension builtin.language-basics-shellscript: connect ETIMEDOUT 185.199.108.133:443
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/4337238756/jobs/7573099052
+OS: Macos
+Phase: Download Builtin Extensions
+Date: 2023-03-05
+
+VError: Failed to download extension builtin.language-basics-shellscript: Failed to download "https://github.com/lvce-editor/language-basics-shellscript/releases/download/v0.0.19/language-basics-shellscript-v0.0.19.tar.br": connect ETIMEDOUT 185.199.108.133:443
+    at downloadExtension (file:///Users/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:58:11)
+    at async downloadExtensionAndLog (file:///Users/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:78:3)
+    at async file:///Users/runner/work/lvce-editor/lvce-editor/build/node_modules/p-map/index.js:141:20 {
+  jse_shortmsg: 'Failed to download extension builtin.language-basics-shellscript',
+  jse_cause: VError: Failed to download "https://github.com/lvce-editor/language-basics-shellscript/releases/download/v0.0.19/language-basics-shellscript-v0.0.19.tar.br": connect ETIMEDOUT 185.199.108.133:443
+      at downloadUrl (file:///Users/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:23:11)
+      at async downloadExtension (file:///Users/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:54:5)
+      at async downloadExtensionAndLog (file:///Users/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:78:3)
+      at async file:///Users/runner/work/lvce-editor/lvce-editor/build/node_modules/p-map/index.js:141:20 {
+    jse_shortmsg: 'Failed to download "https://github.com/lvce-editor/language-basics-shellscript/releases/download/v0.0.19/language-basics-shellscript-v0.0.19.tar.br"',
+    jse_cause: RequestError: connect ETIMEDOUT 185.199.108.133:443
+        at ClientRequest.<anonymous> (file:///Users/runner/work/lvce-editor/lvce-editor/build/node_modules/got/dist/source/core/index.js:789:107)
+        at Object.onceWrapper (node:events:628:26)
+        at ClientRequest.emit (node:events:525:35)
+        at TLSSocket.socketErrorListener (node:_http_client:502:9)
+        at TLSSocket.emit (node:events:513:28)
+        at emitErrorNT (node:internal/streams/destroy:151:8)
+        at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+      input: undefined,
+      code: 'ETIMEDOUT',
+      timings: [Object],
+      options: {
+        request: undefined,
+        agent: { http: undefined, https: undefined, http2: undefined },
+        h2session: undefined,
+        decompress: true,
+        timeout: {
+          connect: undefined,
+          lookup: undefined,
+          read: undefined,
+          request: undefined,
+          response: undefined,
+          secureConnect: undefined,
+          send: undefined,
+          socket: undefined
+        },
+        prefixUrl: '',
+        body: undefined,
+        form: undefined,
+        json: undefined,
+        cookieJar: undefined,
+        ignoreInvalidCookies: false,
+        searchParams: undefined,
+        dnsLookup: undefined,
+        dnsCache: undefined,
+        context: {},
+        hooks: {
+          init: [],
+          beforeRequest: [],
+          beforeError: [],
+          beforeRedirect: [],
+          beforeRetry: [],
+          afterResponse: []
+        },
+        followRedirect: true,
+        maxRedirects: 10,
+        cache: undefined,
+        throwHttpErrors: true,
+        username: '',
+        password: '',
+        http2: false,
+        allowGetBody: false,
+        headers: {
+          'user-agent': 'got (https://github.com/sindresorhus/got)',
+          'accept-encoding': 'gzip, deflate, br'
+        },
+        methodRewriting: false,
+        dnsLookupIpVersion: undefined,
+        parseJson: [Function: parse],
+        stringifyJson: [Function: stringify],
+        retry: {
+          limit: 2,
+          methods: [ 'GET', 'PUT', 'HEAD', 'DELETE', 'OPTIONS', 'TRACE' ],
+          statusCodes: [
+            408, 413, 429, 500,
+            502, 503, 504, 521,
+            522, 524
+          ],
+          errorCodes: [
+            'ETIMEDOUT',
+            'ECONNRESET',
+            'EADDRINUSE',
+            'ECONNREFUSED',
+            'EPIPE',
+            'ENOTFOUND',
+            'ENETUNREACH',
+            'EAI_AGAIN'
+          ],
+          maxRetryAfter: undefined,
+          calculateDelay: [Function: calculateDelay],
+          backoffLimit: Infinity,
+          noise: 100
+        },
+        localAddress: undefined,
+        method: 'GET',
+        createConnection: undefined,
+        cacheOptions: {
+          shared: undefined,
+          cacheHeuristic: undefined,
+          immutableMinTimeToLive: undefined,
+          ignoreCargoCult: undefined
+        },
+        https: {
+          alpnProtocols: undefined,
+          rejectUnauthorized: undefined,
+          checkServerIdentity: undefined,
+          certificateAuthority: undefined,
+          key: undefined,
+          certificate: undefined,
+          passphrase: undefined,
+          pfx: undefined,
+          ciphers: undefined,
+          honorCipherOrder: undefined,
+          minVersion: undefined,
+          maxVersion: undefined,
+          signatureAlgorithms: undefined,
+          tlsSessionLifetime: undefined,
+          dhparam: undefined,
+          ecdhCurve: undefined,
+          certificateRevocationLists: undefined
+        },
+        encoding: undefined,
+        resolveBodyOnly: false,
+        isStream: true,
+        responseType: 'text',
+        url: URL {
+          href: 'https://objects.githubusercontent.com/github-production-release-asset-2e65be/504213929/b0347206-6e9c-4630-b4f2-13763f8facaa?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230305%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230305T174034Z&X-Amz-Expires=300&X-Amz-Signature=56b35af235f0ea59236863b638e0b643a1dee2b9d6f2d754485b77abeec9dad0&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=504213929&response-content-disposition=attachment%3B%20filename%3Dlanguage-basics-shellscript-v0.0.19.tar.br&response-content-type=application%2Foctet-stream',
+          origin: 'https://objects.githubusercontent.com',
+          protocol: 'https:',
+          username: '',
+          password: '',
+          host: 'objects.githubusercontent.com',
+          hostname: 'objects.githubusercontent.com',
+          port: '',
+          pathname: '/github-production-release-asset-2e65be/504213929/b0347206-6e9c-4630-b4f2-13763f8facaa',
+          search: '?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230305%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230305T174034Z&X-Amz-Expires=300&X-Amz-Signature=56b35af235f0ea59236863b638e0b643a1dee2b9d6f2d754485b77abeec9dad0&X-Amz-SignedHeaders=host&actor_id=0&key_id=0&repo_id=504213929&response-content-disposition=attachment%3B%20filename%3Dlanguage-basics-shellscript-v0.0.19.tar.br&response-content-type=application%2Foctet-stream',
+          searchParams: URLSearchParams {
+            'X-Amz-Algorithm' => 'AWS4-HMAC-SHA256',
+            'X-Amz-Credential' => 'AKIAIWNJYAX4CSVEH53A/20230305/us-east-1/s3/aws4_request',
+            'X-Amz-Date' => '20230305T174034Z',
+            'X-Amz-Expires' => '300',
+            'X-Amz-Signature' => '56b35af235f0ea59236863b638e0b643a1dee2b9d6f2d754485b77abeec9dad0',
+            'X-Amz-SignedHeaders' => 'host',
+            'actor_id' => '0',
+            'key_id' => '0',
+            'repo_id' => '504213929',
+            'response-content-disposition' => 'attachment; filename=language-basics-shellscript-v0.0.19.tar.br',
+            'response-content-type' => 'application/octet-stream' },
+          hash: ''
+        },
+        pagination: {
+          transform: [Function: transform],
+          paginate: [Function: paginate],
+          filter: [Function: filter],
+          shouldContinue: [Function: shouldContinue],
+          countLimit: Infinity,
+          backoff: 0,
+          requestLimit: 10000,
+          stackAllItems: false
+        },
+        setHost: true,
+        maxHeaderSize: undefined,
+        signal: undefined,
+        enableUnixSockets: true
+      }
+    },
+    jse_info: {},
+    cause: [Function: ve_cause]
+  },
+  jse_info: {},
+  cause: [Function: ve_cause]
+}
+Error: Process completed with exit code 1.
