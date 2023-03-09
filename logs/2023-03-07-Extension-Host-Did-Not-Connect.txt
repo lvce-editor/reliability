@@ -1,0 +1,39 @@
+Name: Failed to start extension host: Extension host did not connect
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/4348585195/jobs/7597289158
+OS: Windows
+Phase: Unit-Tests (Shared Process)
+Date: 2023-03-07
+
+Summary of all failing tests
+ FAIL  test/ExtensionHost.test.js (13.58 s)
+  ● start - error - syntax error
+
+    expect(received).rejects.toThrowError(expected)
+
+    Expected message: "Failed to start extension host: Extension Host exited with code 1"
+    Received message: "Failed to start extension host: Extension host did not connect"
+
+          60 |     const handleTimeout = () => {
+          61 |       cleanup()
+        > 62 |       reject(new VError('Extension host did not connect'))
+             |              ^
+          63 |     }
+          64 |     const timeout = Timeout.setTimeout(handleTimeout, CONNECTION_TIMEOUT)
+          65 |     ipc.on('error', handleFirstError)
+
+          at Timeout.handleTimeout (src/parts/ExtensionHostRpc/ExtensionHostRpc.js:62:14)
+
+       96 |   }
+       97 |   // TODO error message should include stderr of extension host: SyntaxError: Unexpected end of input
+    >  98 |   await expect(ExtensionHost.start(socket)).rejects.toThrowError(
+          |                                                     ^
+       99 |     new Error(
+      100 |       'Failed to start extension host: Extension Host exited with code 1'
+      101 |     )
+
+      at Object.toThrowError (../../node_modules/expect/build/index.js:210:22)
+      at Object.toThrowError (test/ExtensionHost.test.js:98:53)
+
+
+Test Suites: 1 failed, 1 skipped, 62 passed, 63 of 64 total
+Tests:       1 failed, 22 skipped, 1 todo, 252 passed, 276 total
