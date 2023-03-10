@@ -1,0 +1,56 @@
+Name: The operation was canceled.
+Url: https://github.com/lvce-editor/language-basics-html/actions/runs/4368294734/jobs/7640688859
+OS: Ubuntu
+Phase: Cache
+Date: 2023-03-10
+
+Run actions/cache@v3 14m 56s
+Received 25856344 of 30050648 (86.0%), 24.6 MBs/sec
+Received 25856344 of 30050648 (86.0%), 12.3 MBs/sec
+Received 25856344 of 30050648 (86.0%), 8.2 MBs/sec
+Received 25856344 of 30050648 (86.0%), 6.2 MBs/sec
+Received 25856344 of 30050648 (86.0%), 4.9 MBs/sec
+Received 25856344 of 30050648 (86.0%), 4.1 MBs/sec
+Received 25856344 of 30050648 (86.0%), 3.5 MBs/sec
+Received 25856344 of 30050648 (86.0%), 3.1 MBs/sec
+Received 25856344 of 30050648 (86.0%), 2.7 MBs/sec
+Received 25856344 of 30050648 (86.0%), 2.5 MBs/sec
+Received 25856344 of 30050648 (86.0%), 2.2 MBs/sec
+Received 25856344 of 30050648 (86.0%), 2.1 MBs/sec
+Received 25856344 of 30050648 (86.0%), 1.9 MBs/sec
+Received 25856344 of 30050648 (86.0%), 1.8 MBs/sec
+Received 25856344 of 30050648 (86.0%), 1.6 MBs/sec
+Received 25856344 of 30050648 (86.0%), 1.5 MBs/sec
+Received 25856344 of 30050648 (86.0%), 1.4 MBs/sec
+Received 25856344 of 30050648 (86.0%), 1.4 MBs/sec
+Received 25856344 of 30050648 (86.0%), 1.3 MBs/sec
+Received 25856344 of 30050648 (86.0%), 1.2 MBs/sec
+Received 25856344 of 30050648 (86.0%), 1.2 MBs/sec
+Received 25856344 of 30050648 (86.0%), 1.1 MBs/sec
+Received 25856344 of 30050648 (86.0%), 1.1 MBs/sec
+Received 25856344 of 30050648 (86.0%), 1.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 1.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.9 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.9 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.9 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.8 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.8 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Received 25856344 of 30050648 (86.0%), 0.0 MBs/sec
+Error: The operation was canceled.
