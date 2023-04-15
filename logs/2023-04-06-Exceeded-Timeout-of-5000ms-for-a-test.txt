@@ -1,0 +1,23 @@
+Name: Exceeded timeout of 5000 ms for a test
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/4629272545/jobs/8189323019
+Os: Windows
+Phase: Shared Process Unit Tests
+Date: 2023-04-06
+
+
+Summary of all failing tests
+ FAIL  test/InstallExtension.test.js (8.04 s)
+  ● install should fail when the server sends an invalid compressed object
+
+    thrown: "Exceeded timeout of 5000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      167 | })
+      168 |
+    > 169 | test('install should fail when the server sends an invalid compressed object', async () => {
+          | ^
+      170 |   const tmpDir1 = await getTmpDir()
+      171 |   const tmpDir2 = await getTmpDir()
+      172 |   const tmpDir3 = await getTmpDir()
+
+      at test (test/InstallExtension.test.js:169:1)
