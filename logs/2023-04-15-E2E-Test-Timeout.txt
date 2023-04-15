@@ -1,0 +1,27 @@
+Name: Error: Process completed with exit code 128.
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/4707474781/jobs/8349352629?pr=2675
+OS: Macos
+Phase: E2e Tests
+Date: 2023-04-15
+
+worker/src/parts/TypeDefinition/TypeDefinition.js:4:22)
+    at async getLocation (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandGoToTypeDefinition.js:29:22)
+    at async goTo (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandGoTo.js:13:24)
+    at async runFn (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:44:22)
+    at async EditorText/lazy/goToTypeDefinition (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:111:5)
+[test passed] sample.type-definition-provider-error in 884.0949999999721ms
+[starting] sample.type-definition-provider-no-result.js
+[shared-process] socket closed
+unmounted editor cannot be focused
+[test passed] sample.type-definition-provider-no-result in 783.4499999999534ms
+[starting] sample.type-definition-provider-not-registered.js
+[shared-process] socket closed
+[shared-process] socket closed
+Timed out 25000ms waiting for expect(received).toBeVisible()
+Call log:
+[shared process] disconnected
+  - locator._expect with timeout 25000ms
+  - waiting for locator('#TestOverlay')
+  - waiting for locator('#TestOverlay')
+
+Error: Process completed with exit code 128.
