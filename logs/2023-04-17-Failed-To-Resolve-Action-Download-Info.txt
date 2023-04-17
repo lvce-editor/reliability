@@ -1,0 +1,22 @@
+Name: Failed to resolve action download info. Error: Internal Server Error
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/4725062632/jobs/8382999677
+OS: Linux, Macos, Windows
+Phase: Setup
+Date: 2023-04-17
+
+Current runner version: '2.303.0'
+Operating System
+Runner Image
+Runner Image Provisioner
+GITHUB_TOKEN Permissions
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Failed to resolve action download info. Error: Internal Server Error
+
+Retrying in 29.877 seconds
+Failed to resolve action download info. Error: Internal Server Error
+
+Retrying in 10.766 seconds
+Error: Failed to resolve action download info.
