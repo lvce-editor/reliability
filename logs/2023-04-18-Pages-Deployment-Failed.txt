@@ -1,0 +1,25 @@
+Name: Creating Pages deployment failed
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/4736187376/jobs/8407736330
+OS: Linux
+Phase: Deploy to Github pages
+Date: 2023-04-18
+
+Run actions/deploy-pages@v1
+Artifact exchange URL: https://pipelines.actions.githubusercontent.com/9OtalDJVyLyDdev6inEYQsch43zFDau4CbJSKDrBmMKW7l90L0/_apis/pipelines/workflows/4736187376/artifacts?api-version=6.0-preview
+Creating Pages deployment with payload:
+{
+	"artifact_url": "https://pipelines.actions.githubusercontent.com/9OtalDJVyLyDdev6inEYQsch43zFDau4CbJSKDrBmMKW7l90L0/_apis/pipelines/1/runs/8451/artifacts?artifactName=github-pages&%24expand=SignedContent",
+	"pages_build_version": "61bafce1df6a9bf8ae2606d1728980066c6a3817",
+	"oidc_token": "***"
+}
+Error: Creating Pages deployment failed
+Error: HttpError: Deployment request failed for 61bafce1df6a9bf8ae2606d1728980066c6a3817 due to in progress deployment. Please cancel 3f30596e81bc4367e96f8af01be23cd080f83ead first or wait for it to complete.
+    at /home/runner/work/_actions/actions/deploy-pages/v1/webpack:/deploy-pages/node_modules/@octokit/request/dist-node/index.js:86:1
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at createPagesDeployment (/home/runner/work/_actions/actions/deploy-pages/v1/webpack:/deploy-pages/src/api-client.js:116:1)
+    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v1/webpack:/deploy-pages/src/deployment.js:58:1)
+    at main (/home/runner/work/_actions/actions/deploy-pages/v1/webpack:/deploy-pages/src/index.js:30:1)
+Error: TypeError: Converting circular structure to JSON
+    --> starting at object with constructor 'TLSSocket'
+    |     property '_httpMessage' -> object with constructor 'ClientRequest'
+    --- property 'socket' closes the circle
