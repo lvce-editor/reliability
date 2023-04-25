@@ -1,0 +1,720 @@
+Name: connect ETIMEDOUT
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/4791806847/jobs/8522642271?pr=2814
+OS: Ubuntu
+Phase: Downloading builtin extensions
+Date: 2023-04-25
+
+node build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js
+(node:1792) ExperimentalWarning: Import assertions are not a stable feature of the JavaScript language. Avoid relying on their current behavior and syntax as those might change in a future version of Node.js.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1792) ExperimentalWarning: Importing JSON modules is an experimental feature and might change at any time
+[download] builtin.language-basics-bat: 432.755ms
+[download] builtin.language-basics-c: 344.315ms
+[download] builtin.language-basics-coffeescript: 362.66ms
+[download] builtin.language-basics-cpp: 391.242ms
+[download] builtin.language-basics-css: 336.848ms
+[download] builtin.language-basics-dart: 341.037ms
+[download] builtin.language-basics-desktop: 331.738ms
+[download] builtin.language-basics-docker: 372.004ms
+[download] builtin.language-basics-dotenv: 342.799ms
+[download] builtin.language-basics-editorconfig: 368.956ms
+[download] builtin.language-basics-elixir: 340.696ms
+[download] builtin.language-basics-elm: 359.102ms
+[download] builtin.language-basics-gitattributes: 362.925ms
+[download] builtin.language-basics-gn: 398.848ms
+[download] builtin.language-basics-go: 333.607ms
+[download] builtin.language-basics-graphql: 377.275ms
+[download] builtin.language-basics-html: 318.43ms
+[download] builtin.language-basics-java: 324.897ms
+[download] builtin.language-basics-javascript: 348.475ms
+[download] builtin.language-basics-json: 345.808ms
+[download] builtin.language-basics-json5: 357.584ms
+[download] builtin.language-basics-jsx: 340.673ms
+[download] builtin.language-basics-julia: 380.233ms
+[download] builtin.language-basics-markdown: 517.856ms
+[download] builtin.language-basics-mdx: 341.803ms
+[download] builtin.language-basics-nvmrc: 315.278ms
+[download] builtin.language-basics-perl: 496.551ms
+[download] builtin.language-basics-plaintext: 563.022ms
+[download] builtin.language-basics-powershell: 425.982ms
+[download] builtin.language-basics-python: 334.947ms
+[download] builtin.language-basics-r: 314.473ms
+[download] builtin.language-basics-ruby: 488.87ms
+[download] builtin.language-basics-rust: 509.698ms
+[download] builtin.language-basics-scss: 583.504ms
+[download] builtin.language-basics-shellscript: 349.193ms
+[download] builtin.language-basics-svelte: 307.184ms
+[download] builtin.language-basics-toml: 534.894ms
+[download] builtin.language-basics-typescript: 323.071ms
+[download] builtin.language-basics-vue: 340.947ms
+[download] builtin.language-basics-xml: 338.585ms
+[download] builtin.language-basics-yaml: 314.73ms
+[download] builtin.language-features-css: 646.935ms
+[download] builtin.language-features-html: 583.384ms
+[download] builtin.language-features-typescript: 612.424ms
+[download] builtin.prettier: 511.891ms
+[download] builtin.theme-atom-one-dark: 365.092ms
+[download] builtin.theme-gruvbox: 411.402ms
+[download] builtin.theme-high-contrast: 348.117ms
+[download] builtin.theme-material: 457.529ms
+[download] builtin.theme-monokai: 320.744ms
+[download] builtin.theme-noctis-uva: 335.891ms
+[download] builtin.theme-palenight: 377.523ms
+[download] builtin.vscode-icons: 1.070s
+VError: Failed to download extension builtin.language-basics-kotlin: Failed to download "https://github.com/lvce-editor/language-basics-kotlin/releases/download/v0.0.3/language-basics-kotlin-v0.0.3.tar.br": connect ETIMEDOUT 192.30.255.113:443
+    at downloadExtension (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:52:11)
+    at async downloadExtensionAndLog (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:68:3)
+    at async file:///home/runner/work/lvce-editor/lvce-editor/build/node_modules/p-map/index.js:141:20 {
+  jse_shortmsg: 'Failed to download extension builtin.language-basics-kotlin',
+  jse_cause: VError: Failed to download "https://github.com/lvce-editor/language-basics-kotlin/releases/download/v0.0.3/language-basics-kotlin-v0.0.3.tar.br": connect ETIMEDOUT 192.30.255.113:443
+      at downloadUrl (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:24:11)
+      at async downloadExtension (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:48:5)
+      at async downloadExtensionAndLog (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:68:3)
+      at async file:///home/runner/work/lvce-editor/lvce-editor/build/node_modules/p-map/index.js:141:20 {
+    jse_shortmsg: 'Failed to download "https://github.com/lvce-editor/language-basics-kotlin/releases/download/v0.0.3/language-basics-kotlin-v0.0.3.tar.br"',
+    jse_cause: RequestError: connect ETIMEDOUT 192.30.255.113:443
+        at ClientRequest.<anonymous> (file:///home/runner/work/lvce-editor/lvce-editor/build/node_modules/got/dist/source/core/index.js:789:107)
+        at Object.onceWrapper (node:events:628:26)
+        at ClientRequest.emit (node:events:525:35)
+        at TLSSocket.socketErrorListener (node:_http_client:502:9)
+        at TLSSocket.emit (node:events:513:28)
+        at emitErrorNT (node:internal/streams/destroy:151:8)
+        at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+      input: undefined,
+      code: 'ETIMEDOUT',
+      timings: [Object],
+      options: {
+        request: undefined,
+        agent: { http: undefined, https: undefined, http2: undefined },
+        h2session: undefined,
+        decompress: true,
+        timeout: {
+          connect: undefined,
+          lookup: undefined,
+          read: undefined,
+          request: undefined,
+          response: undefined,
+          secureConnect: undefined,
+          send: undefined,
+          socket: undefined
+        },
+        prefixUrl: '',
+        body: undefined,
+        form: undefined,
+        json: undefined,
+        cookieJar: undefined,
+        ignoreInvalidCookies: false,
+        searchParams: undefined,
+        dnsLookup: undefined,
+        dnsCache: undefined,
+        context: {},
+        hooks: {
+          init: [],
+          beforeRequest: [],
+          beforeError: [],
+          beforeRedirect: [],
+          beforeRetry: [],
+          afterResponse: []
+        },
+        followRedirect: true,
+        maxRedirects: 10,
+        cache: undefined,
+        throwHttpErrors: true,
+        username: '',
+        password: '',
+        http2: false,
+        allowGetBody: false,
+        headers: {
+          'user-agent': 'got (https://github.com/sindresorhus/got)',
+          'accept-encoding': 'gzip, deflate, br'
+        },
+        methodRewriting: false,
+        dnsLookupIpVersion: undefined,
+        parseJson: [Function: parse],
+        stringifyJson: [Function: stringify],
+        retry: {
+          limit: 2,
+          methods: [ 'GET', 'PUT', 'HEAD', 'DELETE', 'OPTIONS', 'TRACE' ],
+          statusCodes: [
+            408, 413, 429, 500,
+            502, 503, 504, 521,
+            522, 524
+          ],
+          errorCodes: [
+            'ETIMEDOUT',
+            'ECONNRESET',
+            'EADDRINUSE',
+            'ECONNREFUSED',
+            'EPIPE',
+            'ENOTFOUND',
+            'ENETUNREACH',
+            'EAI_AGAIN'
+          ],
+          maxRetryAfter: undefined,
+          calculateDelay: [Function: calculateDelay],
+          backoffLimit: Infinity,
+          noise: 100
+        },
+        localAddress: undefined,
+        method: 'GET',
+        createConnection: undefined,
+        cacheOptions: {
+          shared: undefined,
+          cacheHeuristic: undefined,
+          immutableMinTimeToLive: undefined,
+          ignoreCargoCult: undefined
+        },
+        https: {
+          alpnProtocols: undefined,
+          rejectUnauthorized: undefined,
+          checkServerIdentity: undefined,
+          certificateAuthority: undefined,
+          key: undefined,
+          certificate: undefined,
+          passphrase: undefined,
+          pfx: undefined,
+          ciphers: undefined,
+          honorCipherOrder: undefined,
+          minVersion: undefined,
+          maxVersion: undefined,
+          signatureAlgorithms: undefined,
+          tlsSessionLifetime: undefined,
+          dhparam: undefined,
+          ecdhCurve: undefined,
+          certificateRevocationLists: undefined
+        },
+        encoding: undefined,
+        resolveBodyOnly: false,
+        isStream: true,
+        responseType: 'text',
+        url: URL {
+          href: 'https://github.com/lvce-editor/language-basics-kotlin/releases/download/v0.0.3/language-basics-kotlin-v0.0.3.tar.br',
+          origin: 'https://github.com',
+          protocol: 'https:',
+          username: '',
+          password: '',
+          host: 'github.com',
+          hostname: 'github.com',
+          port: '',
+          pathname: '/lvce-editor/language-basics-kotlin/releases/download/v0.0.3/language-basics-kotlin-v0.0.3.tar.br',
+          search: '',
+          searchParams: URLSearchParams {},
+          hash: ''
+        },
+        pagination: {
+          transform: [Function: transform],
+          paginate: [Function: paginate],
+          filter: [Function: filter],
+          shouldContinue: [Function: shouldContinue],
+          countLimit: Infinity,
+          backoff: 0,
+          requestLimit: 10000,
+          stackAllItems: false
+        },
+        setHost: true,
+        maxHeaderSize: undefined,
+        signal: undefined,
+        enableUnixSockets: true
+      }
+    },
+    jse_info: {},
+    cause: [Function: ve_cause]
+  },
+  jse_info: {},
+  cause: [Function: ve_cause]
+}
+VError: Failed to download extension builtin.language-basics-less: Failed to download "https://github.com/lvce-editor/language-basics-less/releases/download/v0.0.1/language-basics-less-v0.0.1.tar.br": connect ETIMEDOUT 192.30.255.113:443
+    at downloadExtension (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:52:11)
+    at async downloadExtensionAndLog (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:68:3)
+    at async file:///home/runner/work/lvce-editor/lvce-editor/build/node_modules/p-map/index.js:141:20 {
+  jse_shortmsg: 'Failed to download extension builtin.language-basics-less',
+  jse_cause: VError: Failed to download "https://github.com/lvce-editor/language-basics-less/releases/download/v0.0.1/language-basics-less-v0.0.1.tar.br": connect ETIMEDOUT 192.30.255.113:443
+      at downloadUrl (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:24:11)
+      at async downloadExtension (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:48:5)
+      at async downloadExtensionAndLog (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:68:3)
+      at async file:///home/runner/work/lvce-editor/lvce-editor/build/node_modules/p-map/index.js:141:20 {
+    jse_shortmsg: 'Failed to download "https://github.com/lvce-editor/language-basics-less/releases/download/v0.0.1/language-basics-less-v0.0.1.tar.br"',
+    jse_cause: RequestError: connect ETIMEDOUT 192.30.255.113:443
+        at ClientRequest.<anonymous> (file:///home/runner/work/lvce-editor/lvce-editor/build/node_modules/got/dist/source/core/index.js:789:107)
+        at Object.onceWrapper (node:events:628:26)
+        at ClientRequest.emit (node:events:525:35)
+        at TLSSocket.socketErrorListener (node:_http_client:502:9)
+        at TLSSocket.emit (node:events:513:28)
+        at emitErrorNT (node:internal/streams/destroy:151:8)
+        at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+      input: undefined,
+      code: 'ETIMEDOUT',
+      timings: [Object],
+      options: {
+        request: undefined,
+        agent: { http: undefined, https: undefined, http2: undefined },
+        h2session: undefined,
+        decompress: true,
+        timeout: {
+          connect: undefined,
+          lookup: undefined,
+          read: undefined,
+          request: undefined,
+          response: undefined,
+          secureConnect: undefined,
+          send: undefined,
+          socket: undefined
+        },
+        prefixUrl: '',
+        body: undefined,
+        form: undefined,
+        json: undefined,
+        cookieJar: undefined,
+        ignoreInvalidCookies: false,
+        searchParams: undefined,
+        dnsLookup: undefined,
+        dnsCache: undefined,
+        context: {},
+        hooks: {
+          init: [],
+          beforeRequest: [],
+          beforeError: [],
+          beforeRedirect: [],
+          beforeRetry: [],
+          afterResponse: []
+        },
+        followRedirect: true,
+        maxRedirects: 10,
+        cache: undefined,
+        throwHttpErrors: true,
+        username: '',
+        password: '',
+        http2: false,
+        allowGetBody: false,
+        headers: {
+          'user-agent': 'got (https://github.com/sindresorhus/got)',
+          'accept-encoding': 'gzip, deflate, br'
+        },
+        methodRewriting: false,
+        dnsLookupIpVersion: undefined,
+        parseJson: [Function: parse],
+        stringifyJson: [Function: stringify],
+        retry: {
+          limit: 2,
+          methods: [ 'GET', 'PUT', 'HEAD', 'DELETE', 'OPTIONS', 'TRACE' ],
+          statusCodes: [
+            408, 413, 429, 500,
+            502, 503, 504, 521,
+            522, 524
+          ],
+          errorCodes: [
+            'ETIMEDOUT',
+            'ECONNRESET',
+            'EADDRINUSE',
+            'ECONNREFUSED',
+            'EPIPE',
+            'ENOTFOUND',
+            'ENETUNREACH',
+            'EAI_AGAIN'
+          ],
+          maxRetryAfter: undefined,
+          calculateDelay: [Function: calculateDelay],
+          backoffLimit: Infinity,
+          noise: 100
+        },
+        localAddress: undefined,
+        method: 'GET',
+        createConnection: undefined,
+        cacheOptions: {
+          shared: undefined,
+          cacheHeuristic: undefined,
+          immutableMinTimeToLive: undefined,
+          ignoreCargoCult: undefined
+        },
+        https: {
+          alpnProtocols: undefined,
+          rejectUnauthorized: undefined,
+          checkServerIdentity: undefined,
+          certificateAuthority: undefined,
+          key: undefined,
+          certificate: undefined,
+          passphrase: undefined,
+          pfx: undefined,
+          ciphers: undefined,
+          honorCipherOrder: undefined,
+          minVersion: undefined,
+          maxVersion: undefined,
+          signatureAlgorithms: undefined,
+          tlsSessionLifetime: undefined,
+          dhparam: undefined,
+          ecdhCurve: undefined,
+          certificateRevocationLists: undefined
+        },
+        encoding: undefined,
+        resolveBodyOnly: false,
+        isStream: true,
+        responseType: 'text',
+        url: URL {
+          href: 'https://github.com/lvce-editor/language-basics-less/releases/download/v0.0.1/language-basics-less-v0.0.1.tar.br',
+          origin: 'https://github.com',
+          protocol: 'https:',
+          username: '',
+          password: '',
+          host: 'github.com',
+          hostname: 'github.com',
+          port: '',
+          pathname: '/lvce-editor/language-basics-less/releases/download/v0.0.1/language-basics-less-v0.0.1.tar.br',
+          search: '',
+          searchParams: URLSearchParams {},
+          hash: ''
+        },
+        pagination: {
+          transform: [Function: transform],
+          paginate: [Function: paginate],
+          filter: [Function: filter],
+          shouldContinue: [Function: shouldContinue],
+          countLimit: Infinity,
+          backoff: 0,
+          requestLimit: 10000,
+          stackAllItems: false
+        },
+        setHost: true,
+        maxHeaderSize: undefined,
+        signal: undefined,
+        enableUnixSockets: true
+      }
+    },
+    jse_info: {},
+    cause: [Function: ve_cause]
+  },
+  jse_info: {},
+  cause: [Function: ve_cause]
+}
+VError: Failed to download extension builtin.theme-ayu: Failed to download "https://github.com/lvce-editor/theme-ayu/releases/download/v0.0.9/theme-ayu-v0.0.9.tar.br": connect ETIMEDOUT 192.30.255.113:443
+    at downloadExtension (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:52:11)
+    at async downloadExtensionAndLog (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:68:3)
+    at async file:///home/runner/work/lvce-editor/lvce-editor/build/node_modules/p-map/index.js:141:20 {
+  jse_shortmsg: 'Failed to download extension builtin.theme-ayu',
+  jse_cause: VError: Failed to download "https://github.com/lvce-editor/theme-ayu/releases/download/v0.0.9/theme-ayu-v0.0.9.tar.br": connect ETIMEDOUT 192.30.255.113:443
+      at downloadUrl (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:24:11)
+      at async downloadExtension (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:48:5)
+      at async downloadExtensionAndLog (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:68:3)
+      at async file:///home/runner/work/lvce-editor/lvce-editor/build/node_modules/p-map/index.js:141:20 {
+    jse_shortmsg: 'Failed to download "https://github.com/lvce-editor/theme-ayu/releases/download/v0.0.9/theme-ayu-v0.0.9.tar.br"',
+    jse_cause: RequestError: connect ETIMEDOUT 192.30.255.113:443
+        at ClientRequest.<anonymous> (file:///home/runner/work/lvce-editor/lvce-editor/build/node_modules/got/dist/source/core/index.js:789:107)
+        at Object.onceWrapper (node:events:628:26)
+        at ClientRequest.emit (node:events:525:35)
+        at TLSSocket.socketErrorListener (node:_http_client:502:9)
+        at TLSSocket.emit (node:events:513:28)
+        at emitErrorNT (node:internal/streams/destroy:151:8)
+        at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+      input: undefined,
+      code: 'ETIMEDOUT',
+      timings: [Object],
+      options: {
+        request: undefined,
+        agent: { http: undefined, https: undefined, http2: undefined },
+        h2session: undefined,
+        decompress: true,
+        timeout: {
+          connect: undefined,
+          lookup: undefined,
+          read: undefined,
+          request: undefined,
+          response: undefined,
+          secureConnect: undefined,
+          send: undefined,
+          socket: undefined
+        },
+        prefixUrl: '',
+        body: undefined,
+        form: undefined,
+        json: undefined,
+        cookieJar: undefined,
+        ignoreInvalidCookies: false,
+        searchParams: undefined,
+        dnsLookup: undefined,
+        dnsCache: undefined,
+        context: {},
+        hooks: {
+          init: [],
+          beforeRequest: [],
+          beforeError: [],
+          beforeRedirect: [],
+          beforeRetry: [],
+          afterResponse: []
+        },
+        followRedirect: true,
+        maxRedirects: 10,
+        cache: undefined,
+        throwHttpErrors: true,
+        username: '',
+        password: '',
+        http2: false,
+        allowGetBody: false,
+        headers: {
+          'user-agent': 'got (https://github.com/sindresorhus/got)',
+          'accept-encoding': 'gzip, deflate, br'
+        },
+        methodRewriting: false,
+        dnsLookupIpVersion: undefined,
+        parseJson: [Function: parse],
+        stringifyJson: [Function: stringify],
+        retry: {
+          limit: 2,
+          methods: [ 'GET', 'PUT', 'HEAD', 'DELETE', 'OPTIONS', 'TRACE' ],
+          statusCodes: [
+            408, 413, 429, 500,
+            502, 503, 504, 521,
+            522, 524
+          ],
+          errorCodes: [
+            'ETIMEDOUT',
+            'ECONNRESET',
+            'EADDRINUSE',
+            'ECONNREFUSED',
+            'EPIPE',
+            'ENOTFOUND',
+            'ENETUNREACH',
+            'EAI_AGAIN'
+          ],
+          maxRetryAfter: undefined,
+          calculateDelay: [Function: calculateDelay],
+          backoffLimit: Infinity,
+          noise: 100
+        },
+        localAddress: undefined,
+        method: 'GET',
+        createConnection: undefined,
+        cacheOptions: {
+          shared: undefined,
+          cacheHeuristic: undefined,
+          immutableMinTimeToLive: undefined,
+          ignoreCargoCult: undefined
+        },
+        https: {
+          alpnProtocols: undefined,
+          rejectUnauthorized: undefined,
+          checkServerIdentity: undefined,
+          certificateAuthority: undefined,
+          key: undefined,
+          certificate: undefined,
+          passphrase: undefined,
+          pfx: undefined,
+          ciphers: undefined,
+          honorCipherOrder: undefined,
+          minVersion: undefined,
+          maxVersion: undefined,
+          signatureAlgorithms: undefined,
+          tlsSessionLifetime: undefined,
+          dhparam: undefined,
+          ecdhCurve: undefined,
+          certificateRevocationLists: undefined
+        },
+        encoding: undefined,
+        resolveBodyOnly: false,
+        isStream: true,
+        responseType: 'text',
+        url: URL {
+          href: 'https://github.com/lvce-editor/theme-ayu/releases/download/v0.0.9/theme-ayu-v0.0.9.tar.br',
+          origin: 'https://github.com',
+          protocol: 'https:',
+          username: '',
+          password: '',
+          host: 'github.com',
+          hostname: 'github.com',
+          port: '',
+          pathname: '/lvce-editor/theme-ayu/releases/download/v0.0.9/theme-ayu-v0.0.9.tar.br',
+          search: '',
+          searchParams: URLSearchParams {},
+          hash: ''
+        },
+        pagination: {
+          transform: [Function: transform],
+          paginate: [Function: paginate],
+          filter: [Function: filter],
+          shouldContinue: [Function: shouldContinue],
+          countLimit: Infinity,
+          backoff: 0,
+          requestLimit: 10000,
+          stackAllItems: false
+        },
+        setHost: true,
+        maxHeaderSize: undefined,
+        signal: undefined,
+        enableUnixSockets: true
+      }
+    },
+    jse_info: {},
+    cause: [Function: ve_cause]
+  },
+  jse_info: {},
+  cause: [Function: ve_cause]
+}
+VError: Failed to download extension builtin.theme-cobalt2: Failed to download "https://github.com/lvce-editor/theme-cobalt2/releases/download/v0.0.11/theme-cobalt2-v0.0.11.tar.br": connect ETIMEDOUT 192.30.255.113:443
+    at downloadExtension (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:52:11)
+    at async downloadExtensionAndLog (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:68:3)
+    at async file:///home/runner/work/lvce-editor/lvce-editor/build/node_modules/p-map/index.js:141:20 {
+  jse_shortmsg: 'Failed to download extension builtin.theme-cobalt2',
+  jse_cause: VError: Failed to download "https://github.com/lvce-editor/theme-cobalt2/releases/download/v0.0.11/theme-cobalt2-v0.0.11.tar.br": connect ETIMEDOUT 192.30.255.113:443
+      at downloadUrl (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:24:11)
+      at async downloadExtension (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:48:5)
+      at async downloadExtensionAndLog (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/DownloadBuiltinExtensions/DownloadBuiltinExtensions.js:68:3)
+      at async file:///home/runner/work/lvce-editor/lvce-editor/build/node_modules/p-map/index.js:141:20 {
+    jse_shortmsg: 'Failed to download "https://github.com/lvce-editor/theme-cobalt2/releases/download/v0.0.11/theme-cobalt2-v0.0.11.tar.br"',
+    jse_cause: RequestError: connect ETIMEDOUT 192.30.255.113:443
+        at ClientRequest.<anonymous> (file:///home/runner/work/lvce-editor/lvce-editor/build/node_modules/got/dist/source/core/index.js:789:107)
+        at Object.onceWrapper (node:events:628:26)
+        at ClientRequest.emit (node:events:525:35)
+        at TLSSocket.socketErrorListener (node:_http_client:502:9)
+        at TLSSocket.emit (node:events:513:28)
+        at emitErrorNT (node:internal/streams/destroy:151:8)
+        at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+        at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+        at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1494:16) {
+      input: undefined,
+      code: 'ETIMEDOUT',
+      timings: [Object],
+      options: {
+        request: undefined,
+        agent: { http: undefined, https: undefined, http2: undefined },
+        h2session: undefined,
+        decompress: true,
+        timeout: {
+          connect: undefined,
+          lookup: undefined,
+          read: undefined,
+          request: undefined,
+          response: undefined,
+          secureConnect: undefined,
+          send: undefined,
+          socket: undefined
+        },
+        prefixUrl: '',
+        body: undefined,
+        form: undefined,
+        json: undefined,
+        cookieJar: undefined,
+        ignoreInvalidCookies: false,
+        searchParams: undefined,
+        dnsLookup: undefined,
+        dnsCache: undefined,
+        context: {},
+        hooks: {
+          init: [],
+          beforeRequest: [],
+          beforeError: [],
+          beforeRedirect: [],
+          beforeRetry: [],
+          afterResponse: []
+        },
+        followRedirect: true,
+        maxRedirects: 10,
+        cache: undefined,
+        throwHttpErrors: true,
+        username: '',
+        password: '',
+        http2: false,
+        allowGetBody: false,
+        headers: {
+          'user-agent': 'got (https://github.com/sindresorhus/got)',
+          'accept-encoding': 'gzip, deflate, br'
+        },
+        methodRewriting: false,
+        dnsLookupIpVersion: undefined,
+        parseJson: [Function: parse],
+        stringifyJson: [Function: stringify],
+        retry: {
+          limit: 2,
+          methods: [ 'GET', 'PUT', 'HEAD', 'DELETE', 'OPTIONS', 'TRACE' ],
+          statusCodes: [
+            408, 413, 429, 500,
+            502, 503, 504, 521,
+            522, 524
+          ],
+          errorCodes: [
+            'ETIMEDOUT',
+            'ECONNRESET',
+            'EADDRINUSE',
+            'ECONNREFUSED',
+            'EPIPE',
+            'ENOTFOUND',
+            'ENETUNREACH',
+            'EAI_AGAIN'
+          ],
+          maxRetryAfter: undefined,
+          calculateDelay: [Function: calculateDelay],
+          backoffLimit: Infinity,
+          noise: 100
+        },
+        localAddress: undefined,
+        method: 'GET',
+        createConnection: undefined,
+        cacheOptions: {
+          shared: undefined,
+          cacheHeuristic: undefined,
+          immutableMinTimeToLive: undefined,
+          ignoreCargoCult: undefined
+        },
+        https: {
+          alpnProtocols: undefined,
+          rejectUnauthorized: undefined,
+          checkServerIdentity: undefined,
+          certificateAuthority: undefined,
+          key: undefined,
+          certificate: undefined,
+          passphrase: undefined,
+          pfx: undefined,
+          ciphers: undefined,
+          honorCipherOrder: undefined,
+          minVersion: undefined,
+          maxVersion: undefined,
+          signatureAlgorithms: undefined,
+          tlsSessionLifetime: undefined,
+          dhparam: undefined,
+          ecdhCurve: undefined,
+          certificateRevocationLists: undefined
+        },
+        encoding: undefined,
+        resolveBodyOnly: false,
+        isStream: true,
+        responseType: 'text',
+        url: URL {
+          href: 'https://github.com/lvce-editor/theme-cobalt2/releases/download/v0.0.11/theme-cobalt2-v0.0.11.tar.br',
+          origin: 'https://github.com',
+          protocol: 'https:',
+          username: '',
+          password: '',
+          host: 'github.com',
+          hostname: 'github.com',
+          port: '',
+          pathname: '/lvce-editor/theme-cobalt2/releases/download/v0.0.11/theme-cobalt2-v0.0.11.tar.br',
+          search: '',
+          searchParams: URLSearchParams {},
+          hash: ''
+        },
+        pagination: {
+          transform: [Function: transform],
+          paginate: [Function: paginate],
+          filter: [Function: filter],
+          shouldContinue: [Function: shouldContinue],
+          countLimit: Infinity,
+          backoff: 0,
+          requestLimit: 10000,
+          stackAllItems: false
+        },
+        setHost: true,
+        maxHeaderSize: undefined,
+        signal: undefined,
+        enableUnixSockets: true
+      }
+    },
+    jse_info: {},
+    cause: [Function: ve_cause]
+  },
+  jse_info: {},
+  cause: [Function: ve_cause]
+}
+Error: Process completed with exit code 1.
