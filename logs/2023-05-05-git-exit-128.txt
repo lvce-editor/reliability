@@ -1,0 +1,17 @@
+Name: git exit 128
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/4888054947/jobs/8725348314?pr=2856
+OS: Ubuntu
+Phase: Checkout
+Date: 2023-05-05
+
+/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +0c4c185b41f4e0069f46490e0ebb89410f2fa4eb:refs/remotes/pull/2856/merge
+Error: fatal: unable to access 'https://github.com/lvce-editor/lvce-editor/': The requested URL returned error: 429
+The process '/usr/bin/git' failed with exit code 128
+Waiting 14 seconds before trying again
+/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +0c4c185b41f4e0069f46490e0ebb89410f2fa4eb:refs/remotes/pull/2856/merge
+Error: fatal: unable to access 'https://github.com/lvce-editor/lvce-editor/': The requested URL returned error: 429
+The process '/usr/bin/git' failed with exit code 128
+Waiting 13 seconds before trying again
+/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --progress --no-recurse-submodules --depth=1 origin +0c4c185b41f4e0069f46490e0ebb89410f2fa4eb:refs/remotes/pull/2856/merge
+Error: fatal: unable to access 'https://github.com/lvce-editor/lvce-editor/': The requested URL returned error: 429
+Error: The process '/usr/bin/git' failed with exit code 128
