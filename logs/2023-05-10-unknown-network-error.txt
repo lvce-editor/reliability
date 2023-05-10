@@ -1,0 +1,15 @@
+Name: unknown network error
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/4930269812/jobs/8810963307
+OS: Macos
+Phase: E2E tests
+Date: 2023-05-10
+
+[test passed] viewlet.editor-cursor-character-left in 441.93499999993946ms
+[starting] viewlet.editor-cursor-character-right.js
+[shared-process] socket closed
+[test passed] viewlet.editor-cursor-character-right in 455.44000000006054ms
+[starting] viewlet.editor-cursor-down.js
+[shared-process] socket closed
+[renderer-process] Unhandled Rejection: Error: Failed to import /packages/renderer-worker/src/rendererWorkerMain.js: Unknown Network Error
+Timed out 25000ms waiting for expect(received).toBeVisible()
+[shared process] disconnected
