@@ -1,0 +1,19 @@
+Name: locator._expect with timeout 25000ms
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/5011598272/jobs/8982596991
+OS: Macos
+Phase: E2E tests
+Date: 2023-05-18
+
+Run npm run e2e:headless
+
+> extension-host-worker-tests@0.0.0-dev e2e:headless
+> node src/_all.js --headless
+
+send ready
+[starting] sample.brace-completion-provider-error-spelling.js
+[shared process] started
+Timed out 25000ms waiting for expect(received).toBeVisible()
+Call log:
+[shared process] disconnected
+  - locator._expect with timeout 25000ms
+  - waiting for locator('#TestOverlay')
