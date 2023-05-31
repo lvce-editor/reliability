@@ -1,0 +1,1181 @@
+Name: the operation was canceled
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/5126407765/jobs/9220852015?pr=3175
+OS: Macos
+Phase: Build Electron app
+Date: 2023-05-31
+
+Run extension host worker tests 31m 35s
+Run npm run e2e:headless
+
+> extension-host-worker-tests@0.0.0-dev e2e:headless
+> node src/_all.js --headless
+
+[test starting] sample.brace-completion-provider-error-spelling.js
+listen renderer
+listen shared
+[test starting] sample.brace-completion-provider-error.js
+listen renderer
+listen shared
+[test starting] sample.brace-completion-provider.js
+listen renderer
+listen shared
+[test starting] sample.command-provider-error-command-not-found.js
+listen renderer
+listen shared
+[test passed] sample.command-provider-error-command-not-found in 2009.1500000000233ms
+[test starting] sample.command-provider-error-command-registered-multiple-times.js
+listen renderer
+listen shared
+[test passed] sample.command-provider-error-command-registered-multiple-times in 1915.3149999999441ms
+[test starting] sample.command-provider-error.js
+listen renderer
+listen shared
+[test passed] sample.command-provider-error in 2211.8549999999814ms
+[test starting] sample.command-provider.js
+listen renderer
+listen shared
+[test starting] sample.completion-provider-error-invalid-return-value-array-with-undefined-items.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+Error: Failed to execute completion provider: VError: invalid completion result: expected completion item to be of type object but was of type undefined
+
+  85 |         if (error) {
+  86 |           const improvedError = improveValidationError(name, error)
+> 87 |           throw new VError(improvedError)
+     |                 ^
+  88 |         }
+  89 |         return result
+  90 |       } catch (error) {
+
+    at executeCompletionProvider (http://localhost:3000/packages/extension-host-worker/src/parts/Registry/Registry.js:87:17)
+    at async getResponse (http://localhost:3000/packages/extension-host-worker/src/parts/GetResponse/GetResponse.js:6:20)
+    at async MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:24)
+    at async executeProviders (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:19:19)
+    at async getCompletions (http://localhost:3000/packages/renderer-worker/src/parts/Completions/Completions.js:10:23)
+    at async loadContent (http://localhost:3000/packages/renderer-worker/src/parts/ViewletEditorCompletion/ViewletEditorCompletion.js:138:27)
+    at async load (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:345:20)
+    at async openCompletion (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandCompletion.js:102:20)
+[test passed] undefined in 4453.145000000019ms
+[test starting] sample.completion-provider-error-invalid-return-value-number.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+Error: Failed to execute completion provider: VError: invalid completion result: completion must be of type array but is 42
+
+  85 |         if (error) {
+  86 |           const improvedError = improveValidationError(name, error)
+> 87 |           throw new VError(improvedError)
+     |                 ^
+  88 |         }
+  89 |         return result
+  90 |       } catch (error) {
+
+    at executeCompletionProvider (http://localhost:3000/packages/extension-host-worker/src/parts/Registry/Registry.js:87:17)
+    at async getResponse (http://localhost:3000/packages/extension-host-worker/src/parts/GetResponse/GetResponse.js:6:20)
+    at async MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:24)
+    at async executeProviders (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:19:19)
+    at async getCompletions (http://localhost:3000/packages/renderer-worker/src/parts/Completions/Completions.js:10:23)
+    at async loadContent (http://localhost:3000/packages/renderer-worker/src/parts/ViewletEditorCompletion/ViewletEditorCompletion.js:138:27)
+    at async load (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:345:20)
+    at async openCompletion (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandCompletion.js:102:20)
+[test passed] sample.completion-provider-error-invalid-return-value-number in 11029.695000000065ms
+[test starting] sample.completion-provider-error-invalid-return-value-undefined.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+Error: Failed to execute completion provider: VError: invalid completion result: completion must be of type array but is undefined
+
+  85 |         if (error) {
+  86 |           const improvedError = improveValidationError(name, error)
+> 87 |           throw new VError(improvedError)
+     |                 ^
+  88 |         }
+  89 |         return result
+  90 |       } catch (error) {
+
+    at executeCompletionProvider (http://localhost:3000/packages/extension-host-worker/src/parts/Registry/Registry.js:87:17)
+    at async getResponse (http://localhost:3000/packages/extension-host-worker/src/parts/GetResponse/GetResponse.js:6:20)
+    at async MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:24)
+    at async executeProviders (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:19:19)
+    at async getCompletions (http://localhost:3000/packages/renderer-worker/src/parts/Completions/Completions.js:10:23)
+    at async loadContent (http://localhost:3000/packages/renderer-worker/src/parts/ViewletEditorCompletion/ViewletEditorCompletion.js:138:27)
+    at async load (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:345:20)
+    at async openCompletion (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandCompletion.js:102:20)
+[test passed] sample.completion-provider-error-invalid-return-value-undefined in 4000.8249999999534ms
+[test starting] sample.completion-provider-error.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+Error: Failed to execute completion provider: oops
+
+  2 |   languageId: 'xyz',
+  3 |   provideCompletions(textDocument, offset) {
+> 4 |     throw new Error('oops')
+    |           ^
+  5 |   },
+  6 | }
+  7 | export const activate = () => {
+
+    at provideCompletions (http://localhost:3000/packages/extension-host-worker-tests/fixtures/sample.completion-provider-error/main.js:4:11)
+    at executeCompletionProvider (http://localhost:3000/packages/extension-host-worker/src/parts/Registry/Registry.js:83:50)
+    at execute (http://localhost:3000/packages/extension-host-worker/src/parts/Command/Command.js:7:10)
+    at MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:42)
+    at async executeProviders (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:19:19)
+    at async getCompletions (http://localhost:3000/packages/renderer-worker/src/parts/Completions/Completions.js:10:23)
+    at async loadContent (http://localhost:3000/packages/renderer-worker/src/parts/ViewletEditorCompletion/ViewletEditorCompletion.js:138:27)
+    at async load (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:345:20)
+    at async openCompletion (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandCompletion.js:102:20)
+[test passed] sample.completion-provider-error in 4672.730000000098ms
+[test starting] sample.completion-provider.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] sample.completion-provider in 3521.170000000042ms
+[test starting] sample.debug-provider-error-not-found.js
+listen renderer
+listen shared
+Error: Failed to execute debug provider: no debug provider "test-debug" found
+
+  10 |   const provider = state.debugProviderMap[id]
+  11 |   if (!provider) {
+> 12 |     throw new VError(`no debug provider "${id}" found`)
+     |           ^
+  13 |   }
+  14 |   return provider
+  15 | }
+
+    at getDebugProvider (http://localhost:3000/packages/extension-host-worker/src/parts/ExtensionHostDebug/ExtensionHostDebug.js:12:11)
+    at start (http://localhost:3000/packages/extension-host-worker/src/parts/ExtensionHostDebug/ExtensionHostDebug.js:37:22)
+    at execute (http://localhost:3000/packages/extension-host-worker/src/parts/Command/Command.js:7:10)
+    at MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:42)
+    at async executeProvider (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:33:19)
+    at async loadContent (http://localhost:3000/packages/renderer-worker/src/parts/ViewletRunAndDebug/ViewletRunAndDebug.js:42:3)
+    at async load (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:345:20)
+    at async openViewlet (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSideBar/ViewletSideBar.js:91:20)
+    at async runFn (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:45:22)
+[test passed] sample.debug-provider-error-not-found in 2244.579999999958ms
+[test starting] sample.debug-provider-paused-on-exception.js
+listen renderer
+listen shared
+send paused {callFrames: Array(3), reason: exception, data: Object, hitBreakpoints: Array(0)}
+[test passed] sample.debug-provider-paused-on-exception in 2168.0800000000745ms
+[test starting] sample.debug-provider-scope.js
+listen renderer
+listen shared
+send paused {callFrames: Array(1), reason: other, hitBreakpoints: Array(0)}
+[test passed] sample.debug-provider-scope in 2581.2399999999907ms
+[test starting] sample.definition-provider-error.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+Error: Failed to execute definition provider: oops
+
+  2 |   languageId: 'xyz',
+  3 |   provideDefinition(textDocument, offset) {
+> 4 |     throw new Error('oops')
+    |           ^
+  5 |   },
+  6 | }
+  7 |
+
+    at provideDefinition (http://localhost:3000/packages/extension-host-worker-tests/fixtures/sample.definition-provider-error/main.js:4:11)
+    at executeDefinitionProvider (http://localhost:3000/packages/extension-host-worker/src/parts/Registry/Registry.js:83:50)
+    at execute (http://localhost:3000/packages/extension-host-worker/src/parts/Command/Command.js:7:10)
+    at MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:42)
+    at async executeProviders (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:19:19)
+    at async getDefinition (http://localhost:3000/packages/renderer-worker/src/parts/Definition/Definition.js:4:22)
+    at async getLocation (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandGoToDefinition.js:27:22)
+    at async goTo (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandGoTo.js:13:24)
+    at async runFn (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:45:22)
+[test passed] sample.definition-provider-error in 1917.359999999986ms
+[test starting] sample.definition-provider-no-result.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] sample.definition-provider-no-result in 2234.7399999999907ms
+[test starting] sample.error-activate-dynamic-import-not-found.js
+listen renderer
+listen shared
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.error-activate-dynamic-import-not-found/add.js"
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.error-activate-dynamic-import-not-found/add.js"
+[test passed] sample.error-activate-dynamic-import-not-found in 3175.609999999986ms
+[test starting] sample.error-cannot-read-properties-of-null-reading-value.js
+listen renderer
+listen shared
+[test passed] sample.error-cannot-read-properties-of-null-reading-value in 2315.695000000065ms
+[test starting] sample.error-clone.js
+listen renderer
+listen shared
+[test passed] sample.error-clone in 2159.7750000000233ms
+[test starting] sample.error-dependency-module-not-found-complex.js
+listen renderer
+listen shared
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.error-dependency-module-not-found-complex/parts/math.js"
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.error-dependency-module-not-found-complex/parts/math.js"
+[test passed] sample.error-dependency-module-not-found-complex in 2283.1999999999534ms
+[test starting] sample.error-dependency-module-not-found.js
+listen renderer
+listen shared
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.error-dependency-module-not-found/not-found.js"
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.error-dependency-module-not-found/not-found.js"
+[test passed] sample.error-dependency-module-not-found in 3586.7600000000093ms
+[test starting] sample.error-dynamic-import-not-found.js
+listen renderer
+listen shared
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.error-dynamic-import-not-found/add.js"
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.error-dynamic-import-not-found/add.js"
+[test passed] sample.error-dynamic-import-not-found in 2187.3799999998882ms
+[test starting] sample.error-eval-csp-violation.js
+listen renderer
+listen shared
+[test passed] sample.error-eval-csp-violation in 2120.0200000000186ms
+[test starting] sample.error-export-not-found.js
+listen renderer
+listen shared
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.error-export-not-found/add.js"
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.error-export-not-found/add.js"
+[test passed] sample.error-export-not-found in 1695.8349999999627ms
+[test starting] sample.error-fetch-csp-violation.js
+listen renderer
+listen shared
+[test passed] sample.error-fetch-csp-violation in 2092.4150000000373ms
+[test starting] sample.error-identifier-has-already-been-declared-other-file.js
+listen renderer
+listen shared
+[test passed] sample.error-identifier-has-already-been-declared-other-file in 3097.2450000001118ms
+[test starting] sample.error-identifier-has-already-been-declared.js
+listen renderer
+listen shared
+[test passed] sample.error-identifier-has-already-been-declared in 3564.5749999999534ms
+[test starting] sample.error-illegal-constructor.js
+listen renderer
+listen shared
+[test passed] sample.error-illegal-constructor in 4193.324999999953ms
+[test starting] sample.error-import-data-url-csp-violation.js
+listen renderer
+listen shared
+[test passed] sample.error-import-data-url-csp-violation in 6264.290000000037ms
+[test starting] sample.error-module-not-found.js
+listen renderer
+listen shared
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.error-module-not-found/add.js"
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.error-module-not-found/add.js"
+[test passed] sample.error-module-not-found in 6822.870000000112ms
+[test starting] sample.error-unexpected-token.js
+listen renderer
+listen shared
+[test passed] sample.error-unexpected-token in 6993.7949999999255ms
+[test starting] sample.error-uri.js
+listen renderer
+listen shared
+[test passed] sample.error-uri in 5931.935000000056ms
+[test starting] sample.error-worker-csp-violation.js
+listen renderer
+listen shared
+[test passed] sample.error-worker-csp-violation in 5423.590000000084ms
+[test starting] sample.file-system-provider-error-missing-id.js
+listen renderer
+listen shared
+Error: Failed to activate extension sample.file-system-provider-error-missing-id: Failed to register file system provider: missing id
+
+  15 | export const registerFileSystemProvider = (fileSystemProvider) => {
+  16 |   if (!fileSystemProvider.id) {
+> 17 |     throw new Error('Failed to register file system provider: missing id')
+     |           ^
+  18 |   }
+  19 |   state.fileSystemProviderMap[fileSystemProvider.id] = fileSystemProvider
+  20 | }
+
+    at registerFileSystemProvider (http://localhost:3000/packages/extension-host-worker/src/parts/ExtensionHostFileSystem/ExtensionHostFileSystem.js:17:11)
+    at activate (http://localhost:3000/packages/extension-host-worker-tests/fixtures/sample.file-system-provider-error-missing-id/main.js:8:10)
+    at activate (http://localhost:3000/packages/extension-host-worker/src/parts/ExtensionHostExtension/ExtensionHostExtension.js:29:34)
+    at async getResponse (http://localhost:3000/packages/extension-host-worker/src/parts/GetResponse/GetResponse.js:6:20)
+    at async MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:24)
+    at async actuallyActivateByEvent (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHostManagement/ExtensionHostManagement.js:131:7)
+    at async executeProvider (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:25:26)
+    at async getContent (http://localhost:3000/packages/renderer-worker/src/parts/ViewletEditorText/ViewletEditorText.js:22:19)
+    at async loadContent (http://localhost:3000/packages/renderer-worker/src/parts/ViewletEditorText/ViewletEditorText.js:123:19)
+    at async load (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:345:20)
+    at async openUri (http://localhost:3000/packages/renderer-worker/src/parts/ViewletMain/ViewletMainOpenUri.js:81:20)
+[test passed] sample.file-system-provider-error-missing-id in 4504.370000000112ms
+[test starting] sample.file-system-provider-race-condition.js
+listen renderer
+listen shared
+cannot dispose instance 87 because it may already be disposed
+cannot dispose instance 88 because it may already be disposed
+unmounted editor cannot be focused
+cannot execute setText viewlet instance 88 not found
+cannot execute setText viewlet instance 87 not found
+cannot execute setText viewlet instance 87 not found
+cannot execute setText viewlet instance 87 not found
+cannot execute setText viewlet instance 87 not found
+[test passed] sample.file-system-provider-race-condition in 5626.619999999879ms
+[test starting] sample.formatting-provider-error-invalid-return-value-string.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+VError: Failed to execute formatting provider: VError: invalid formatting result: formatting must be of type array but is ""
+    at executeFormattingProvider (http://localhost:3000/packages/extension-host-worker/src/parts/Registry/Registry.js:87:17)
+    at async Module.getResponse (http://localhost:3000/packages/extension-host-worker/src/parts/GetResponse/GetResponse.js:6:20)
+    at async MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:24)
+    at constructError (http://localhost:3000/packages/renderer-worker/src/parts/RestoreJsonRpcError/RestoreJsonRpcError.js:15:19)
+    at Module.restoreJsonRpcError (http://localhost:3000/packages/renderer-worker/src/parts/RestoreJsonRpcError/RestoreJsonRpcError.js:44:27)
+    at Module.unwrapJsonRpcResult (http://localhost:3000/packages/renderer-worker/src/parts/UnwrapJsonRpcResult/UnwrapJsonRpcResult.js:6:47)
+    at Module.invoke (http://localhost:3000/packages/renderer-worker/src/parts/JsonRpc/JsonRpc.js:22:38)
+    at async Promise.all (index 0)
+    at async Module.executeProviders (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:19:19)
+    at async Module.format (http://localhost:3000/packages/renderer-worker/src/parts/Format/Format.js:13:17)
+    at async format (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandFormat.js:18:19)
+    at async runFn (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:45:22)
+    at async Editor/lazy/format (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:115:5)
+[test passed] sample.formatting-provider-error-invalid-return-value-string in 4823.334999999963ms
+[test starting] sample.formatting-provider-error.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+active formatt
+Error: Failed to execute formatting provider: oops
+    at Object.format (http://localhost:3000/packages/extension-host-worker-tests/fixtures/sample.formatting-provider-error/main.js:4:11)
+    at executeFormattingProvider (http://localhost:3000/packages/extension-host-worker/src/parts/Registry/Registry.js:83:50)
+    at execute (http://localhost:3000/packages/extension-host-worker/src/parts/Command/Command.js:7:10)
+    at Module.getResponse (http://localhost:3000/packages/extension-host-worker/src/parts/GetResponse/GetResponse.js:6:26)
+    at MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:42)
+    at constructError (http://localhost:3000/packages/renderer-worker/src/parts/RestoreJsonRpcError/RestoreJsonRpcError.js:15:19)
+    at Module.restoreJsonRpcError (http://localhost:3000/packages/renderer-worker/src/parts/RestoreJsonRpcError/RestoreJsonRpcError.js:44:27)
+    at Module.unwrapJsonRpcResult (http://localhost:3000/packages/renderer-worker/src/parts/UnwrapJsonRpcResult/UnwrapJsonRpcResult.js:6:47)
+    at Module.invoke (http://localhost:3000/packages/renderer-worker/src/parts/JsonRpc/JsonRpc.js:22:38)
+    at async Promise.all (index 0)
+    at async Module.executeProviders (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:19:19)
+    at async Module.format (http://localhost:3000/packages/renderer-worker/src/parts/Format/Format.js:13:17)
+    at async format (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandFormat.js:18:19)
+    at async runFn (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:45:22)
+    at async Editor/lazy/format (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:115:5)
+[test passed] sample.formatting-provider-error in 4809.534999999916ms
+[test starting] sample.formatting-provider-formatting-error.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+Formatting Error:  oops
+[test passed] sample.formatting-provider-formatting-error in 4857.510000000009ms
+[test starting] sample.formatting-provider-preserve-cursor-position.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] sample.formatting-provider-preserve-cursor-position in 6184.300000000047ms
+[test starting] sample.formatting-provider.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] sample.formatting-provider in 4099.14000000013ms
+[test starting] sample.icon-theme-error-invalid-json.js
+listen renderer
+listen shared
+[test passed] sample.icon-theme-error-invalid-json in 402.1799999999348ms
+[test starting] sample.icon-theme-error-no-file-names.js
+listen renderer
+listen shared
+[test passed] sample.icon-theme-error-no-file-names in 411.47500000009313ms
+[test starting] sample.icon-theme-error-no-icon-definitions.js
+listen renderer
+listen shared
+[test passed] sample.icon-theme in 387.2150000000838ms
+[test starting] sample.icon-theme-error-not-found.js
+listen renderer
+listen shared
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.icon-theme-error-not-found/icon-theme.json"
+[test passed] sample.icon-theme-error-not-found in 1110.0100000000093ms
+[test starting] sample.icon-theme.js
+listen renderer
+listen shared
+[test passed] sample.icon-theme in 754.2650000001304ms
+[test starting] sample.import-json-syntax-error.js
+listen renderer
+listen shared
+[test passed] sample.import-json-syntax-error in 5005.165000000037ms
+[test starting] sample.import-json.js
+listen renderer
+listen shared
+[test starting] sample.language.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+tokenizers without hasArrayReturn=false are deprecated (language xyz)
+[test passed] sample.language in 2052.464999999851ms
+[test starting] sample.reference-provider-error-main-not-found.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.reference-provider-error-main-not-found/not-found.js"
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.reference-provider-error-main-not-found/not-found.js"
+Error: Failed to activate extension sample.reference-provider-error-main-not-found: Failed to import http://localhost:3000/packages/extension-host-worker-tests/fixtures/sample.reference-provider-error-main-not-found/not-found.js: Not found (404)
+
+  14 |   switch (response.status) {
+  15 |     case HttpStatusCode.NotFound:
+> 16 |       throw new Error(`Failed to import ${url}: Not found (404)`)
+     |             ^
+  17 |     default:
+  18 |       return `Failed to import ${url}: ${error}`
+  19 |   }
+
+    at tryToGetActualImportErrorMessage (http://localhost:3000/packages/extension-host-worker/src/parts/TryToGetActualImportErrorMessage/TryToGetActualImportErrorMessage.js:16:13)
+    at async importScript (http://localhost:3000/packages/extension-host-worker/src/parts/ImportScript/ImportScript.js:12:34)
+    at async activate (http://localhost:3000/packages/extension-host-worker/src/parts/ExtensionHostExtension/ExtensionHostExtension.js:26:20)
+    at async getResponse (http://localhost:3000/packages/extension-host-worker/src/parts/GetResponse/GetResponse.js:6:20)
+    at async MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:24)
+    at async actuallyActivateByEvent (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHostManagement/ExtensionHostManagement.js:131:7)
+    at async executeProviders (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:11:26)
+    at async executeReferenceProvider (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostReference.js:11:18)
+    at async getReferences (http://localhost:3000/packages/renderer-worker/src/parts/References/References.js:8:22)
+    at async loadContent (http://localhost:3000/packages/renderer-worker/src/parts/ViewletLocations/ViewletLocations.js:101:22)
+    at async load (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:345:20)
+[test passed] sample.reference-provider-error-main-not-found in 4888.370000000112ms
+[test starting] sample.reference-provider-error-manifest-not-found.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.reference-provider-error-main-not-found/not-found.js"
+[server] Failed to serve static file "/packages/extension-host-worker-tests/fixtures/sample.reference-provider-error-main-not-found/not-found.js"
+Error: Failed to activate extension sample.reference-provider-error-main-not-found: Failed to import http://localhost:3000/packages/extension-host-worker-tests/fixtures/sample.reference-provider-error-main-not-found/not-found.js: Not found (404)
+
+  14 |   switch (response.status) {
+  15 |     case HttpStatusCode.NotFound:
+> 16 |       throw new Error(`Failed to import ${url}: Not found (404)`)
+     |             ^
+  17 |     default:
+  18 |       return `Failed to import ${url}: ${error}`
+  19 |   }
+
+    at tryToGetActualImportErrorMessage (http://localhost:3000/packages/extension-host-worker/src/parts/TryToGetActualImportErrorMessage/TryToGetActualImportErrorMessage.js:16:13)
+    at async importScript (http://localhost:3000/packages/extension-host-worker/src/parts/ImportScript/ImportScript.js:12:34)
+    at async activate (http://localhost:3000/packages/extension-host-worker/src/parts/ExtensionHostExtension/ExtensionHostExtension.js:26:20)
+    at async getResponse (http://localhost:3000/packages/extension-host-worker/src/parts/GetResponse/GetResponse.js:6:20)
+    at async MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:24)
+    at async actuallyActivateByEvent (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHostManagement/ExtensionHostManagement.js:131:7)
+    at async executeProviders (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:11:26)
+    at async executeReferenceProvider (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostReference.js:11:18)
+    at async getReferences (http://localhost:3000/packages/renderer-worker/src/parts/References/References.js:8:22)
+    at async loadContent (http://localhost:3000/packages/renderer-worker/src/parts/ViewletLocations/ViewletLocations.js:101:22)
+    at async load (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:345:20)
+[test passed] sample.reference-provider-error-main-not-found in 4905.764999999898ms
+[test starting] sample.reference-provider-error.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+Error: Failed to execute reference provider: oops
+
+  2 |   languageId: 'xyz',
+  3 |   provideReferences(textDocument, offset) {
+> 4 |     throw new Error('oops')
+    |           ^
+  5 |   },
+  6 | }
+  7 |
+
+    at provideReferences (http://localhost:3000/packages/extension-host-worker-tests/fixtures/sample.reference-provider-error/main.js:4:11)
+    at executeReferenceProvider (http://localhost:3000/packages/extension-host-worker/src/parts/Registry/Registry.js:83:50)
+    at execute (http://localhost:3000/packages/extension-host-worker/src/parts/Command/Command.js:7:10)
+    at MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:42)
+    at async executeProviders (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:19:19)
+    at async executeReferenceProvider (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostReference.js:11:18)
+    at async getReferences (http://localhost:3000/packages/renderer-worker/src/parts/References/References.js:8:22)
+    at async loadContent (http://localhost:3000/packages/renderer-worker/src/parts/ViewletLocations/ViewletLocations.js:101:22)
+    at async load (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:345:20)
+[test passed] sample.reference-provider-error in 6612.010000000009ms
+[test starting] sample.reference-provider-no-results.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] sample.reference-provider-no-results in 3369.8700000001118ms
+[test starting] sample.source-control-provider-accept-input-error.js
+listen renderer
+listen shared
+Error: No source control provider found
+
+  25 |   const extensionHosts = await ExtensionHostManagement.activateByEvent(event)
+  26 |   if (extensionHosts.length === 0) {
+> 27 |     throw new Error(noProviderFoundMessage)
+     |           ^
+  28 |   }
+  29 |   const promises = []
+  30 |   for (const extensionHost of extensionHosts) {
+
+    at executeProvider (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:27:11)
+    at async loadContent (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSourceControl/ViewletSourceControlLoadContent.js:34:30)
+    at async load (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:345:20)
+    at async openViewlet (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSideBar/ViewletSideBar.js:91:20)
+    at async runFn (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:45:22)
+    at async SideBar/openViewlet (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:91:5)
+    at async open (http://localhost:3000/packages/renderer-worker/src/parts/TestFrameWorkComponent/TestFrameWorkComponentSideBar.js:4:3)
+    at async test (http://localhost:3000/packages/extension-host-worker-tests/src/sample.source-control-provider-accept-input-error.js:12:3)
+    at async executeTest (http://localhost:3000/packages/renderer-worker/src/parts/ExecuteTest/ExecuteTest.js:31:5)
+    at async execute (http://localhost:3000/packages/renderer-worker/src/parts/Test/Test.js:32:7)
+cannot execute viewlet command Source Control.handleInput: no active instance for Source Control
+[test passed] sample.source-control-provider-accept-input-error in 1331.7650000001304ms
+[test starting] sample.source-control-provider-error-changed-files-is-not-iterable.js
+listen renderer
+listen shared
+Error: Source control group is missing an items property
+
+   7 |   const { id, label, items } = group
+   8 |   if (!items) {
+>  9 |     throw new Error(`Source control group is missing an items property`)
+     |           ^
+  10 |   }
+  11 |   const length = items.length
+  12 |   const type = isExpanded ? 'directory-expanded' : 'directory'
+
+    at getDisplayItemsGroup (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSourceControl/ViewletSourceControlGetDisplayItems.js:9:11)
+    at getDisplayItems (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSourceControl/ViewletSourceControlGetDisplayItems.js:57:31)
+    at loadContent (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSourceControl/ViewletSourceControlLoadContent.js:37:24)
+    at async load (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:345:20)
+    at async openViewlet (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSideBar/ViewletSideBar.js:91:20)
+    at async runFn (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:45:22)
+    at async SideBar/openViewlet (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:91:5)
+    at async open (http://localhost:3000/packages/renderer-worker/src/parts/TestFrameWorkComponent/TestFrameWorkComponentSideBar.js:4:3)
+    at async test (http://localhost:3000/packages/extension-host-worker-tests/src/sample.source-control-provider-error-changed-files-is-not-iterable.js:10:3)
+    at async executeTest (http://localhost:3000/packages/renderer-worker/src/parts/ExecuteTest/ExecuteTest.js:31:5)
+[test passed] sample.source-control-provider-error-changed-files-is-not-iterable in 4396.600000000093ms
+[test starting] sample.source-control-provider-error-invalid-return-value-array-of-strings.js
+listen renderer
+listen shared
+TypeError: Cannot read properties of undefined (reading 'slice')
+
+  196 | // TODO this should be in FileSystem module
+  197 | export const pathBaseName = (path) => {
+> 198 |   return path.slice(path.lastIndexOf('/') + 1)
+      |               ^
+  199 | }
+  200 |
+  201 | // TODO this should be in FileSystem module
+
+    at pathBaseName (http://localhost:3000/packages/renderer-worker/src/parts/Workspace/Workspace.js:198:15)
+    at getDisplayItemsGroup (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSourceControl/ViewletSourceControlGetDisplayItems.js:33:34)
+    at getDisplayItems (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSourceControl/ViewletSourceControlGetDisplayItems.js:57:31)
+    at loadContent (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSourceControl/ViewletSourceControlLoadContent.js:37:24)
+    at async load (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:345:20)
+    at async openViewlet (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSideBar/ViewletSideBar.js:91:20)
+    at async runFn (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:45:22)
+    at async SideBar/openViewlet (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:91:5)
+    at async open (http://localhost:3000/packages/renderer-worker/src/parts/TestFrameWorkComponent/TestFrameWorkComponentSideBar.js:4:3)
+    at async test (http://localhost:3000/packages/extension-host-worker-tests/src/sample.source-control-provider-error-invalid-return-value-array-of-strings.js:10:3)
+[test passed] sample.source-control-provider-error-invalid-return-value-array-of-strings in 3217.8849999997765ms
+[test starting] sample.source-control-provider-exec-error.js
+listen renderer
+listen shared
+Error: Failed to execute test-source-control: process exited with code 128
+
+  10 |       const { stdout, stderr, exitCode } = result
+  11 |       if (exitCode !== 0) {
+> 12 |         throw new ExecError(command, args, stdout, stderr, exitCode)
+     |               ^
+  13 |       }
+  14 |       return { stdout, stderr, exitCode }
+  15 |     }
+
+    at Api.api.exec (http://localhost:3000/packages/extension-host-worker/src/parts/ExtensionHostMockExec/ExtensionHostMockExec.js:12:15)
+    at async Object.getChangedFiles (http://localhost:3000/packages/extension-host-worker-tests/fixtures/sample.source-control-provider-exec-error/main.js:7:5)
+    at async getGroupsFromProvider (http://localhost:3000/packages/extension-host-worker/src/parts/ExtensionHostSourceControl/ExtensionHostSourceControl.js:30:19)
+    at async getGroups (http://localhost:3000/packages/extension-host-worker/src/parts/ExtensionHostSourceControl/ExtensionHostSourceControl.js:48:18)
+    at async getResponse (http://localhost:3000/packages/extension-host-worker/src/parts/GetResponse/GetResponse.js:6:20)
+    at async MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:24)
+    at async executeProvider (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:33:19)
+    at async getGroups (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSourceControl/ViewletSourceControlLoadContent.js:10:20)
+    at async loadContent (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSourceControl/ViewletSourceControlLoadContent.js:35:34)
+    at async load (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:345:20)
+    at async openViewlet (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSideBar/ViewletSideBar.js:91:20)
+[test passed] sample.source-control-provider-exec-error in 4409.104999999981ms
+[test starting] sample.source-control-provider-exec.js
+listen renderer
+listen shared
+[test passed] sample.source-control-provider-exec in 6571.48499999987ms
+[test starting] sample.source-control-provider.js
+listen renderer
+listen shared
+[test passed] sample.source-control-provider in 4911.72499999986ms
+[test starting] sample.tab-completion-provider-error-invalid-return-value-number.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+Error: Failed to execute tab completion provider: VError: invalid tab completion result: tabCompletion must be of type object but is 42
+
+  85 |         if (error) {
+  86 |           const improvedError = improveValidationError(name, error)
+> 87 |           throw new VError(improvedError)
+     |                 ^
+  88 |         }
+  89 |         return result
+  90 |       } catch (error) {
+
+    at executeTabCompletionProvider (http://localhost:3000/packages/extension-host-worker/src/parts/Registry/Registry.js:87:17)
+    at async getResponse (http://localhost:3000/packages/extension-host-worker/src/parts/GetResponse/GetResponse.js:6:20)
+    at async MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:24)
+    at async executeProviders (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:19:19)
+    at async getTabCompletion (http://localhost:3000/packages/renderer-worker/src/parts/TabCompletion/TabCompletion.js:9:5)
+    at async tabCompletion (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandTabCompletion.js:14:27)
+    at async runFn (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:45:22)
+    at async Editor/lazy/tabCompletion (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:115:5)
+[test passed] sample.tab-completion-provider-error-invalid-return-value-number in 4454.324999999953ms
+[test starting] sample.tab-completion-provider-error.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+Error: Failed to execute tab completion provider: oops
+
+  2 |   languageId: 'xyz',
+  3 |   provideTabCompletion(textDocument, offset) {
+> 4 |     throw new Error('oops')
+    |           ^
+  5 |   },
+  6 | }
+  7 | export const activate = () => {
+
+    at provideTabCompletion (http://localhost:3000/packages/extension-host-worker-tests/fixtures/sample.tab-completion-provider-error/main.js:4:11)
+    at executeTabCompletionProvider (http://localhost:3000/packages/extension-host-worker/src/parts/Registry/Registry.js:83:50)
+    at execute (http://localhost:3000/packages/extension-host-worker/src/parts/Command/Command.js:7:10)
+    at MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:42)
+    at async executeProviders (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:19:19)
+    at async getTabCompletion (http://localhost:3000/packages/renderer-worker/src/parts/TabCompletion/TabCompletion.js:9:5)
+    at async tabCompletion (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandTabCompletion.js:14:27)
+    at async runFn (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:45:22)
+    at async Editor/lazy/tabCompletion (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:115:5)
+[test passed] sample.tab-completion-provider-error in 8413.060000000056ms
+[test starting] sample.tab-completion-provider-no-result.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] sample.tab-completion-provider-no-result in 4806.8300000000745ms
+[test starting] sample.tab-completion-provider-snippet.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] sample.tab-completion-provider-snippet in 6216.444999999832ms
+[test starting] sample.tab-completion-provider.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] sample.tab-completion-provider in 6444.09999999986ms
+[test starting] sample.text-search-provider-error-results-is-not-of-type-array.js
+listen renderer
+listen shared
+Error: results must be of type array
+
+  47 |     })
+  48 |     if (!Array.isArray(results)) {
+> 49 |       throw new Error(`results must be of type array`)
+     |             ^
+  50 |     }
+  51 |     const { fileCount, resultCount } = getResultCounts(results)
+  52 |     // const displayResults = toDisplayResults(results, itemHeight, resultCount, value)
+
+    at handleUpdate (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSearch/ViewletSearchHandleUpdate.js:49:13)
+    at async runFn (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:45:22)
+    at async Search/handleInput (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:91:5)
+    at async setValue (http://localhost:3000/packages/renderer-worker/src/parts/TestFrameWorkComponent/TestFrameWorkComponentSearch.js:4:3)
+    at async test (http://localhost:3000/packages/extension-host-worker-tests/src/sample.text-search-provider-error-results-is-not-of-type-array.js:12:3)
+    at async executeTest (http://localhost:3000/packages/renderer-worker/src/parts/ExecuteTest/ExecuteTest.js:31:5)
+    at async execute (http://localhost:3000/packages/renderer-worker/src/parts/Test/Test.js:32:7)
+    at async startup (http://localhost:3000/packages/renderer-worker/src/parts/Workbench/Workbench.js:175:5)
+    at async main (http://localhost:3000/packages/renderer-worker/src/rendererWorkerMain.js:4:3)
+[test passed] sample.text-search-provider-error-results-is-not-of-type-array in 5405.219999999972ms
+[test starting] sample.text-search-provider-error.js
+listen renderer
+listen shared
+Error: Failed to execute text search provider: oops
+
+  2 |   scheme: 'memfs',
+  3 |   provideTextSearchResults(query) {
+> 4 |     throw new Error('oops')
+    |           ^
+  5 |   },
+  6 | }
+  7 |
+
+    at provideTextSearchResults (http://localhost:3000/packages/extension-host-worker-tests/fixtures/sample.text-search-provider-error/main.js:4:11)
+    at executeTextSearchProvider (http://localhost:3000/packages/extension-host-worker/src/parts/ExtensionHostTextSearch/ExtensionHostTextSearch.js:27:46)
+    at execute (http://localhost:3000/packages/extension-host-worker/src/parts/Command/Command.js:7:10)
+    at MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:42)
+    at async executeProviders (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:19:19)
+    at async executeTextSearchProvider (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostTextSearch.js:9:18)
+    at async textSearch (http://localhost:3000/packages/renderer-worker/src/parts/TextSearch/TextSearchExtension.js:7:19)
+    at async textSearch (http://localhost:3000/packages/renderer-worker/src/parts/TextSearch/TextSearch.js:24:19)
+    at async handleUpdate (http://localhost:3000/packages/renderer-worker/src/parts/ViewletSearch/ViewletSearchHandleUpdate.js:44:21)
+[test passed] sample.text-search-provider-error in 7471.380000000121ms
+[test starting] sample.text-search-provider-no-results.js
+listen renderer
+listen shared
+[test passed] sample.text-search-provider-no-results in 3865.945000000065ms
+[test starting] sample.text-search-provider.js
+listen renderer
+listen shared
+[test passed] sample.text-search-provider in 4557.135000000009ms
+[test starting] sample.type-definition-provider-error-failed-to-activate-extension.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+Error: Failed to activate extension sample.type-definition-provider-error-failed-to-activate-extension: TypeError: x is not a function
+
+  1 | export const activate = () => {
+> 2 |   throw new TypeError('x is not a function')
+    |         ^
+  3 | }
+  4 |
+
+    at activate (http://localhost:3000/packages/extension-host-worker-tests/fixtures/sample.type-definition-provider-error-failed-to-activate-extension/main.js:2:9)
+    at activate (http://localhost:3000/packages/extension-host-worker/src/parts/ExtensionHostExtension/ExtensionHostExtension.js:29:34)
+    at async getResponse (http://localhost:3000/packages/extension-host-worker/src/parts/GetResponse/GetResponse.js:6:20)
+    at async MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:24)
+    at async actuallyActivateByEvent (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHostManagement/ExtensionHostManagement.js:131:7)
+    at async executeProviders (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:11:26)
+    at async getTypeDefinition (http://localhost:3000/packages/renderer-worker/src/parts/TypeDefinition/TypeDefinition.js:4:22)
+    at async getLocation (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandGoToTypeDefinition.js:24:22)
+    at async goTo (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandGoTo.js:13:24)
+    at async runFn (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:45:22)
+[test passed] sample.type-definition-provider-error-failed-to-activate-extension in 10195.284999999916ms
+[test starting] sample.type-definition-provider-error.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+Error: Failed to execute type definition provider: oops
+
+  2 |   languageId: 'xyz',
+  3 |   provideTypeDefinition(textDocument, offset) {
+> 4 |     throw new Error('oops')
+    |           ^
+  5 |   },
+  6 | }
+  7 |
+
+    at provideTypeDefinition (http://localhost:3000/packages/extension-host-worker-tests/fixtures/sample.type-definition-provider-error/main.js:4:11)
+    at executeTypeDefinitionProvider (http://localhost:3000/packages/extension-host-worker/src/parts/Registry/Registry.js:83:50)
+    at execute (http://localhost:3000/packages/extension-host-worker/src/parts/Command/Command.js:7:10)
+    at MessagePort.handleMessageFromRendererWorker (http://localhost:3000/packages/extension-host-worker/src/parts/Rpc/Rpc.js:25:42)
+    at async executeProviders (http://localhost:3000/packages/renderer-worker/src/parts/ExtensionHost/ExtensionHostShared.js:19:19)
+    at async getTypeDefinition (http://localhost:3000/packages/renderer-worker/src/parts/TypeDefinition/TypeDefinition.js:4:22)
+    at async getLocation (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandGoToTypeDefinition.js:24:22)
+    at async goTo (http://localhost:3000/packages/renderer-worker/src/parts/EditorCommand/EditorCommandGoTo.js:13:24)
+    at async runFn (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:45:22)
+[test passed] sample.type-definition-provider-error in 7299.285000000149ms
+[test starting] sample.type-definition-provider-no-result.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] sample.type-definition-provider-no-result in 4281.780000000028ms
+[test starting] sample.type-definition-provider-not-registered.js
+listen renderer
+listen shared
+try to get language from content {uri: memfs:///workspace/test.xyz, languageId: unknown, lines: Array(6), completionTriggerCharacters: Array(0), primarySelectionIndex: 0}
+try to get language from content {uri: memfs:///workspace/test.xyz, languageId: unknown, lines: Array(6), completionTriggerCharacters: Array(0), primarySelectionIndex: 0}
+unmounted editor cannot be focused
+[test passed] sample.type-definition-provider-not-registered in 2514.689999999944ms
+[test starting] sample.worker.js
+listen renderer
+listen shared
+[test passed] sample.worker in 0.07499999995343387ms
+[test starting] viewlet.activity-bar-keyboard-navigation.js
+listen renderer
+listen shared
+[test passed] viewlet.activity-bar-keyboard-navigation in 2656.2050000000745ms
+[test starting] viewlet.diff-editor-deletion.js
+listen renderer
+listen shared
+{finalDeltaY: 0}
+{scrollBarHeight: 0}
+[test passed] sample.diff-editor-deletion in 1176.3850000000093ms
+[test starting] viewlet.diff-editor-insertion-at-start-and-end.js
+listen renderer
+listen shared
+{finalDeltaY: 0}
+{scrollBarHeight: 0}
+[test passed] sample.diff-editor-insertion-at-start-and-end in 930.4750000000931ms
+[test starting] viewlet.diff-editor-insertion.js
+listen renderer
+listen shared
+{finalDeltaY: 0}
+{scrollBarHeight: 0}
+[test passed] sample.diff-editor-insertion in 1011.6599999996834ms
+[test starting] viewlet.diff-editor-scrolling.js
+listen renderer
+listen shared
+[test starting] viewlet.diff-editor.js
+listen renderer
+listen shared
+{finalDeltaY: 0}
+{scrollBarHeight: 0}
+[test passed] sample.diff-editor in 2040.5ms
+[test starting] viewlet.editor-audio-error.js
+listen renderer
+listen shared
+[test starting] viewlet.editor-copy-line-down.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] viewlet.editor-copy-line-down in 3189.1650000000373ms
+[test starting] viewlet.editor-cursor-character-left.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] viewlet.editor-cursor-character-left in 2562.964999999851ms
+[test starting] viewlet.editor-cursor-character-right.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] viewlet.editor-cursor-character-right in 2099.6949999998324ms
+[test starting] viewlet.editor-cursor-down.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] viewlet.editor-cursor-down in 1889.1949999998324ms
+[test starting] viewlet.editor-cursor-up.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] viewlet.editor-cursor-up in 2001.6499999999069ms
+[test starting] viewlet.editor-cursor-word-left.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] viewlet.editor-cursor-word-left in 1726.154999999795ms
+[test starting] viewlet.editor-cursor-word-right.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] viewlet.editor-cursor-word-right in 2116.375ms
+[test starting] viewlet.editor-find-widget-accessibility.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] viewlet.editor-find-widget-accessibility in 3254.564999999944ms
+[test starting] viewlet.editor-find-widget.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] viewlet.editor-find-widget in 4171.959999999963ms
+[test starting] viewlet.editor-image-error.js
+listen renderer
+listen shared
+[test passed] viewlet.editor-image-error in 2110.9499999997206ms
+[test starting] viewlet.editor-image.js
+listen renderer
+listen shared
+[test passed] viewlet.editor-image in 1812.3050000001676ms
+[test starting] viewlet.editor-insert-line-break.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] viewlet.editor-insert-line-break in 2654.3249999997206ms
+[test starting] viewlet.editor-scrolling.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] viewlet.editor-scrolling in 2076.7400000002235ms
+[test starting] viewlet.explorer-accessibility.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] viewlet.explorer-accessibility in 1958.6999999997206ms
+[test starting] viewlet.explorer-create-file-error-no-name-provided.js
+listen renderer
+listen shared
+[test starting] viewlet.explorer-create-file.js
+listen renderer
+listen shared
+[test passed] viewlet.explorer-create-file in 1215.7450000001118ms
+[test starting] viewlet.explorer-delete-file.js
+listen renderer
+listen shared
+[test passed] viewlet.explorer-delete-file in 947.714999999851ms
+[test starting] viewlet.explorer-delete-multiple-files.js
+listen renderer
+listen shared
+[test starting] viewlet.explorer-expand-all.js
+listen renderer
+listen shared
+[test passed] viewlet.explorer-expand-all in 763.7449999996461ms
+[test starting] viewlet.explorer-expand-recursively.js
+listen renderer
+listen shared
+[test passed] viewlet.explorer-expand-recursively in 807.625ms
+[test starting] viewlet.explorer-keyboard-navigation.js
+listen renderer
+listen shared
+unmounted editor cannot be focused
+[test passed] viewlet.explorer-keyboard-navigation in 2678.399999999907ms
+[test starting] viewlet.explorer-mouse-navigation.js
+listen renderer
+listen shared
+[test passed] viewlet.explorer-mouse-navigation in 721.9150000000373ms
+[test starting] viewlet.explorer-rename-file-cancel.js
+listen renderer
+listen shared
+[test passed] viewlet.explorer-rename-file-cancel in 663.3449999997392ms
+[test starting] viewlet.explorer-sorting.js
+listen renderer
+listen shared
+[test passed] viewlet.explorer-sorting in 684.035000000149ms
+[test starting] viewlet.key-bindings-accessibility.js
+listen renderer
+listen shared
+[test passed] viewlet.keybindings in 9278.30000000028ms
+[test starting] viewlet.quick-pick-accessibility.js
+listen renderer
+listen shared
+[test passed] viewlet.quick-pick-no-results in 1540.2199999997392ms
+[test starting] viewlet.quick-pick-keyboard-navigation.js
+listen renderer
+listen shared
+[test passed] viewlet.explorer-keyboard-navigation in 1745.9850000003353ms
+[test starting] viewlet.title-bar-accessibility.js
+listen renderer
+listen shared
+[test starting] viewlet.title-bar-menu-bar-accessibility.js
+listen renderer
+listen shared
+[shared-process] VError: Failed to write to file "/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/foo-9CVz6o/lvce-oss/recently-opened.json": EISDIR: illegal operation on a directory, open '/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/foo-9CVz6o/lvce-oss/recently-opened.json'
+
+  67 |       throw new FileNotFoundError(path)
+VError: Failed to read /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/foo-9CVz6o/lvce-oss/recently-opened.json : Failed to write to file "/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/foo-9CVz6o/lvce-oss/recently-opened.json": EISDIR: illegal operation on a directory, open '/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/foo-9CVz6o/lvce-oss/recently-opened.json'
+  68 |     }
+    at FileSystem.writeFile (file:///Users/runner/work/lvce-editor/lvce-editor/packages/shared-process/src/parts/FileSystem/FileSystem.js:69:11)
+> 69 |     throw new VError(error, `Failed to write to file "${path}"`)
+     |           ^
+  70 |   }
+  71 | }
+  72 |
+
+    at FileSystem.writeFile (file:///Users/runner/work/lvce-editor/lvce-editor/packages/shared-process/src/parts/FileSystem/FileSystem.js:69:11)
+    at async handleJsonRpcMessage (file:///Users/runner/work/lvce-editor/lvce-editor/packages/shared-process/src/parts/HandleJsonRpcMessage/HandleJsonRpcMessage.js:10:24)
+
+    at async handleJsonRpcMessage (file:///Users/runner/work/lvce-editor/lvce-editor/packages/shared-process/src/parts/HandleJsonRpcMessage/HandleJsonRpcMessage.js:10:24)
+    at Module.restoreJsonRpcError (http://localhost:3000/packages/renderer-worker/src/parts/RestoreJsonRpcError/RestoreJsonRpcError.js:36:66)
+    at Module.unwrapJsonRpcResult (http://localhost:3000/packages/renderer-worker/src/parts/UnwrapJsonRpcResult/UnwrapJsonRpcResult.js:6:47)
+    at Module.invoke (http://localhost:3000/packages/renderer-worker/src/parts/JsonRpc/JsonRpc.js:22:38)
+    at async Module.invoke (http://localhost:3000/packages/renderer-worker/src/parts/SharedProcess/SharedProcess.js:45:18)
+    at async Module.writeFile (http://localhost:3000/packages/renderer-worker/src/parts/FileSystem/FileSystemDisk.js:30:3)
+    at async Module.writeFile (http://localhost:3000/packages/renderer-worker/src/parts/FileSystem/FileSystem.js:39:3)
+    at async readFileNode (http://localhost:3000/packages/renderer-worker/src/parts/FileSystem/FileSystemAppShared.js:32:9)
+    at async getRecentlyOpened (http://localhost:3000/packages/renderer-worker/src/parts/RecentlyOpened/RecentlyOpened.js:17:21)
+    at async Module.getMenuEntries (http://localhost:3000/packages/renderer-worker/src/parts/MenuEntriesOpenRecent/MenuEntriesOpenRecent.js:33:20)
+    at async handleKeyArrowRightMenuOpen (http://localhost:3000/packages/renderer-worker/src/parts/ViewletTitleBarMenuBar/ViewletTitleBarMenuBarHandleKeyArrowRightMenuOpen.js:17:28)
+[test passed] viewlet.title-bar-menu-bar-keyboard-navigation in 3089.8899999996647ms
+[test starting] viewlet.title-bar-menu-bar-keyboard-navigation.js
+listen renderer
+listen shared
+[shared-process] VError: Failed to read file "/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/foo-9CVz6o/lvce-oss/recently-opened.json": EISDIR: illegal operation on a directory, read
+
+  48 |       throw new FileNotFoundError(path)
+  49 |     }
+> 50 |     throw new VError(error, `Failed to read file "${path}"`)
+     |           ^
+  51 |   }
+  52 | }
+VError: Failed to read /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/foo-9CVz6o/lvce-oss/recently-opened.json: Failed to read file "/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/foo-9CVz6o/lvce-oss/recently-opened.json": EISDIR: illegal operation on a directory, read
+  53 |
+    at FileSystem.readFile (file:///Users/runner/work/lvce-editor/lvce-editor/packages/shared-process/src/parts/FileSystem/FileSystem.js:50:11)
+
+    at async handleJsonRpcMessage (file:///Users/runner/work/lvce-editor/lvce-editor/packages/shared-process/src/parts/HandleJsonRpcMessage/HandleJsonRpcMessage.js:10:24)
+    at Module.restoreJsonRpcError (http://localhost:3000/packages/renderer-worker/src/parts/RestoreJsonRpcError/RestoreJsonRpcError.js:36:66)
+    at FileSystem.readFile (file:///Users/runner/work/lvce-editor/lvce-editor/packages/shared-process/src/parts/FileSystem/FileSystem.js:50:11)
+    at Module.unwrapJsonRpcResult (http://localhost:3000/packages/renderer-worker/src/parts/UnwrapJsonRpcResult/UnwrapJsonRpcResult.js:6:47)
+    at async handleJsonRpcMessage (file:///Users/runner/work/lvce-editor/lvce-editor/packages/shared-process/src/parts/HandleJsonRpcMessage/HandleJsonRpcMessage.js:10:24)
+    at Module.invoke (http://localhost:3000/packages/renderer-worker/src/parts/JsonRpc/JsonRpc.js:22:38)
+    at async Module.invoke (http://localhost:3000/packages/renderer-worker/src/parts/SharedProcess/SharedProcess.js:45:18)
+    at async readFileNode (http://localhost:3000/packages/renderer-worker/src/parts/FileSystem/FileSystemAppShared.js:24:33)
+    at async getRecentlyOpened (http://localhost:3000/packages/renderer-worker/src/parts/RecentlyOpened/RecentlyOpened.js:17:21)
+    at async Module.getMenuEntries (http://localhost:3000/packages/renderer-worker/src/parts/MenuEntriesOpenRecent/MenuEntriesOpenRecent.js:33:20)
+    at async handleKeyArrowRightMenuOpen (http://localhost:3000/packages/renderer-worker/src/parts/ViewletTitleBarMenuBar/ViewletTitleBarMenuBarHandleKeyArrowRightMenuOpen.js:17:28)
+    at async runFn (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:45:22)
+    at async TitleBarMenuBar/lazy/handleKeyArrowRight (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:115:5)
+
+[shared-process] VError: Failed to read file "/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/foo-9CVz6o/lvce-oss/recently-opened.json": EISDIR: illegal operation on a directory, read
+
+  48 |       throw new FileNotFoundError(path)
+VError: Failed to read /var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/foo-9CVz6o/lvce-oss/recently-opened.json: Failed to read file "/var/folders/24/8k48jl6d249_n_qfxwsl6xvm0000gn/T/foo-9CVz6o/lvce-oss/recently-opened.json": EISDIR: illegal operation on a directory, read
+  49 |     }
+> 50 |     throw new VError(error, `Failed to read file "${path}"`)
+    at FileSystem.readFile (file:///Users/runner/work/lvce-editor/lvce-editor/packages/shared-process/src/parts/FileSystem/FileSystem.js:50:11)
+     |           ^
+    at async handleJsonRpcMessage (file:///Users/runner/work/lvce-editor/lvce-editor/packages/shared-process/src/parts/HandleJsonRpcMessage/HandleJsonRpcMessage.js:10:24)
+  51 |   }
+    at Module.restoreJsonRpcError (http://localhost:3000/packages/renderer-worker/src/parts/RestoreJsonRpcError/RestoreJsonRpcError.js:36:66)
+  52 | }
+    at Module.unwrapJsonRpcResult (http://localhost:3000/packages/renderer-worker/src/parts/UnwrapJsonRpcResult/UnwrapJsonRpcResult.js:6:47)
+  53 |
+    at Module.invoke (http://localhost:3000/packages/renderer-worker/src/parts/JsonRpc/JsonRpc.js:22:38)
+
+    at async Module.invoke (http://localhost:3000/packages/renderer-worker/src/parts/SharedProcess/SharedProcess.js:45:18)
+    at FileSystem.readFile (file:///Users/runner/work/lvce-editor/lvce-editor/packages/shared-process/src/parts/FileSystem/FileSystem.js:50:11)
+    at async readFileNode (http://localhost:3000/packages/renderer-worker/src/parts/FileSystem/FileSystemAppShared.js:24:33)
+    at async handleJsonRpcMessage (file:///Users/runner/work/lvce-editor/lvce-editor/packages/shared-process/src/parts/HandleJsonRpcMessage/HandleJsonRpcMessage.js:10:24)
+    at async getRecentlyOpened (http://localhost:3000/packages/renderer-worker/src/parts/RecentlyOpened/RecentlyOpened.js:17:21)
+
+    at async Module.getMenuEntries (http://localhost:3000/packages/renderer-worker/src/parts/MenuEntriesOpenRecent/MenuEntriesOpenRecent.js:33:20)
+    at async handleKeyArrowRightMenuOpen (http://localhost:3000/packages/renderer-worker/src/parts/ViewletTitleBarMenuBar/ViewletTitleBarMenuBarHandleKeyArrowRightMenuOpen.js:17:28)
+    at async runFn (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:45:22)
+    at async TitleBarMenuBar/lazy/handleKeyArrowRight (http://localhost:3000/packages/renderer-worker/src/parts/ViewletManager/ViewletManager.js:115:5)
+[test passed] viewlet.title-bar-menu-bar-keyboard-navigation in 2877.9499999997206ms
+[shared process] disconnected
+
+
+Build Electron App (Macos) 3m 13s
+
+Run node build/bin/build.js --target=electron-builder-mac
+{ target: 'electron-builder-mac' }
+[build step skipped] bundleElectronAppDependencies
+copyElectron: 17.126s
+copyDependencies: 5.102s
+copyExtensionHostSources: 342.048ms
+copyPtyHostSources: 421.55ms
+copyMainProcessSources: 733.379ms
+copySharedProcessSources: 1.200s
+copyExtensionHostHelperProcessSources: 605.271ms
+copyPdfWorkerSources: 70.534ms
+copyExtensions: 6.413s
+copyStaticFiles: 302.833ms
+{
+  sortedDirents: [
+    '__Theme.css',
+    '_Global.css',
+    'Widgets.css',
+    'ViewletVideo.css',
+    'ViewletTitleBarMenuBar.css',
+    'ViewletTitleBarIcon.css',
+    'ViewletTitleBarButtons.css',
+    'ViewletTitleBar.css',
+    'ViewletTerminalTabs.css',
+    'ViewletTerminal.css',
+    'ViewletStatusBar.css',
+    'ViewletSourceControl.css',
+    'ViewletSimpleBrowser.css',
+    'ViewletSideBar.css',
+    'ViewletSearch.css',
+    'ViewletRunAndDebug.css',
+    'ViewletReferences.css',
+    'ViewletQuickPick.css',
+    'ViewletProblems.css',
+    'ViewletPdf.css',
+    'ViewletPanelTabs.css',
+    'ViewletPanel.css',
+    'ViewletOutput.css',
+    'ViewletMain.css',
+    'ViewletList.css',
+    'ViewletLayout.css',
+    'ViewletKeyBindings.css',
+    'ViewletFindWidget.css',
+    'ViewletExtensions.css',
+    'ViewletExtensionDetail.css',
+    'ViewletExplorer.css',
+    'ViewletEditorImage.css',
+    'ViewletEditorCompletion.css',
+    'ViewletEditor.css',
+    'ViewletDiffEditor.css',
+    'ViewletDialog.css',
+    'ViewletDebugConsole.css',
+    'ViewletColorPicker.css',
+    'ViewletAudio.css',
+    'ViewletActivityBar.css',
+    'Viewlet.css',
+    'TreeItem.css',
+    'Symbol.css',
+    'ScrollBar.css',
+    'Notification.css',
+    'Mobile.css',
+    'Menu.css',
+    'MaskIcon.css',
+    'Markdown.css',
+    'Label.css',
+    'InputBox.css',
+    'ImagePreview.css',
+    'IconButton.css',
+    'Highlight.css',
+    'Focus.css',
+    'FileIcon.css',
+    'EditorTabs.css',
+    'EditorHover.css',
+    'Drag.css',
+    'ContextMenu.css',
+    'BackDrop.css',
+    'AriaAlert.css',
+    'Animation.css',
+    'Actions.css'
+  ]
+}
+copyCss: 830.272ms
+bundleRendererProcess: 2.725s
+copyRendererProcessFiles: 893.844ms
+bundleRendererWorker: 11.836s
+copyRendererWorkerFiles: 4.187s
+{
+  timings: {
+    '# BUILD': [ 23404.49733000016, 57359560, 87505328 ],
+    '## initialize': [ 0.959656999912113, 3496, 30153736 ],
+    '## generate module graph': [ 10652.775306999683, 33065000, 63219936 ],
+    'generate ast': [ 3169.807041000575, 10647824, 68769576 ],
+    'analyze ast': [ 4774.200639001094, 23039992, 68799896 ],
+    '## sort and bind modules': [ 497.1188329998404, 5036544, 68257104 ],
+    '## mark included statements': [ 12248.829359000083, 19244880, 87502608 ],
+    'treeshaking pass 1': [ 112.11445200024173, 1249720, 69804872 ],
+    'treeshaking pass 2': [ 66.51102799968794, 1342440, 71147936 ],
+    'treeshaking pass 3': [ 143.41444699978456, 1391648, 72540208 ],
+    'treeshaking pass 4': [ 513.9737269999459, 4886248, 77427080 ],
+    'treeshaking pass 5': [ 203.50851499987766, -8166584, 69261120 ],
+    'treeshaking pass 6': [ 91.17669000010937, 2913272, 72175016 ],
+    'treeshaking pass 7': [ 86.78766399994493, 2737256, 74912896 ],
+    'treeshaking pass 8': [ 186.5700709996745, 3588152, 78501672 ],
+    'treeshaking pass 9': [ 209.09306399989873, -10921440, 67580856 ],
+    'treeshaking pass 10': [ 294.45621199999005, 2354632, 69936136 ],
+    'treeshaking pass 11': [ 55.38580199982971, 2145376, 72082160 ],
+    'treeshaking pass 12': [ 266.89179900009185, 8663200, 80746008 ],
+    'treeshaking pass 13': [ 355.42714900011197, -6700496, 74046160 ],
+    'treeshaking pass 14': [ 186.2455329997465, 3765648, 77812456 ],
+    'treeshaking pass 15': [ 2410.8489010003395, 544840, 78357944 ],
+    'treeshaking pass 16': [ 1348.4488960001618, -1304512, 77054080 ],
+    'treeshaking pass 17': [ 845.2092079999857, 4779416, 81834144 ],
+    'treeshaking pass 18': [ 566.9418460000306, 2197168, 84031936 ],
+    'treeshaking pass 19': [ 708.7870389996096, 2421144, 86453704 ],
+    'treeshaking pass 20': [ 1168.4409170001745, -7681672, 78772656 ],
+    'treeshaking pass 21': [ 1166.5001409999095, 4088240, 82861520 ],
+    'treeshaking pass 22': [ 419.25364900007844, 1824400, 84686544 ],
+    'treeshaking pass 23': [ 298.75003399979323, 1423024, 86110192 ],
+    'treeshaking pass 24': [ 532.9102370003238, 1390944, 87501760 ]
+  }
+}
+bundleExtensionHostWorker: 27.650s
+copyExtensionHostWorkerFiles: 754.583ms
+{
+  timings: {
+    '# BUILD': [ 1776.9105539997108, -3629672, 111510056 ],
+    '## initialize': [ 0.2813989999704063, 3576, 115145600 ],
+    '## generate module graph': [ 1127.3083239998668, 326736, 115473152 ],
+    'generate ast': [ 337.8034480023198, 2134752, 116820488 ],
+    'analyze ast': [ 295.021711000707, 7696416, 116878280 ],
+    '## sort and bind modules': [ 51.610483000054955, 319376, 115793152 ],
+    '## mark included statements': [ 591.6423890003935, -4286488, 111507288 ],
+    'treeshaking pass 1': [ 16.273840999696404, 404488, 116211312 ],
+    'treeshaking pass 2': [ 10.878665999975055, 369440, 116581376 ],
+    'treeshaking pass 3': [ 44.90621899999678, 620736, 117202736 ],
+    'treeshaking pass 4': [ 96.12992199975997, 1830112, 119033472 ],
+    'treeshaking pass 5': [ 99.2326630000025, 1587008, 120621104 ],
+    'treeshaking pass 6': [ 52.0282049998641, 961824, 121583552 ],
+    'treeshaking pass 7': [ 61.80337099963799, -12108008, 109476168 ],
+    'treeshaking pass 8': [ 20.375388000160456, 573112, 110049904 ],
+    'treeshaking pass 9': [ 22.111737000290304, 535568, 110586096 ],
+    'treeshaking pass 10': [ 46.467271000146866, 344192, 110930912 ],
+    'treeshaking pass 11': [ 52.332944999914616, 288928, 111220464 ],
+    'treeshaking pass 12': [ 67.53240599995479, 285304, 111506392 ]
+  }
+}
+bundleExtensionHostSubWorker: 3.154s
+copyExtensionHostSubWorkerFiles: 395.158ms
+copyPlaygroundFiles: 6.94ms
+addRootPackageJson: 124.606ms
+copyElectronResult: 2:10.994 (m:ss.mmm)
+copyElectronBuilderConfig: 25.761ms
+copyBuildResources: 21.254ms
+  • electron-builder  version=23.6.0 os=21.6.0
+  • publishing will be skipped  reason=current build is a part of pull request solution=set env PUBLISH_FOR_PULL_REQUEST to true to force code signing
+There are serious security concerns with PUBLISH_FOR_PULL_REQUEST=true (see the  CircleCI documentation (https://circleci.com/docs/1.0/fork-pr-builds/) for details)
+If you have SSH keys, sensitive env vars or AWS credentials stored in your project settings and untrusted forks can make pull requests against your repo, then this option isn't for you.
+  • loaded configuration  file=package.json ("build" field)
+  • building        target=DMG arch=x64 file=build/.tmp/electron-builder/dist/lvce-oss-0.0.0.dmg
+Error: The operation was canceled.
