@@ -1,0 +1,7 @@
+Name: github actions never finishes
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/5370260483/jobs/9742271039?pr=3415
+OS: Macos
+Phase: After Complete
+Date: 2023-06-25
+
+Despite everything completing in ~17min, the job still shows up as "in progress" 4 hours later. The timeout for the action is set at 40min.
