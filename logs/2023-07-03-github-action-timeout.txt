@@ -1,0 +1,10 @@
+Name: github action timeout
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/5446109635/jobs/9906361068
+OS: Macos
+Phase: Unit Tests, E2e tests
+Date: 2023-07-03
+
+Run npm test 15m 12s
+Run extension host worker tests 21m 21s
+
+The operation was canceled.
