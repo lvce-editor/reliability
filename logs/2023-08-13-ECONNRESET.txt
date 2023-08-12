@@ -1,0 +1,48 @@
+Name: This job failed
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/5840713882/job/15840231232
+OS: Macos
+Phase: Build Electron App (Macos dmg, x64)
+Date: 2023-08-13
+
+Run node build/bin/build.js --product=lvce --target=electron-builder-mac
+{ target: 'electron-builder-mac' }
+{
+  electronVersion: '25.5.0',
+  buildPath: '/Users/runner/work/lvce-editor/lvce-editor/build/.tmp/cachedDependencies/4cf6a94b66d5d79e41f4f6494ffdba1c752812f4/packages/pty-host',
+  arch: 'x64'
+}
+FetchError: request to https://artifacts.electronjs.org/headers/v25.5.0/node-v25.5.0-headers.tar.gz?force_headers_dist=1 failed, reason: read ECONNRESET
+    at ClientRequest.<anonymous> (/Users/runner/work/lvce-editor/lvce-editor/build/node_modules/minipass-fetch/lib/index.js:130:14)
+    at ClientRequest.emit (node:events:514:28)
+    at TLSSocket.socketErrorListener (node:_http_client:501:9)
+    at TLSSocket.emit (node:events:526:35)
+    at emitErrorNT (node:internal/streams/destroy:151:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'ECONNRESET',
+  errno: 'ECONNRESET',
+  syscall: 'read',
+  type: 'system'
+}
+
+Build failed:
+VError: Failed to rebuild native dependendencies in /Users/runner/work/lvce-editor/lvce-editor/build/.tmp/cachedDependencies/4cf6a94b66d5d79e41f4f6494ffdba1c752812f4/packages/pty-host: node-gyp failed to rebuild '/Users/runner/work/lvce-editor/lvce-editor/build/.tmp/cachedDependencies/4cf6a94b66d5d79e41f4f6494ffdba1c752812f4/packages/pty-host/node_modules/node-pty'
+    at Module.rebuild (file:///Users/runner/work/lvce-editor/lvce-editor/build/src/parts/Rebuild/Rebuild.js:18:13)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Module.bundlePtyHostDependencies (file:///Users/runner/work/lvce-editor/lvce-editor/build/src/parts/BundlePtyHostDependencies/BundlePtyHostDependencies.js:39:3)
+    at copyPtyHostFiles (file:///Users/runner/work/lvce-editor/lvce-editor/build/src/parts/BundleElectronAppDependencies/BundleElectronAppDependencies.js:17:3)
+    at Module.bundleElectronAppDependencies (file:///Users/runner/work/lvce-editor/lvce-editor/build/src/parts/BundleElectronAppDependencies/BundleElectronAppDependencies.js:126:3)
+    at build (file:///Users/runner/work/lvce-editor/lvce-editor/build/src/parts/BundleElectronApp/BundleElectronApp.js:273:5)
+    at bundleElectronMaybe (file:///Users/runner/work/lvce-editor/lvce-editor/build/src/parts/ElectronBuilder/ElectronBuilder.js:28:3)
+    at copyElectronResult (file:///Users/runner/work/lvce-editor/lvce-editor/build/src/parts/ElectronBuilder/ElectronBuilder.js:175:3)
+    at Module.build (file:///Users/runner/work/lvce-editor/lvce-editor/build/src/parts/ElectronBuilder/ElectronBuilder.js:260:3)
+    at Module.build (file:///Users/runner/work/lvce-editor/lvce-editor/build/src/parts/ElectronBuilderMac/ElectronBuilderMac.js:16:3)
+    at main (file:///Users/runner/work/lvce-editor/lvce-editor/build/src/build.js:74:5) {
+  jse_shortmsg: 'Failed to rebuild native dependendencies in /Users/runner/work/lvce-editor/lvce-editor/build/.tmp/cachedDependencies/4cf6a94b66d5d79e41f4f6494ffdba1c752812f4/packages/pty-host',
+  jse_cause: Error: node-gyp failed to rebuild '/Users/runner/work/lvce-editor/lvce-editor/build/.tmp/cachedDependencies/4cf6a94b66d5d79e41f4f6494ffdba1c752812f4/packages/pty-host/node_modules/node-pty'
+      at ChildProcess.<anonymous> (/Users/runner/work/lvce-editor/lvce-editor/build/node_modules/@electron/rebuild/src/module-type/node-gyp/node-gyp.ts:131:16)
+      at ChildProcess.emit (node:events:514:28)
+      at Process.ChildProcess._handle.onexit (node:internal/child_process:291:12),
+  jse_info: {},
+  cause: [Function: ve_cause]
+}
