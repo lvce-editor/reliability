@@ -1,0 +1,12 @@
+Name: GitHub Actions has encountered an internal error when running your job.
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/5825401989
+OS: All
+Phase: Setup
+Date: 2023-08-10
+
+ci (windows-2022)
+GitHub Actions has encountered an internal error when running your job.
+ci (macos-12)
+GitHub Actions has encountered an internal error when running your job.
+ci (ubuntu-22.04)
+GitHub Actions has encountered an internal error when running your job.

@@ -1,0 +1,7 @@
+Name: This job failed
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/5825401989/job/15796875938
+OS: All
+Phase: Setup
+Date: 2023-08-11
+
+This job failed
