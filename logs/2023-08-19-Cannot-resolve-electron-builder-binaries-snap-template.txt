@@ -1,0 +1,129 @@
+Name: Cannot resolve electron builder binaries snap template
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/5911700419/job/16034424903?pr=3779
+OS: Linux
+Phase: Build Electron App
+Date: 2023-08-19
+
+Run node build/bin/build.js --target=electron-builder-snap
+{ target: 'electron-builder-snap' }
+[build step skipped] bundleElectronAppDependencies
+copyElectron: 384.143ms
+copyDependencies: 882.129ms
+copyExtensionHostSources: 26.185ms
+copyPtyHostSources: 29.793ms
+[build step skipped] bundleMainProcess
+copyMainProcessFiles: 119.297ms
+bundleSharedProcess: 245.714ms
+copySharedProcessFiles: 146.269ms
+copyExtensionHostHelperProcessSources: 27.887ms
+copyPdfWorkerSources: 6.634ms
+copyExtensions: 722.696ms
+copyStaticFiles: 38.458ms
+copyCss: 63.024ms
+[build step skipped] bundleRendererProcess
+copyRendererProcessFiles: 151.069ms
+[build step skipped] bundleRendererWorker
+copyRendererWorkerFiles: 451.586ms
+{
+  timings: {
+    '# BUILD': [ 1190.7346179999877, 51887872, 117546288 ],
+    '## initialize': [ 0.19390099996235222, 3448, 65666584 ],
+    '## generate module graph': [ 611.9716069999849, 34345240, 100013024 ],
+    'generate ast': [ 252.04548299883027, 11201128, 99955504 ],
+    'analyze ast': [ 295.5127360000042, 39432776, 99976904 ],
+    '## sort and bind modules': [ 47.72908199997619, 5940760, 105954408 ],
+    '## mark included statements': [ 530.3806259999983, 11588536, 117543568 ],
+    'treeshaking pass 1': [ 24.38234399992507, -6514160, 99487520 ],
+    'treeshaking pass 2': [ 6.149736000108533, 1591656, 101079800 ],
+    'treeshaking pass 3': [ 7.20354200003203, 1816280, 102896704 ],
+    'treeshaking pass 4': [ 15.902994000003673, 5025808, 107923136 ],
+    'treeshaking pass 5': [ 17.663704000064172, -9096336, 98827424 ],
+    'treeshaking pass 6': [ 7.848745999974199, 2670464, 101498512 ],
+    'treeshaking pass 7': [ 6.589938999968581, 2595400, 104094536 ],
+    'treeshaking pass 8': [ 11.929470999981277, 3768080, 107863240 ],
+    'treeshaking pass 9': [ 7.45514400000684, 3124520, 110988384 ],
+    'treeshaking pass 10': [ 6.37433699995745, 2458600, 113447608 ],
+    'treeshaking pass 11': [ 8.633350999909453, -13230816, 100217416 ],
+    'treeshaking pass 12': [ 22.81603499990888, 8863680, 109081720 ],
+    'treeshaking pass 13': [ 33.44899699999951, -5084608, 103997736 ],
+    'treeshaking pass 14': [ 11.251966999960132, 3890056, 107888416 ],
+    'treeshaking pass 15': [ 127.38045000005513, -179384, 107709656 ],
+    'treeshaking pass 16': [ 50.66609800001606, -1259344, 106450936 ],
+    'treeshaking pass 17': [ 26.870159000041895, 4969688, 111421248 ],
+    'treeshaking pass 18': [ 15.886493000085466, 2262696, 113684568 ],
+    'treeshaking pass 19': [ 13.833282000035979, 2500288, 116185480 ],
+    'treeshaking pass 20': [ 35.6064100000076, -7757664, 108428440 ],
+    'treeshaking pass 21': [ 19.65381599997636, 4260448, 112689512 ],
+    'treeshaking pass 22': [ 24.402843999909237, 1903440, 114593576 ],
+    'treeshaking pass 23': [ 14.210484000039287, 1488696, 116082896 ],
+    'treeshaking pass 24': [ 13.205378000042401, 1459200, 117542720 ]
+  }
+}
+bundleExtensionHostWorker: 1.500s
+copyExtensionHostWorkerFiles: 94.649ms
+[build step skipped] bundleExtensionHostSubWorker
+copyExtensionHostSubWorkerFiles: 26.662ms
+copyPlaygroundFiles: 1.159ms
+addRootPackageJson: 0.769ms
+copyElectronResult: 8.557s
+copyElectronBuilderConfig: 1.003ms
+copyBuildResources: 2.627ms
+  • electron-builder  version=24.6.3 os=5.15.0-1042-azure
+  • publishing will be skipped  reason=current build is a part of pull request solution=set env PUBLISH_FOR_PULL_REQUEST to true to force code signing
+There are serious security concerns with PUBLISH_FOR_PULL_REQUEST=true (see the  CircleCI documentation (https://circleci.com/docs/1.0/fork-pr-builds/) for details)
+If you have SSH keys, sensitive env vars or AWS credentials stored in your project settings and untrusted forks can make pull requests against your repo, then this option isn't for you.
+  • loaded configuration  file=package.json ("build" field)
+  • building        target=snap arch=x64 file=build/.tmp/electron-builder/dist/lvce-oss_0.0.0_amd64.snap
+  ⨯ cannot resolve https://github.com/electron-userland/electron-builder-binaries/releases/download/snap-template-4.0-2/snap-template-electron-4.0-2-amd64.tar.7z: status code 429
+github.com/develar/app-builder/pkg/download.(*Downloader).follow
+	/Volumes/data/Documents/app-builder/pkg/download/downloader.go:237
+github.com/develar/app-builder/pkg/download.(*Downloader).DownloadNoRetry
+	/Volumes/data/Documents/app-builder/pkg/download/downloader.go:128
+github.com/develar/app-builder/pkg/download.(*Downloader).Download
+	/Volumes/data/Documents/app-builder/pkg/download/downloader.go:112
+github.com/develar/app-builder/pkg/download.DownloadArtifact
+	/Volumes/data/Documents/app-builder/pkg/download/artifactDownloader.go:107
+github.com/develar/app-builder/pkg/package-format/snap.ResolveTemplateDir
+	/Volumes/data/Documents/app-builder/pkg/package-format/snap/snap.go:112
+github.com/develar/app-builder/pkg/package-format/snap.ConfigureCommand.func1
+	/Volumes/data/Documents/app-builder/pkg/package-format/snap/snap.go:77
+github.com/alecthomas/kingpin.(*actionMixin).applyActions
+	/Volumes/data/go/pkg/mod/github.com/alecthomas/kingpin@v2.2.6+incompatible/actions.go:28
+github.com/alecthomas/kingpin.(*Application).applyActions
+	/Volumes/data/go/pkg/mod/github.com/alecthomas/kingpin@v2.2.6+incompatible/app.go:557
+github.com/alecthomas/kingpin.(*Application).execute
+	/Volumes/data/go/pkg/mod/github.com/alecthomas/kingpin@v2.2.6+incompatible/app.go:390
+github.com/alecthomas/kingpin.(*Application).Parse
+	/Volumes/data/go/pkg/mod/github.com/alecthomas/kingpin@v2.2.6+incompatible/app.go:222
+main.main
+	/Volumes/data/Documents/app-builder/main.go:90
+runtime.main
+	/usr/local/Cellar/go/1.17/libexec/src/runtime/proc.go:255
+runtime.goexit
+	/usr/local/Cellar/go/1.17/libexec/src/runtime/asm_amd64.s:1581
+Build failed:
+VError: Electron builder failed to execute: /home/runner/work/lvce-editor/lvce-editor/build/node_modules/app-builder-bin/linux/x64/app-builder process failed ERR_ELECTRON_BUILDER_CANNOT_EXECUTE
+Exit code:
+1
+    at runElectronBuilder (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/ElectronBuilder/ElectronBuilder.js:73:11)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Module.build (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/ElectronBuilder/ElectronBuilder.js:272:3)
+    at Module.build (file:///home/runner/work/lvce-editor/lvce-editor/build/src/parts/ElectronBuilderSnap/ElectronBuilderSnap.js:16:3)
+    at main (file:///home/runner/work/lvce-editor/lvce-editor/build/src/build.js:76:5) {
+  jse_shortmsg: 'Electron builder failed to execute',
+  jse_cause: ExecError: /home/runner/work/lvce-editor/lvce-editor/build/node_modules/app-builder-bin/linux/x64/app-builder process failed ERR_ELECTRON_BUILDER_CANNOT_EXECUTE
+  Exit code:
+  1
+      at ChildProcess.<anonymous> (/home/runner/work/lvce-editor/lvce-editor/build/node_modules/builder-util/src/util.ts:250:14)
+      at Object.onceWrapper (node:events:629:26)
+      at ChildProcess.emit (node:events:514:28)
+      at maybeClose (node:internal/child_process:1091:16)
+      at Process.ChildProcess._handle.onexit (node:internal/child_process:302:5) {
+    exitCode: 1,
+    alreadyLogged: false,
+    code: 'ERR_ELECTRON_BUILDER_CANNOT_EXECUTE'
+  },
+  jse_info: {},
+  cause: [Function: ve_cause]
+}
+Error: Process completed with exit code 1.
