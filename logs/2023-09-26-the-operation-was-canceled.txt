@@ -1,0 +1,10 @@
+Name: the operation was canceled
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/6317128827/job/17153243740?pr=3880
+OS: Macos
+Phase: E2E tests
+Date: 2023-09-26
+
+38m 1s
+Run npx lerna run test --since origin/main
+lerna notice cli v7.3.0
+Error: The operation was canceled.
