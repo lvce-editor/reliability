@@ -1,0 +1,34 @@
+Name: no module named distutils
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/6754014215/job/18361075587?pr=4128
+OS: Macos
+Phase: Build Electron App
+Date: 2023-11-04
+
+
+Run node build/bin/build.js --target=electron-builder-mac
+{ target: 'electron-builder-mac' }
+{
+  electronVersion: '26.4.2',
+  buildPath: '/Users/runner/work/lvce-editor/lvce-editor/build/.tmp/cachedDependencies/4c3f0a80b31d8bef3d653a8d1c0e16fbbb05ee20/packages/pty-host',
+  arch: 'x64'
+}
+Traceback (most recent call last):
+  File "/Users/runner/work/lvce-editor/lvce-editor/build/node_modules/node-gyp/gyp/gyp_main.py", line 42, in <module>
+    import gyp  # noqa: E402
+    ^^^^^^^^^^
+  File "/Users/runner/work/lvce-editor/lvce-editor/build/node_modules/node-gyp/gyp/pylib/gyp/__init__.py", line 9, in <module>
+    import gyp.input
+  File "/Users/runner/work/lvce-editor/lvce-editor/build/node_modules/node-gyp/gyp/pylib/gyp/input.py", line 19, in <module>
+    from distutils.version import StrictVersion
+ModuleNotFoundError: No module named 'distutils'
+Error: `gyp` failed with exit code: 1
+    at ChildProcess.onCpExit (/Users/runner/work/lvce-editor/lvce-editor/build/node_modules/node-gyp/lib/configure.js:325:16)
+    at ChildProcess.emit (node:events:517:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:292:12)
+
+Build failed:
+VError: Failed to rebuild native dependendencies in /Users/runner/work/lvce-editor/lvce-editor/build/.tmp/cachedDependencies/4c3f0a80b31d8bef3d653a8d1c0e16fbbb05ee20/packages/pty-host: node-gyp failed to rebuild '/Users/runner/work/lvce-editor/lvce-editor/build/.tmp/cachedDependencies/4c3f0a80b31d8bef3d653a8d1c0e16fbbb05ee20/packages/pty-host/node_modules/node-pty'
+    at ChildProcess.<anonymous> (/Users/runner/work/lvce-editor/lvce-editor/build/node_modules/@electron/rebuild/src/module-type/node-gyp/node-gyp.ts:131:16)
+    at ChildProcess.emit (node:events:517:28)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:292:12)
+Error: Process completed with exit code 1.
