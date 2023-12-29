@@ -1,0 +1,23 @@
+Name: Timeout exceeded
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/7357960049/job/20030592588
+OS: Windows
+Phase: Unit Tests
+Date: 2023-12-29
+
+ PASS  test/ErrorHandling.test.js
+ PASS  test/ExtensionInstall.test.js
+ FAIL  test/TextSearchIntegrationTest.test.js (15.275 s)
+  ● search
+
+    thrown: "Exceeded timeout of 15000 ms for a test.
+    Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+
+      17 | const TIMEOUT_LONG = 15_000
+      18 |
+    > 19 | test(
+         | ^
+      20 |   'search',
+      21 |   async () => {
+      22 |     const tmpDir = await getTmpDir()
+
+      at test (test/TextSearchIntegrationTest.test.js:19:1)
