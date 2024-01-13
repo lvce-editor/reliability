@@ -1,0 +1,22 @@
+Name: nodename nor servname provided, or not known (api.github.com:443)
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/7511374741/job/20450895872?pr=4870
+OS: Macos
+Phase: Setup
+Date: 2024-01-13
+
+Current runner version: '2.311.0'
+Operating System
+Runner Image
+Runner Image Provisioner
+GITHUB_TOKEN Permissions
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'actions/checkout@v4' (SHA:b4ffde65f46336ab88eb53be808477a3936bae11)
+Download action repository 'actions/setup-node@v4' (SHA:b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8)
+Warning: Failed to download action 'https://api.github.com/repos/actions/setup-node/tarball/b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8'. Error: Operation timed out (api.github.com:443)
+Warning: Back off 23.576 seconds before retry.
+Warning: Failed to download action 'https://api.github.com/repos/actions/setup-node/tarball/b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8'. Error: nodename nor servname provided, or not known (api.github.com:443)
+Warning: Back off 16.095 seconds before retry.
+Error: nodename nor servname provided, or not known (api.github.com:443)
