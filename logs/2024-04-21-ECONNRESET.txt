@@ -1,0 +1,33 @@
+Name: This job failed
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/8772396551/job/24071285399?pr=5769
+OS: Windows
+Phase: Build Electron App (Windows, x64)
+Date: 2024-04-21
+
+Run node packages/build/bin/build.js --target=electron-builder-windows-exe
+{ target: 'electron-builder-windows-exe' }
+{
+  electronVersion: '28.3.1',
+  buildPath: 'D:\\a\\lvce-editor\\lvce-editor\\packages\\build\\.tmp\\cachedDependencies\\c92fd66a2152dcd62b10989143b888da12538e02/pty-host',
+  arch: 'x64'
+}
+FetchError: request to https://www.electronjs.org/headers/v28.3.1/SHASUMS256.txt failed, reason: read ECONNRESET
+    at ClientRequest.<anonymous> (D:\a\lvce-editor\lvce-editor\packages\build\node_modules\minipass-fetch\lib\index.js:130:14)
+    at ClientRequest.emit (node:events:518:28)
+    at TLSSocket.socketErrorListener (node:_http_client:500:9)
+    at TLSSocket.emit (node:events:530:35)
+    at emitErrorNT (node:internal/streams/destroy:169:8)
+    at emitErrorCloseNT (node:internal/streams/destroy:128:3)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'ECONNRESET',
+  errno: 'ECONNRESET',
+  syscall: 'read',
+  type: 'system'
+}
+
+Build failed:
+VError: Failed to rebuild native dependendencies in D:\a\lvce-editor\lvce-editor\packages\build\.tmp\cachedDependencies\c92fd66a2152dcd62b10989143b888da12538e02/pty-host: node-gyp failed to rebuild 'D:\a\lvce-editor\lvce-editor\packages\build\.tmp\cachedDependencies\c92fd66a2152dcd62b10989143b888da12538e02\pty-host\node_modules\node-pty'
+    at ChildProcess.<anonymous> (D:\a\lvce-editor\lvce-editor\packages\build\node_modules\@electron\rebuild\src\module-type\node-gyp\node-gyp.ts:131:16)
+    at ChildProcess.emit (node:events:518:28)
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:294:12)
+Error: Process completed with exit code 1.
