@@ -1,0 +1,16 @@
+Name: nodename nor servname provided or not known
+Url: https://github.com/lvce-editor/ipc/actions/runs/8805621177/job/24168601240
+OS: Macos
+Phase: CI
+Date: 2024-04-23
+
+Secret source: Actions
+Prepare workflow directory
+Prepare all required actions
+Getting action download info
+Download action repository 'actions/checkout@v4' (SHA:1d96c772d19495a3b5c517cd2bc0cb401ea0529f)
+Warning: Failed to download action 'https://api.github.com/repos/actions/checkout/tarball/1d96c772d19495a3b5c517cd2bc0cb401ea0529f'. Error: nodename nor servname provided, or not known (codeload.github.com:443)
+Warning: Back off 18.46 seconds before retry.
+Warning: Failed to download action 'https://api.github.com/repos/actions/checkout/tarball/1d96c772d19495a3b5c517cd2bc0cb401ea0529f'. Error: nodename nor servname provided, or not known (codeload.github.com:443)
+Warning: Back off 17.008 seconds before retry.
+Error: nodename nor servname provided, or not known (codeload.github.com:443)
