@@ -1,0 +1,16 @@
+Name: Failed to list artifacts
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/8838624494/job/24271985934
+OS: Linux
+Phase: CI
+Date: 2024-04-25
+
+Fetching artifact metadata for "github-pages" in this workflow run
+Error: Listing artifact metadata failed
+Error: Fetching artifact metadata failed. Is githubstatus.com reporting issues with API requests, Pages, or Actions? Please re-run the deployment at a later time.
+Error: HttpError: Failed to ListArtifacts: Unexpected token '<', "<!DOCTYPE "... is not valid JSON
+    at wrapTwirpErrorLikeOctokit (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/api-client.js:35:1)
+    at getArtifactMetadata (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/api-client.js:75:1)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at Deployment.create (/home/runner/work/_actions/actions/deploy-pages/v4/src/internal/deployment.js:66:1)
+    at main (/home/runner/work/_actions/actions/deploy-pages/v4/src/index.js:30:1)
+Error: Error: Failed to create deployment (status: 500) with build version df15e9e73a5f685e46b3f451eee2b331f6767ca9. Server error, is githubstatus.com reporting a Pages outage? Please re-run the deployment at a later time.
