@@ -1,0 +1,19 @@
+Name: Failed
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/9046599778/job/24857623022
+OS: Windows
+Phase: CI
+Date: 2024-05-12
+
+@lvce-editor/extension-host-helper-process@0.0.0-dev test
+> node --unhandled-rejections=warn --experimental-vm-modules ../../node_modules/jest/bin/jest.js --detectOpenHandles --forceExit
+
+(node:5348) ExperimentalWarning: VM Modules is an experimental feature and might change at any time
+(Use `node --trace-warnings ...` to show where the warning was created)
+  FAIL  test/IpcChildWithNodeForkedProcess.test.js
+
+
+  ● Test suite failed to run
+
+    kill EPERM
+
+      at ChildProcessWorker.killChild (../../node_modules/jest-worker/build/workers/ChildProcessWorker.js:411:17)
