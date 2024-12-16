@@ -1,0 +1,8 @@
+Name: SSL Bad Record
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/4758748781/jobs/8457190179?pr=2769
+OS: MacOS
+Phase: Release
+Date: 2024-12-16
+
+Run actions/upload-release-asset@v1.0.1
+Error: request to https://uploads.github.com/repos/lvce-editor/lvce-editor/releases/191051574/assets?name=lvce-v0.41.0_arm64.dmg& failed, reason: 408FAEF501000000:error:0A0003FC:SSL routines:ssl3_read_bytes:sslv3 alert bad record mac:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1590:SSL alert number 20
