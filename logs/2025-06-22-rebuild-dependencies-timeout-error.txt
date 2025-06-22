@@ -1,0 +1,59 @@
+Name: Rebuild Dependencies Timeout Error
+Url: https://github.com/lvce-editor/lvce-editor/actions/runs/15807877595/job/44555180702
+OS: Ubuntu
+Phase: Build Deb
+Date: 2025-01-07
+
+{ target: 'electron-deb' }
+cleanup: 0.626ms
+copyExtensionHostHelperProcessFiles: 2.175s
+{
+  electronVersion: '36.5.0',
+  buildPath: '/home/runner/work/lvce-editor/lvce-editor/packages/build/.tmp/cachedDependencies/33a5334f03e7e9dd4bbd1afab8f48eb87134ebe6/shared-process',
+  arch: 'x64'
+}
+
+FetchError: request to https://artifacts.electronjs.org/headers/v36.5.0/node-v36.5.0-headers.tar.gz?force_headers_dist=1 failed, reason:
+    at ClientRequest.<anonymous> (/home/runner/work/lvce-editor/lvce-editor/packages/build/node_modules/minipass-fetch/lib/index.js:130:14)
+    at ClientRequest.emit (node:events:518:28)
+    at emitErrorEvent (node:_http_client:104:11)
+    at _destroy (node:_http_client:898:9)
+    at onSocketNT (node:_http_client:918:5)
+    at process.processTicksAndRejections (node:internal/process/task_queues:91:21) {
+  code: 'ETIMEDOUT',
+  errno: 'ETIMEDOUT',
+  type: 'system'
+}
+
+Build failed:
+VError: Failed to rebuild native dependendencies in /home/runner/work/lvce-editor/lvce-editor/packages/build/.tmp/cachedDependencies/33a5334f03e7e9dd4bbd1afab8f48eb87134ebe6/shared-process: node-gyp failed to rebuild '/home/runner/work/lvce-editor/lvce-editor/packages/build/.tmp/cachedDependencies/33a5334f03e7e9dd4bbd1afab8f48eb87134ebe6/shared-process/node_modules/@vscode/windows-process-tree'
+    at ChildProcess.<anonymous> (file:///home/runner/work/lvce-editor/lvce-editor/packages/build/node_modules/@electron/rebuild/lib/module-type/node-gyp/node-gyp.js:114:24)
+    at ChildProcess.emit (node:events:518:28)
+    at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+Build failed:
+ExecaError: Command failed with exit code 1: fakeroot /opt/hostedtoolcache/node/22.16.0/x64/bin/node /home/runner/work/lvce-editor/lvce-editor/packages/build/bin/build.js '--product=lvce' '--target=electron-deb'
+    at getFinalError (file:///home/runner/work/lvce-editor/lvce-editor/packages/build/node_modules/execa/lib/return/final-error.js:6:9)
+    at makeError (file:///home/runner/work/lvce-editor/lvce-editor/packages/build/node_modules/execa/lib/return/result.js:108:16)
+    at getAsyncResult (file:///home/runner/work/lvce-editor/lvce-editor/packages/build/node_modules/execa/lib/methods/main-async.js:168:4)
+    at handlePromise (file:///home/runner/work/lvce-editor/lvce-editor/packages/build/node_modules/execa/lib/methods/main-async.js:151:17)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Module.build (file:///home/runner/work/lvce-editor/lvce-editor/packages/build/src/parts/BuildDeb/BuildDeb.js:199:5)
+    at async main (file:///home/runner/work/lvce-editor/lvce-editor/packages/build/src/build.js:81:5) {
+  shortMessage: "Command failed with exit code 1: fakeroot /opt/hostedtoolcache/node/22.16.0/x64/bin/node /home/runner/work/lvce-editor/lvce-editor/packages/build/bin/build.js '--product=lvce' '--target=electron-deb'",
+  command: 'fakeroot /opt/hostedtoolcache/node/22.16.0/x64/bin/node /home/runner/work/lvce-editor/lvce-editor/packages/build/bin/build.js --product=lvce --target=electron-deb',
+  escapedCommand: "fakeroot /opt/hostedtoolcache/node/22.16.0/x64/bin/node /home/runner/work/lvce-editor/lvce-editor/packages/build/bin/build.js '--product=lvce' '--target=electron-deb'",
+  cwd: '/home/runner/work/lvce-editor/lvce-editor',
+  durationMs: 4890.250959,
+  failed: true,
+  timedOut: false,
+  isCanceled: false,
+  isGracefullyCanceled: false,
+  isTerminated: false,
+  isMaxBuffer: false,
+  isForcefullyTerminated: false,
+  exitCode: 1,
+  stdio: [ undefined, undefined, undefined ],
+  ipcOutput: [],
+  pipedFrom: []
+}
+Error: Process completed with exit code 1.
