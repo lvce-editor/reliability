@@ -1,0 +1,48 @@
+Name: Buffer Did Not Change Error
+Url: https://github.com/lvce-editor/language-features-typescript/actions/runs/17884784713/job/50857061978?pr=491
+OS: Macos
+Phase: e2e
+Date: 2025-09-20
+
+> e2e@0.0.0-dev e2e:headless
+> node ./node_modules/@lvce-editor/test-with-playwright/bin/test-with-playwright.js  --only-extension=../extension --test-path=. --headless
+
+SKIP typescript.add-missing-imports.ts
+PASS typescript.auto-fix-imports.ts in 748ms
+SKIP typescript.auto-fix-spelling.ts
+PASS typescript.auto-import-no-suggestions.ts in 1258ms
+SKIP typescript.auto-import.ts
+SKIP typescript.brace-completion.ts
+PASS typescript.completion-from-node-modules-relative.ts in 1161ms
+PASS typescript.completion-from-node-modules.ts in 1487ms
+PASS typescript.completion-import-folder.ts in 1151ms
+PASS typescript.completion-import.ts in 1246ms
+SKIP typescript.completion-service-worker.ts
+FAIL typescript.completion-webworker.ts: test failed: AssertionError: expected selector #Completions .EditorCompletionItem:nth(0) to have text "DedicatedWorkerGlobalScope" element was not found
+PASS typescript.completion.ts in 1369ms
+SKIP typescript.definition-imported-file.ts
+SKIP typescript.definition-node-modules.ts
+PASS typescript.definition-same-file.ts in 1283ms
+SKIP typescript.definition.ts
+SKIP typescript.diagnostics.ts
+PASS typescript.go-to-type-definition-error.ts in 712ms
+SKIP typescript.grow-selection.ts
+SKIP typescript.hover.ts
+SKIP typescript.implementations.ts
+SKIP typescript.jsx-closing-tag.ts
+PASS typescript.no-definition-found.ts in 1161ms
+SKIP typescript.no-reference-found.ts
+FAIL typescript.organize-imports.ts: test failed: Error: Rpc error: Buffer did not change
+PASS typescript.path-completion.ts in 1128ms
+SKIP typescript.references-dom-lib.ts
+PASS typescript.references-empty.ts in 1085ms
+PASS typescript.references-error.ts in 1262ms
+SKIP typescript.references-node-module.ts
+SKIP typescript.references.ts
+SKIP typescript.rename.ts
+SKIP typescript.semantic-highlighting.ts
+PASS typescript.toggle-block-comment.ts in 745ms
+PASS typescript.toggle-line-comment.ts in 738ms
+15 tests passed, 19 tests skipped, 2 tests failed in 31795.556083ms
+[shared process] disconnected
+Error: Process completed with exit code 1.
